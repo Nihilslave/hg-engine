@@ -15,11 +15,12 @@ void LONG_CALL GetMonSpriteCharAndPlttNarcIdsEx(MON_PIC *picdata, u16 mons_no, u
 //
 // This will NOT update the text during the starter-selection
 // sequence. To update that text, modify text archive 190 in
-// DSPRE.
+// DSPRE, or override it via data/text/190.txt like this repo
+// does now.
 static const u16 sStarterChoices[3] = {
-    SPECIES_CHIKORITA,
-    SPECIES_CYNDAQUIL,
-    SPECIES_TOTODILE,
+    SPECIES_ZACIAN,
+    SPECIES_ZAMAZENTA,
+    SPECIES_ETERNATUS,
 };
 
 /**
