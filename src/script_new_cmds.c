@@ -6,13 +6,17 @@
 #include "../include/types.h"
 
 #define SCRIPT_NEW_CMD_REPEL_USE 0
+#define SCRIPT_NEW_CMD_STARTER_QUIZ_ROLL 1
 
 #define SCRIPT_NEW_CMD_MAX 256
+
+// defined in src/starters.c
+void StarterQuiz_Roll(u16 base_var);
 
 BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx)
 {
     u8 sw = ScriptReadByte(ctx);
-    u16 UNUSED arg0 = ScriptReadHalfword(ctx);
+    u16 arg0 = ScriptReadHalfword(ctx);
 
     switch (sw) {
     case SCRIPT_NEW_CMD_REPEL_USE:;
@@ -21,6 +25,10 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx)
         SetScriptVar(arg0, most_recent_repel);
         Repel_Use(most_recent_repel, HEAPID_MAIN_HEAP);
 #endif
+        break;
+
+    case SCRIPT_NEW_CMD_STARTER_QUIZ_ROLL:
+        StarterQuiz_Roll(arg0);
         break;
 
     default:

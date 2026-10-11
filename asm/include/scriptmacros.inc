@@ -6779,6 +6779,15 @@ DummyTextTrap \slot, \unk
 RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
 .endm
 
+// rolls three distinct starter groups for the era quiz and stores them into the
+// given special-var base: base + 0..2 = option message ids (text archive 191),
+// base + 3..5 = group indices (the values the menu options return)
+.equ NEW_COMMAND_STARTER_QUIZ_ROLL, 1
+
+.macro starter_quiz_roll,base
+RunNewCommand NEW_COMMAND_STARTER_QUIZ_ROLL, \base
+.endm
+
 // Dummy
 .macro DummyTextTreasure,slot,unk
 .hword 209

@@ -278,6 +278,6 @@
 // DSPRE, PokeText, or any other external tool keeps its own version of everything hg-engine does not itself change.
 // hg-engine's own text archives and its common and trainer scripts are always built.
 // #define BUILD_DUMPED_EVENTDATA
-// #define BUILD_DUMPED_SCR_SEQ
+#define BUILD_DUMPED_SCR_SEQ
 
 #endif

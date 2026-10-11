@@ -61,6 +61,8 @@
 .equ NUM_OBJ_GFX_VARS, 16
 
 .equ VAR_PLAYER_STARTER, 0x4030
+// group index + 1 of the starter era picked in the opening quiz (0 = not picked; see src/starters.c)
+.equ VAR_STARTER_GROUP, 0x4031
 .equ VAR_UNK_4031, 0x4031
 .equ VAR_UNK_4032, 0x4032
 .equ VAR_BUENAS_PASSWORD_SET, 0x4033
