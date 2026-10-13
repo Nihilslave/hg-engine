@@ -118,6 +118,26 @@ _0145:
 	closemsg
 	apply_movement obj_T20R0101_doctor, _0368
 	wait_movement
+	// --- starter quiz: Elm asks which era interests the player right after offering a Pokémon (see src/starters.c)
+	compare VAR_STARTER_GROUP, 0
+	goto_if_ne _QUIZ_DONE_INTRO
+	starter_quiz_roll VAR_SPECIAL_x8000
+	setvar VAR_SPECIAL_x8006, 255
+	npc_msg 106
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	copyvar VAR_STARTER_GROUP, VAR_SPECIAL_RESULT
+	addvar VAR_STARTER_GROUP, 1
+	npc_msg 107
+	wait_button
+	closemsg
+_QUIZ_DONE_INTRO:
 	setflag FLAG_ELMS_LAB_PREVENT_PLAYER_ESCAPE
 	releaseall
 	end
@@ -188,7 +208,8 @@ scr_seq_T20R0101_012:
 	lockall
 	faceplayer
 	goto_if_set FLAG_GOT_STARTER, _0331
-	// --- starter quiz: Elm asks which era interests the player before the ball choice (see src/starters.c)
+	// --- starter quiz fallback: normally Elm already asked in the lab intro scene (_011);
+	//     this only fires for saves that somehow skipped it (see src/starters.c)
 	compare VAR_STARTER_GROUP, 0
 	goto_if_ne _QUIZ_DONE
 	starter_quiz_roll VAR_SPECIAL_x8000
