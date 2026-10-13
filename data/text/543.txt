@@ -104,5 +104,6 @@ Professor Elm: {STRVAR_1 3, 0, 0}!\nI’m truly surprised!\rI can’t believe th
 Professor Elm: {STRVAR_1 3, 0, 0}!\nI’m truly surprised!\rI can’t believe that such a great\nTrainer has been so close by\fall this time!\r{STRVAR_1 3, 0, 0}, you have been helping\nme understand what it means to\fwalk with Pokémon.\rIt is that...\fthere is no end to the relationship\fbetween people and Pokémon!\rLet me thank you once again for\nyour support!
 Hmm...\nAs far as I know, there are no\fPokémon like this at Johto...\rJust like Mr. Pokémon was saying\nover the phone.\rYou seem to be there when\nsomething exciting happens,\f{STRVAR_1 3, 0, 0}!\rYou are making me all excited!\nI’ll give you a present for that.\fPlease take it.\r
 Hmm...\nAs far as I know, there are no\fPokémon like this at Johto...\rJust like Mr. Pokémon was saying\nover the phone.\rYou seem to be there when\nsomething exciting happens,\f{STRVAR_1 3, 0, 0}!\rYou are making me all excited!\nI’ll give you a present for that.\fPlease take it.\r
-Which era of Pokémon legends\ninterests you the most?\rPlease choose one of these three.
+Which difficulty do you want\nto play on?\rPlease choose one.
 All right! I’ll remember that.
+Which of these three concepts\ninterests you the most?\rPlease choose one.

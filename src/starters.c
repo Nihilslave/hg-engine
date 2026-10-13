@@ -8,120 +8,251 @@ extern u32 sStarterChoiceCries[];
 
 void LONG_CALL GetMonSpriteCharAndPlttNarcIdsEx(MON_PIC *picdata, u16 mons_no, u8 dir, u8 col, u8 form_no, u8 a5, u32 personality);
 
-// Every save gets one group of three starter choices.  The opening quiz in
-// T20R0201 (the player's house) asks which era interests the player and stores
-// the answer in VAR_STARTER_GROUP; saves that never answered the quiz fall
-// back to a random roll the first time the starter-selection scene is set up.
-// Add, remove, or reorder groups freely (existing saves keep the group index
-// they stored, so reordering changes their contents).
+// ---------------------------------------------------------------------------
+// Opening quiz (multi-round, runs in the lab intro scene; see
+// data/scr_seq/scr_seq_0843_T20R0101.s):
 //
-// ORDER MATTERS: the quiz menu labels appended to data/text/191.txt (entries
-// 477 onward) and the quiz logic in GetStarterGroupFromAnswers both assume
-// this order.
+//   Q1     - one fixed question: which difficulty to play (easy/normal/hard)
+//   Q2-Q4  - three identical questions ("which of these three concepts
+//            interests you the most?"), each showing three of the nine era
+//            concept words; a word is only ever shown once, so the three
+//            answers always map to three distinct eras
 //
-// Use MON_WITH_FORM(SPECIES_NAME, form) to specify a starter
-// with a form.
+// Each answered era then gives one starter: the game draws it randomly from
+// that era's pool of the chosen difficulty and stores the result in
+// VAR_STARTER_MON_0..2.  Those three species fill the three Poké Balls of the
+// starter-selection scene.
 //
-// Keep in mind that these choices will impact Rival team
-// determination in the appropriate trigger-scripts.
+// The difficulty tiers are themed by strength:
+//   1 easy   - the strongest picks (cover legends & co), for an easier run
+//   2 normal - secondary legends / trios / mythicals
+//   3 hard   - the regional starter trios, for a challenge run
 //
-// This will NOT update the text during the starter-selection
-// sequence. To update that text, modify text archive 190 in
-// DSPRE, or override it via data/text/190.txt like this repo
-// does now.
-static const u16 sStarterGroups[][3] = {
-    { SPECIES_KYOGRE, SPECIES_GROUDON, SPECIES_RAYQUAZA },    // 0: Hoenn (gen 3)
-    { SPECIES_DIALGA, SPECIES_PALKIA, SPECIES_GIRATINA },     // 1: Sinnoh (gen 4)
-    { SPECIES_RESHIRAM, SPECIES_ZEKROM, SPECIES_KYUREM },     // 2: Unova (gen 5)
-    { SPECIES_XERNEAS, SPECIES_YVELTAL, SPECIES_ZYGARDE },    // 3: Kalos (gen 6)
-    { SPECIES_SOLGALEO, SPECIES_LUNALA, SPECIES_NECROZMA },   // 4: Alola (gen 7)
-    { SPECIES_ZACIAN, SPECIES_ZAMAZENTA, SPECIES_ETERNATUS }, // 5: Galar (gen 8)
+// Add, remove or reorder candidates freely - pools may have different lengths
+// (see STARTER_POOL_MAX below); saves keep the species they already drew, so
+// edits only affect new games.
+//
+// Keep in mind that these choices impact the Rival team determination in the
+// appropriate trigger-scripts.
+//
+// The starter-selection screen text (data/text/190.txt) is still the static
+// Zacian/Zamazenta/Eternatus flavor text; it does not match the drawn species
+// yet.
+// ---------------------------------------------------------------------------
+
+#define STARTER_ERA_COUNT 9
+#define STARTER_DIFF_COUNT 3
+
+// Maximum candidates per pool.  Pools may be shorter than this - the unused
+// entries stay 0 (SPECIES_NONE) and terminate the list - so every
+// era/difficulty combination can have its own number of candidates, and an
+// entry can always be added or removed without touching the others.
+#define STARTER_POOL_MAX 8
+
+// menu option text lives in data/text/191.txt (the touchscreen list menu reads
+// its options from archive 191):
+//   STARTER_QUIZ_CONCEPT_LABEL_BASE + era index   = the era's concept word
+//   STARTER_QUIZ_DIFF_LABEL_BASE + 0..2           = EASY / NORMAL / HARD
+#define STARTER_QUIZ_CONCEPT_LABEL_BASE 477
+#define STARTER_QUIZ_DIFF_LABEL_BASE 486
+
+// script vars holding the quiz state; keep in sync with VAR_STARTER_* in
+// asm/include/vars.inc (0x4034/0x4036/0x4038-0x403A are free in vanilla)
+#define STARTER_DIFF_VAR 0x4034         // 0 = quiz not finished, 1..3 = easy..hard
+#define STARTER_CONCEPT_MASK_VAR 0x4036 // bit n = concept word n not shown yet
+#define STARTER_MON_VAR_BASE 0x4038     // +0..2 = drawn species of the ball slots
+
+// the concept menu's result is read from this special var (the lab script
+// passes it as the menu's resultVar to menu_init_std_gmm)
+#define STARTER_MENU_RESULT_VAR 0x800C // VAR_SPECIAL_RESULT
+
+static const u16 sStarterPools[STARTER_ERA_COUNT][STARTER_DIFF_COUNT][STARTER_POOL_MAX] = {
+    {   // 0: Kanto (gen 1)
+        { SPECIES_MEWTWO },             // easy
+        { SPECIES_ARTICUNO, SPECIES_ZAPDOS, SPECIES_MOLTRES },          // normal
+        { SPECIES_VENUSAUR, SPECIES_CHARIZARD, SPECIES_BLASTOISE },     // hard
+    },
+    {   // 1: Johto (gen 2)
+        { SPECIES_LUGIA, SPECIES_HO_OH },               // easy
+        { SPECIES_RAIKOU, SPECIES_ENTEI, SPECIES_SUICUNE },             // normal
+        { SPECIES_MEGANIUM, SPECIES_TYPHLOSION, SPECIES_FERALIGATR },   // hard
+    },
+    {   // 2: Hoenn (gen 3)
+        { SPECIES_KYOGRE, SPECIES_GROUDON, SPECIES_RAYQUAZA },          // easy
+        { SPECIES_REGIROCK, SPECIES_REGICE, SPECIES_REGISTEEL },        // normal
+        { SPECIES_SCEPTILE, SPECIES_BLAZIKEN, SPECIES_SWAMPERT },       // hard
+    },
+    {   // 3: Sinnoh (gen 4)
+        { SPECIES_DIALGA, SPECIES_PALKIA, SPECIES_GIRATINA },           // easy
+        { SPECIES_UXIE, SPECIES_MESPRIT, SPECIES_AZELF },               // normal
+        { SPECIES_TORTERRA, SPECIES_INFERNAPE, SPECIES_EMPOLEON },      // hard
+    },
+    {   // 4: Unova (gen 5)
+        { SPECIES_RESHIRAM, SPECIES_ZEKROM, SPECIES_KYUREM },           // easy
+        { SPECIES_COBALION, SPECIES_TERRAKION, SPECIES_VIRIZION, SPECIES_TORNADUS, SPECIES_THUNDURUS, SPECIES_LANDORUS },      // normal
+        { SPECIES_SERPERIOR, SPECIES_EMBOAR, SPECIES_SAMUROTT },        // hard
+    },
+    {   // 5: Kalos (gen 6)
+        { SPECIES_XERNEAS, SPECIES_YVELTAL },          // easy
+        { SPECIES_ZYGARDE },          // normal
+        { SPECIES_CHESNAUGHT, SPECIES_DELPHOX, SPECIES_GRENINJA },      // hard
+    },
+    {   // 6: Alola (gen 7)
+        { SPECIES_SOLGALEO, SPECIES_LUNALA },                         // easy
+        { SPECIES_TAPU_KOKO, SPECIES_TAPU_LELE, SPECIES_TAPU_BULU, SPECIES_TAPU_FINI, SPECIES_NECROZMA }, // normal (all four tapus)
+        { SPECIES_DECIDUEYE, SPECIES_INCINEROAR, SPECIES_PRIMARINA },                   // hard
+    },
+    {   // 7: Galar (gen 8)
+        { SPECIES_ZACIAN, SPECIES_ZAMAZENTA, SPECIES_ETERNATUS },       // easy
+        { SPECIES_URSHIFU, SPECIES_REGIELEKI, SPECIES_REGIDRAGO, SPECIES_GLASTRIER, SPECIES_SPECTRIER, SPECIES_ENAMORUS },      // normal
+        { SPECIES_RILLABOOM, SPECIES_CINDERACE, SPECIES_INTELEON, SPECIES_CALYREX },     // hard
+    },
+    {   // 8: Paldea (gen 9)
+        { SPECIES_KORAIDON, SPECIES_MIRAIDON },      // easy
+        { SPECIES_WO_CHIEN, SPECIES_CHIEN_PAO, SPECIES_TING_LU, SPECIES_CHI_YU },       // normal
+        { SPECIES_MEOWSCARADA, SPECIES_SKELEDIRGE, SPECIES_QUAQUAVAL, SPECIES_TERAPAGOS }, // hard
+    },
 };
 
-#define STARTER_GROUP_COUNT ((int)(sizeof(sStarterGroups) / sizeof(sStarterGroups[0])))
-
-// index of the first quiz menu label appended to data/text/191.txt (the
-// vanilla archive has exactly this many entries, 0 to STARTER_QUIZ_LABEL_BASE - 1)
-#define STARTER_QUIZ_LABEL_BASE 477
-
-// script var that remembers which group the player will get, as index + 1
-// (0 = not chosen yet).  Mirrors VAR_STARTER_GROUP in asm/include/vars.inc;
-// 0x4031 is unused by both the vanilla scripts and hg-engine itself.
-#define STARTER_GROUP_VAR 0x4031
-
 /**
- *  @brief rolls three distinct starter groups for the era quiz, writing the
- *         results into six consecutive special vars (called via the
- *         starter_quiz_roll script command)
+ *  @brief rolls the next three concept words for one quiz question, writing
+ *         the results into six consecutive special vars (called via the
+ *         starter_quiz_roll_concepts script command)
+ *
+ *         A word is removed from the pool as soon as it is shown, so across
+ *         the three questions every era's concept appears exactly once.
  *
  *  @param base_var first special var, receives:
- *                  base_var + 0..2 = menu label message ids (data/text/191.txt)
- *                  base_var + 3..5 = group indices (menu option return values)
+ *                  base_var + 0..2 = menu option message ids (data/text/191.txt)
+ *                  base_var + 3..5 = era indices (menu option return values)
  */
-void StarterQuiz_Roll(u16 base_var)
+void StarterQuiz_RollConcepts(u16 base_var)
 {
-    int rolled[3];
+    u16 mask = GetScriptVar(STARTER_CONCEPT_MASK_VAR);
+    int picked[3];
 
-    rolled[0] = gf_rand() % STARTER_GROUP_COUNT;
-
-    do {
-        rolled[1] = gf_rand() % STARTER_GROUP_COUNT;
-    } while (rolled[1] == rolled[0] && STARTER_GROUP_COUNT > 1);
-
-    do {
-        rolled[2] = gf_rand() % STARTER_GROUP_COUNT;
-    } while ((rolled[2] == rolled[0] || rolled[2] == rolled[1]) && STARTER_GROUP_COUNT > 2);
+    if ((mask & 0x1FF) == 0) { // fresh quiz (the script resets it before Q2)
+        mask = 0x1FF;
+    }
 
     for (int i = 0; i < 3; i++) {
-        SetScriptVar(base_var + i, STARTER_QUIZ_LABEL_BASE + rolled[i]);
-        SetScriptVar(base_var + 3 + i, rolled[i]);
+        if ((mask & 0x1FF) == 0) { // defensive: never run a question dry
+            mask = 0x1FF;
+        }
+        do {
+            picked[i] = gf_rand() % STARTER_ERA_COUNT;
+        } while (!(mask & (1 << picked[i])));
+        mask &= ~(1 << picked[i]);
+    }
+
+    SetScriptVar(STARTER_CONCEPT_MASK_VAR, mask);
+
+    for (int i = 0; i < 3; i++) {
+        SetScriptVar(base_var + i, STARTER_QUIZ_CONCEPT_LABEL_BASE + picked[i]); // option text
+        SetScriptVar(base_var + 3 + i, picked[i]);                               // option value
     }
 }
 
 /**
- *  @brief maps the player's quiz answers to the starter group they should get.
- *         This is the single place to extend when the quiz logic changes
- *         (e.g. multiple rounds of questions).
+ *  @brief draws one random candidate from an era/difficulty pool; the pools
+ *         are terminated by SPECIES_NONE (0), so they may have different
+ *         lengths
  *
- *  @return group index, or -1 if the quiz hasn't been answered yet
+ *  @param era era index (0-8)
+ *  @param diff difficulty index (0-2, easy to hard)
+ *  @return the drawn species entry
  */
-static int GetStarterGroupFromAnswers(void)
+static u16 DrawFromPool(int era, int diff)
 {
-    u16 stored = GetScriptVar(STARTER_GROUP_VAR); // quiz stores its answer as index + 1
+    const u16 *pool = sStarterPools[era][diff];
+    int count = 0;
 
-    if (stored == 0 || stored > STARTER_GROUP_COUNT) {
-        return -1;
+    while (count < STARTER_POOL_MAX && pool[count] != SPECIES_NONE) {
+        count++;
     }
 
-    return stored - 1;
+    if (count == 0) { // safety net: an empty pool should never be reachable
+        return sStarterPools[0][1][0];
+    }
+
+    return pool[gf_rand() % count];
 }
 
 /**
- *  @brief gets the starter group this save uses; falls back to a random roll
- *         for saves that never answered the quiz (old saves, skipped quiz, ...)
+ *  @brief draws one starter for the era the player just picked and stores it
+ *         in the given script var (called via the starter_quiz_draw script
+ *         command)
  *
- *  @return group index, 0 to STARTER_GROUP_COUNT - 1
+ *         The era is read from VAR_SPECIAL_RESULT (the concept menu returns
+ *         the chosen option's value), the difficulty from
+ *         VAR_STARTER_DIFFICULTY.
+ *
+ *  @param mon_var script var to store the drawn species in
  */
-static int GetStarterGroup(void)
+void StarterQuiz_DrawSlot(u16 mon_var)
 {
-    int group = GetStarterGroupFromAnswers();
+    u16 era = GetScriptVar(STARTER_MENU_RESULT_VAR);
+    u16 diff = GetScriptVar(STARTER_DIFF_VAR);
 
-    if (group < 0) {
-        group = gf_rand() % STARTER_GROUP_COUNT;
-        SetScriptVar(STARTER_GROUP_VAR, group + 1);
+    if (era >= STARTER_ERA_COUNT) {
+        era = STARTER_ERA_COUNT - 1; // defensive clamp
+    }
+    if (diff < 1 || diff > STARTER_DIFF_COUNT) {
+        diff = 2; // default to normal
     }
 
-    return group;
+    SetScriptVar(mon_var, DrawFromPool(era, diff - 1));
 }
 
 /**
- *  @brief returns the species entry (including form bits) for one slot of this save's group
+ *  @brief draws a random trio (three distinct eras at the quiz's difficulty,
+ *         normal if unset) for saves that somehow skipped the quiz
+ */
+static void RollFallbackTrio(void)
+{
+    u16 diff = GetScriptVar(STARTER_DIFF_VAR);
+    int eras[3];
+
+    if (diff < 1 || diff > STARTER_DIFF_COUNT) {
+        diff = 2;
+    }
+
+    eras[0] = gf_rand() % STARTER_ERA_COUNT;
+
+    do {
+        eras[1] = gf_rand() % STARTER_ERA_COUNT;
+    } while (eras[1] == eras[0]);
+
+    do {
+        eras[2] = gf_rand() % STARTER_ERA_COUNT;
+    } while (eras[2] == eras[0] || eras[2] == eras[1]);
+
+    for (int i = 0; i < 3; i++) {
+        SetScriptVar(STARTER_MON_VAR_BASE + i, DrawFromPool(eras[i], diff - 1));
+    }
+}
+
+/**
+ *  @brief returns the species entry (including form bits) for one ball slot of
+ *         this save; falls back to a random trio when the quiz never ran
  *
  *  @param slot starter choice (0-2)
  */
 static u16 GetStarterSlot(int slot)
 {
-    return sStarterGroups[GetStarterGroup()][slot];
+    u16 species = 0;
+
+    if (slot >= 0 && slot < 3) {
+        species = GetScriptVar(STARTER_MON_VAR_BASE + slot);
+    }
+
+    if (species == 0) {
+        // old save, skipped quiz, ...: roll a trio like in the old days
+        RollFallbackTrio();
+        species = (slot >= 0 && slot < 3) ? GetScriptVar(STARTER_MON_VAR_BASE + slot) : sStarterPools[0][1][0];
+    }
+
+    return species;
 }
 
 /**

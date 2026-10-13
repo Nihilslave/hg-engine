@@ -6779,13 +6779,23 @@ DummyTextTrap \slot, \unk
 RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
 .endm
 
-// rolls three distinct starter groups for the era quiz and stores them into the
-// given special-var base: base + 0..2 = option message ids (text archive 191),
-// base + 3..5 = group indices (the values the menu options return)
-.equ NEW_COMMAND_STARTER_QUIZ_ROLL, 1
+// rolls the next three concept words of the opening quiz into the given
+// special-var base: base + 0..2 = option message ids (text archive 191),
+// base + 3..5 = era indices (the values the menu options return); a word is
+// only ever shown in one question (see src/starters.c)
+.equ NEW_COMMAND_STARTER_QUIZ_ROLL_CONCEPTS, 1
 
-.macro starter_quiz_roll,base
-RunNewCommand NEW_COMMAND_STARTER_QUIZ_ROLL, \base
+.macro starter_quiz_roll_concepts,base
+RunNewCommand NEW_COMMAND_STARTER_QUIZ_ROLL_CONCEPTS, \base
+.endm
+
+// reads the era the player picked from VAR_SPECIAL_RESULT (the concept menu's
+// return value), draws one starter of that era's difficulty pool and stores it
+// into the given script var
+.equ NEW_COMMAND_STARTER_QUIZ_DRAW, 2
+
+.macro starter_quiz_draw,slot
+RunNewCommand NEW_COMMAND_STARTER_QUIZ_DRAW, \slot
 .endm
 
 // Dummy

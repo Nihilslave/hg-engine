@@ -61,18 +61,24 @@
 .equ NUM_OBJ_GFX_VARS, 16
 
 .equ VAR_PLAYER_STARTER, 0x4030
-// group index + 1 of the starter era picked in the opening quiz (0 = not picked; see src/starters.c)
+// legacy: group index + 1 of the era picked by the old single-question quiz;
+// unused since the multi-round quiz rewrite (see src/starters.c)
 .equ VAR_STARTER_GROUP, 0x4031
 .equ VAR_UNK_4031, 0x4031
 .equ VAR_UNK_4032, 0x4032
 .equ VAR_BUENAS_PASSWORD_SET, 0x4033
+// difficulty picked in the opening quiz: 0 = quiz not finished, 1 = easy, 2 = normal, 3 = hard
+.equ VAR_STARTER_DIFFICULTY, 0x4034
 .equ VAR_UNK_4034, 0x4034
 .equ VAR_MAGIKARP_SIZE_RECORD, 0x4035
+// bitmask of era concept words not yet shown in the opening quiz (bit n = era n)
+.equ VAR_STARTER_CONCEPT_MASK, 0x4036
 .equ VAR_UNK_4036, 0x4036
 .equ VAR_UNK_4037, 0x4037
-.equ VAR_UNK_4038, 0x4038
-.equ VAR_UNK_4039, 0x4039
-.equ VAR_UNK_403A, 0x403A
+// species drawn for starter ball slots 0-2, 0 = not drawn yet (see src/starters.c)
+.equ VAR_STARTER_MON_0, 0x4038
+.equ VAR_STARTER_MON_1, 0x4039
+.equ VAR_STARTER_MON_2, 0x403A
 .equ VAR_UNK_403B, 0x403B
 .equ VAR_LOTO_NUMBER_LO, 0x403C
 .equ VAR_LOTO_NUMBER_HI, 0x403D

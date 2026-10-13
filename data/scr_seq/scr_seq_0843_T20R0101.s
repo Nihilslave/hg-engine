@@ -118,11 +118,19 @@ _0145:
 	closemsg
 	apply_movement obj_T20R0101_doctor, _0368
 	wait_movement
-	// --- starter quiz: Elm asks which era interests the player right after offering a Pokémon (see src/starters.c)
-	compare VAR_STARTER_GROUP, 0
+	// --- starter quiz: one difficulty question + three concept questions; the
+	//     three drawn starters end up in the three Poké Balls (see src/starters.c)
+	compare VAR_STARTER_DIFFICULTY, 0
 	goto_if_ne _QUIZ_DONE_INTRO
-	starter_quiz_roll VAR_SPECIAL_x8000
 	setvar VAR_SPECIAL_x8006, 255
+	// Q1: difficulty; the menu returns the option value 1/2/3 -> VAR_STARTER_DIFFICULTY
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	setvar VAR_SPECIAL_x8000, 486
+	setvar VAR_SPECIAL_x8001, 487
+	setvar VAR_SPECIAL_x8002, 488
+	setvar VAR_SPECIAL_x8003, 1
+	setvar VAR_SPECIAL_x8004, 2
+	setvar VAR_SPECIAL_x8005, 3
 	npc_msg 106
 	touchscreen_menu_hide
 	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
@@ -132,8 +140,47 @@ _0145:
 	menu_exec
 	touchscreen_menu_show
 	closemsg
-	copyvar VAR_STARTER_GROUP, VAR_SPECIAL_RESULT
-	addvar VAR_STARTER_GROUP, 1
+	copyvar VAR_STARTER_DIFFICULTY, VAR_SPECIAL_RESULT
+	setvar VAR_STARTER_CONCEPT_MASK, 511
+	// Q2: first concept; the menu returns the era index -> draw a starter into slot 0
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	starter_quiz_roll_concepts VAR_SPECIAL_x8000
+	npc_msg 108
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	starter_quiz_draw VAR_STARTER_MON_0
+	// Q3: second concept -> slot 1
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	starter_quiz_roll_concepts VAR_SPECIAL_x8000
+	npc_msg 108
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	starter_quiz_draw VAR_STARTER_MON_1
+	// Q4: third concept -> slot 2
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	starter_quiz_roll_concepts VAR_SPECIAL_x8000
+	npc_msg 108
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	starter_quiz_draw VAR_STARTER_MON_2
 	npc_msg 107
 	wait_button
 	closemsg
@@ -210,10 +257,17 @@ scr_seq_T20R0101_012:
 	goto_if_set FLAG_GOT_STARTER, _0331
 	// --- starter quiz fallback: normally Elm already asked in the lab intro scene (_011);
 	//     this only fires for saves that somehow skipped it (see src/starters.c)
-	compare VAR_STARTER_GROUP, 0
+	compare VAR_STARTER_DIFFICULTY, 0
 	goto_if_ne _QUIZ_DONE
-	starter_quiz_roll VAR_SPECIAL_x8000
 	setvar VAR_SPECIAL_x8006, 255
+	// Q1: difficulty; the menu returns the option value 1/2/3 -> VAR_STARTER_DIFFICULTY
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	setvar VAR_SPECIAL_x8000, 486
+	setvar VAR_SPECIAL_x8001, 487
+	setvar VAR_SPECIAL_x8002, 488
+	setvar VAR_SPECIAL_x8003, 1
+	setvar VAR_SPECIAL_x8004, 2
+	setvar VAR_SPECIAL_x8005, 3
 	npc_msg 106
 	touchscreen_menu_hide
 	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
@@ -223,8 +277,47 @@ scr_seq_T20R0101_012:
 	menu_exec
 	touchscreen_menu_show
 	closemsg
-	copyvar VAR_STARTER_GROUP, VAR_SPECIAL_RESULT
-	addvar VAR_STARTER_GROUP, 1
+	copyvar VAR_STARTER_DIFFICULTY, VAR_SPECIAL_RESULT
+	setvar VAR_STARTER_CONCEPT_MASK, 511
+	// Q2: first concept; the menu returns the era index -> draw a starter into slot 0
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	starter_quiz_roll_concepts VAR_SPECIAL_x8000
+	npc_msg 108
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	starter_quiz_draw VAR_STARTER_MON_0
+	// Q3: second concept -> slot 1
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	starter_quiz_roll_concepts VAR_SPECIAL_x8000
+	npc_msg 108
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	starter_quiz_draw VAR_STARTER_MON_1
+	// Q4: third concept -> slot 2
+	setvar VAR_SPECIAL_RESULT, 0xEEEE
+	starter_quiz_roll_concepts VAR_SPECIAL_x8000
+	npc_msg 108
+	touchscreen_menu_hide
+	menu_init_std_gmm 1, 1, 0, 0, VAR_SPECIAL_RESULT
+	menu_item_add VAR_SPECIAL_x8000, VAR_SPECIAL_x8006, VAR_SPECIAL_x8003
+	menu_item_add VAR_SPECIAL_x8001, VAR_SPECIAL_x8006, VAR_SPECIAL_x8004
+	menu_item_add VAR_SPECIAL_x8002, VAR_SPECIAL_x8006, VAR_SPECIAL_x8005
+	menu_exec
+	touchscreen_menu_show
+	closemsg
+	starter_quiz_draw VAR_STARTER_MON_2
 	npc_msg 107
 	wait_button
 	closemsg

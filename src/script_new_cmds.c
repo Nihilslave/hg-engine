@@ -6,12 +6,14 @@
 #include "../include/types.h"
 
 #define SCRIPT_NEW_CMD_REPEL_USE 0
-#define SCRIPT_NEW_CMD_STARTER_QUIZ_ROLL 1
+#define SCRIPT_NEW_CMD_STARTER_QUIZ_ROLL_CONCEPTS 1
+#define SCRIPT_NEW_CMD_STARTER_QUIZ_DRAW 2
 
 #define SCRIPT_NEW_CMD_MAX 256
 
 // defined in src/starters.c
-void StarterQuiz_Roll(u16 base_var);
+void StarterQuiz_RollConcepts(u16 base_var);
+void StarterQuiz_DrawSlot(u16 mon_var);
 
 BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx)
 {
@@ -27,8 +29,12 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx)
 #endif
         break;
 
-    case SCRIPT_NEW_CMD_STARTER_QUIZ_ROLL:
-        StarterQuiz_Roll(arg0);
+    case SCRIPT_NEW_CMD_STARTER_QUIZ_ROLL_CONCEPTS:
+        StarterQuiz_RollConcepts(arg0);
+        break;
+
+    case SCRIPT_NEW_CMD_STARTER_QUIZ_DRAW:
+        StarterQuiz_DrawSlot(arg0);
         break;
 
     default:
