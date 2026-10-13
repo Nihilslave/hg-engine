@@ -79,15 +79,23 @@
 .equ VAR_STARTER_MON_0, 0x4038
 .equ VAR_STARTER_MON_1, 0x4039
 .equ VAR_STARTER_MON_2, 0x403A
+// era (0-8) answered for the first concept question (see src/encounter_remap.c)
+.equ VAR_STARTER_ERA_0, 0x403B
 .equ VAR_UNK_403B, 0x403B
 .equ VAR_LOTO_NUMBER_LO, 0x403C
 .equ VAR_LOTO_NUMBER_HI, 0x403D
 .equ VAR_UNOWN_REPORT_LEVEL, 0x403E
 .equ VAR_FOLLOWER_TRAINER_NUM, 0x403F
 .equ VAR_UNK_4040, 0x4040
+// eras (0-8) answered for the second/third concept question (see src/encounter_remap.c)
+.equ VAR_STARTER_ERA_1, 0x4040
 .equ VAR_UNK_4041, 0x4041
+.equ VAR_STARTER_ERA_2, 0x4041
 .equ VAR_UNK_4042, 0x4042
+// 32-bit seed for the encounter randomizer, rolled when the quiz is finished
+.equ VAR_ENCOUNTER_SEED_LO, 0x4042
 .equ VAR_UNK_4043, 0x4043
+.equ VAR_ENCOUNTER_SEED_HI, 0x4043
 .equ VAR_UNK_4044, 0x4044
 .equ VAR_ROAMER_RAIKOU_STATUS, 0x4045
 .equ VAR_ROAMER_ENTEI_STATUS, 0x4046

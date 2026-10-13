@@ -2,6 +2,11 @@
 #include "include/debug.h"
 #include "include/constants/save.h"
 
+# keep WildEncounters_ReadFromNarc's common exit intact: 0x0203B8B4 is
+# "pop {r3,r4,r5,pc}" and is also the beq target for maps without encounter
+# data (the encounter remap hook at 0x0203B8AC replaces the code before it)
+arm9 0203B8B4 38 BD 00 00
+
 #updating old moves
 
 #Binding moves 1/8th

@@ -870,3 +870,80 @@ ldr r3, =0x021E70A0 | 1
 bx r3
 
 .pool
+
+// ---------------------------------------------------------------------------
+// Wild encounter randomization hooks (see src/encounter_remap.c)
+// ---------------------------------------------------------------------------
+
+// after WildEncounters_ReadFromNarc read a map's encounter table (0x0203B8AC
+// replaces "adds r0,r5 / movs r1,#0x25 / bl ReadWholeNarcMemberByIdPair";
+// r5 = EncounterData*, r2 = bank).  The common exit at 0x0203B8B4
+// ("pop {r3,r4,r5,pc}") must stay intact - the beq at 0x0203B8A2 jumps
+// there for maps without encounter data - so the stub continues into it.
+.global EncounterRemap_ReadHook
+EncounterRemap_ReadHook:
+add r0, r5, #0
+movs r1, #0x25
+ldr r3, =0x02007509 // ReadWholeNarcMemberByIdPair
+bl call_via_r3
+push {r0-r3}
+mov r0, r5
+bl EncounterRemap_ApplyToTable
+pop {r0-r3}
+ldr r3, =0x0203B8B4 | 1 // continue into the original pop {r3,r4,r5,pc}
+bx r3
+
+.pool
+
+// after AllocAtEndAndReadWholeNarcMemberByIdPair loaded the headbutt table
+// (0x02204F14 replaces "movs r0,#0xFE / movs r2,#0xB / bl ...alloc-read";
+// r1 = map number is left untouched, r0 = table at the continuation)
+.global EncounterRemap_HeadbuttHook
+EncounterRemap_HeadbuttHook:
+push {r1-r3}
+movs r0, #0xfe
+movs r2, #0xb
+ldr r3, =0x02007541 // AllocAtEndAndReadWholeNarcMemberByIdPair
+bl call_via_r3
+push {r0}
+bl EncounterRemap_HeadbuttTable
+pop {r0}
+pop {r1-r3}
+ldr r3, =0x02204F1C | 1
+bx r3
+
+.pool
+
+// SafariZoneAreaSet_LoadAreaEncounters cleanup (0x0209763C replaces
+// "ldr r0,[sp,#0x1C] / bl Heap_Free / adds r0,r5,#0")
+.global EncounterRemap_SafariHook
+EncounterRemap_SafariHook:
+push {r0-r3}
+ldr r0, [sp, #0x30] // return value = original [sp+0x20] + 16 pushed bytes
+bl EncounterRemap_SafariSlots
+pop {r0-r3}
+ldr r0, [sp, #0x1c]
+ldr r3, =0x0201AB0D // Heap_Free
+bl call_via_r3
+add r0, r5, #0
+ldr r3, =0x02097645 // continue at 0x02097644
+bx r3
+
+.pool
+
+// BugContest_InitEncounters after the entry copy (0x02259E4C replaces
+// "adds r0,r4,#0 / bl Heap_Free / add r0,sp,#0"; r5 = &bugContest->encounters)
+.global EncounterRemap_BugHook
+EncounterRemap_BugHook:
+push {r0-r3}
+mov r0, r5
+bl EncounterRemap_BugMonTable
+pop {r0-r3}
+add r0, r4, #0
+ldr r3, =0x0201AB0D // Heap_Free
+bl call_via_r3
+add r0, sp, #0
+ldr r3, =0x02259E55 // continue at 0x02259E54
+bx r3
+
+.pool

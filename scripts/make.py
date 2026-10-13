@@ -53,7 +53,7 @@ BUILD = "build"
 SRC_FILES = os.listdir(SOURCE)
 OVERLAYS = []
 for file in SRC_FILES:
-    if ".c" not in file and "individual" not in file and ".ld" not in file:
+    if ".c" not in file and ".h" not in file and "individual" not in file and ".ld" not in file:
         OVERLAYS.append(file)
 
 # construct output filename list

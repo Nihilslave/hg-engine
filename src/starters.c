@@ -66,6 +66,14 @@ void LONG_CALL GetMonSpriteCharAndPlttNarcIdsEx(MON_PIC *picdata, u16 mons_no, u
 // passes it as the menu's resultVar to menu_init_std_gmm)
 #define STARTER_MENU_RESULT_VAR 0x800C // VAR_SPECIAL_RESULT
 
+// quiz results kept for the encounter randomizer (mirror VAR_STARTER_ERA_* and
+// VAR_ENCOUNTER_SEED_* in asm/include/vars.inc; see src/encounter_remap.c)
+#define STARTER_ERA_VAR_0 0x403B
+#define STARTER_ERA_VAR_1 0x4040
+#define STARTER_ERA_VAR_2 0x4041
+#define STARTER_SEED_LO_VAR 0x4042
+#define STARTER_SEED_HI_VAR 0x4043
+
 static const u16 sStarterPools[STARTER_ERA_COUNT][STARTER_DIFF_COUNT][STARTER_POOL_MAX] = {
     {   // 0: Kanto (gen 1)
         { SPECIES_MEWTWO },             // easy
@@ -185,14 +193,17 @@ static u16 DrawFromPool(int era, int diff)
  *
  *         The era is read from VAR_SPECIAL_RESULT (the concept menu returns
  *         the chosen option's value), the difficulty from
- *         VAR_STARTER_DIFFICULTY.
+ *         VAR_STARTER_DIFFICULTY.  The answered era is kept for the encounter
+ *         randomizer; the final call additionally rolls its save seed.
  *
  *  @param mon_var script var to store the drawn species in
  */
 void StarterQuiz_DrawSlot(u16 mon_var)
 {
+    static const u16 sEraVars[3] = { STARTER_ERA_VAR_0, STARTER_ERA_VAR_1, STARTER_ERA_VAR_2 };
     u16 era = GetScriptVar(STARTER_MENU_RESULT_VAR);
     u16 diff = GetScriptVar(STARTER_DIFF_VAR);
+    int slot = (int)mon_var - STARTER_MON_VAR_BASE;
 
     if (era >= STARTER_ERA_COUNT) {
         era = STARTER_ERA_COUNT - 1; // defensive clamp
@@ -202,6 +213,22 @@ void StarterQuiz_DrawSlot(u16 mon_var)
     }
 
     SetScriptVar(mon_var, DrawFromPool(era, diff - 1));
+
+    if (slot >= 0 && slot < 3) {
+        // remember which era the player answered (0-8)
+        SetScriptVar(sEraVars[slot], era);
+
+        if (slot == 2) {
+            // quiz finished: roll the seed for the encounter randomizer
+            u32 seed = ((u32)gf_rand() << 16) | gf_rand();
+
+            if (seed == 0) {
+                seed = 0x9E3779B9;
+            }
+            SetScriptVar(STARTER_SEED_LO_VAR, (u16)(seed & 0xFFFF));
+            SetScriptVar(STARTER_SEED_HI_VAR, (u16)(seed >> 16));
+        }
+    }
 }
 
 /**

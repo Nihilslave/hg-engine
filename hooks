@@ -657,3 +657,11 @@ arm9 EncounterSlot_WildMonSlotRoll_Headbutt 022477C0 0
 0012 PlayerTrainerVictoryBGM_hook 0224DA9E 3
 
 arm9 FieldSystem_RestoreMapObjectsFromSave 0203B9F4 1
+
+# wild encounter randomization (see src/encounter_remap.c)
+# NOTE: 0x0203B8B4 ("pop {r3,r4,r5,pc}") must stay intact: the beq at
+# 0x0203B8A2 jumps there for maps without encounter data
+arm9 EncounterRemap_ReadHook 0203B8AC 3
+arm9 EncounterRemap_SafariHook 0209763C 3
+0001 EncounterRemap_HeadbuttHook 02204F14 3
+0024 EncounterRemap_BugHook 02259E4C 3
