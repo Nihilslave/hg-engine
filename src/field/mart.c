@@ -46,7 +46,6 @@ void LONG_CALL InitMartUI(void *taskManager, FieldSystem *fieldSystem, const u16
 
 u16 sCherrygroveCityMart[] = {
     ITEM_AIR_MAIL, ITEM_HEAL_BALL,
-    ITEM_AM_ADAPTABILITY, // TEMP: free machine for testing (remove after purchase)
     0xFFFF
 };
 

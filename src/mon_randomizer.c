@@ -8,6 +8,7 @@
 #include "../include/constants/generated/learnsets.h"
 #include "../include/constants/moves.h"
 #include "../include/move_data.h"
+#include "../include/z_max_moves.h"
 
 // ---------------------------------------------------------------------------
 // Ability pool & level-up move randomizer.
@@ -21,10 +22,12 @@
 //   - every species' learnset becomes one move at level 1 plus one random
 //     move every 5 levels (levels 1, 5, 10, ..., 100); only moves the battle
 //     engine implements are drawn
-//   - the three drawn starter species are special-cased: their ability pool
-//     never contains a negative ability; their level-1 move is never a
-//     status move, and their level-5 move (the starter is received at level
-//     5) always is one
+//   - move pool rules, applied to every species (see GetMoveRules/MoveValid):
+//     the level-1 move is an attacking move of the mon's first type with at
+//     least 10 base PP, the level-5 move is a status move, and Z-Moves and
+//     Max Moves are never drawn
+//   - the three drawn starter species get their ability pool drawn without
+//     negative abilities
 //
 // Everything is a pure function of (seed, species) - no sequential PRNG
 // state - so the same species always generates the same pool/learnset
@@ -50,7 +53,7 @@
 // one entry at level 1 plus one every 5 levels (5, 10, ..., 100)
 #define LEARNSET_ENTRY_COUNT ((LEARNSET_LAST_LEVEL / LEARNSET_LEVEL_STEP) + 1)
 // draws are retried when the result collides with an existing entry (or
-// violates a starter rule)
+// violates a move pool rule)
 #define LEARNSET_DRAW_ATTEMPTS 32
 #define ABILITY_DRAW_ATTEMPTS 32
 
@@ -60,10 +63,22 @@
 #define ABILITY_ID_MAX ABILITY_AURA_GUARD
 #define MOVE_SEEN_BYTES ((MOVE_ID_MAX / 8) + 1)
 
-// move draw roles (starter rules)
+// move draw roles (see GetMoveRules)
 #define MOVE_ROLE_ANY 0
 #define MOVE_ROLE_NON_STATUS 1
 #define MOVE_ROLE_STATUS 2
+
+// level whose move is always a status move
+#define LEARNSET_STATUS_MOVE_LEVEL 5
+
+// constraints for one learnset slot; filled per level by GetMoveRules() and
+// checked against each candidate by MoveValid().  Add new move pool rules here
+// (and enforce them in MoveValid)
+typedef struct MoveDrawRules {
+    u8 role;           // MOVE_ROLE_*: any / non-status only / status only
+    BOOL requireType1; // move must match the species' first type
+    u8 minPP;          // minimum base PP (0 = no PP requirement)
+} MoveDrawRules;
 
 static BOOL sActive; // TRUE once the quiz stored a difficulty + seed
 static u32 sSeed;
@@ -206,11 +221,82 @@ u16 LONG_CALL MonRandom_Ability(u32 species, u32 slot, u16 vanilla)
 }
 
 /**
- *  @brief one learnset move draw; checks the engine's move data directly:
- *         moves flagged as unused/unimplemented are never taught, and the
- *         starter rules restrict the draw to status / non-status moves
+ *  @brief TRUE for the Z-Move / Max Move variants that only exist for the
+ *         battle engine's Z-Move / Dynamax handling
  */
-static u16 DrawMove(u32 *state, u32 role, const u8 *seen)
+static BOOL IsZOrMaxMove(u16 move)
+{
+    for (u16 i = 0; i < NELEMS(ZMoveList); i++) {
+        if (move == ZMoveList[i]) {
+            return TRUE;
+        }
+    }
+    for (u16 i = 0; i < NELEMS(MaxMoveList); i++) {
+        if (move == MaxMoveList[i]) {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+/**
+ *  @brief whether one move may fill a learnset slot.  This is where the move
+ *         pool rules live: moves the engine does not implement, Z-Moves and
+ *         Max Moves and already drawn moves are always rejected, the rest is
+ *         controlled by the per-level MoveDrawRules
+ */
+static BOOL MoveValid(u16 move, const struct BattleMove *bm, const MoveDrawRules *rules, u16 type1, const u8 *seen)
+{
+    if (bm->flag & FLAG_UNUSED_MOVE) {
+        return FALSE; // same rule the game applies when learning moves
+    }
+    if (IsZOrMaxMove(move)) {
+        return FALSE; // Z-Moves and Max Moves never appear in a move pool
+    }
+    if (seen[move >> 3] & (1u << (move & 7))) {
+        return FALSE; // already in this learnset
+    }
+    if (rules->role == MOVE_ROLE_NON_STATUS && bm->split == SPLIT_STATUS) {
+        return FALSE;
+    }
+    if (rules->role == MOVE_ROLE_STATUS && bm->split != SPLIT_STATUS) {
+        return FALSE;
+    }
+    if (rules->requireType1 && bm->type != type1) {
+        return FALSE;
+    }
+    if (rules->minPP != 0 && bm->pp < rules->minPP) {
+        return FALSE;
+    }
+    return TRUE;
+}
+
+/**
+ *  @brief rules for one learnset slot; this is where per-level move pool rules
+ *         are added or changed
+ */
+static void GetMoveRules(u32 level, MoveDrawRules *rules)
+{
+    rules->role = MOVE_ROLE_ANY;
+    rules->requireType1 = FALSE;
+    rules->minPP = 0;
+
+    if (level == LEARNSET_FIRST_LEVEL) {
+        // opening move: an attacking move of the mon's first type with at
+        // least 10 base PP
+        rules->role = MOVE_ROLE_NON_STATUS;
+        rules->requireType1 = TRUE;
+        rules->minPP = 10;
+    } else if (level == LEARNSET_STATUS_MOVE_LEVEL) {
+        rules->role = MOVE_ROLE_STATUS;
+    }
+}
+
+/**
+ *  @brief one learnset move draw; draws random candidates and falls back to a
+ *         deterministic scan so even the most restrictive rules find a move
+ */
+static u16 DrawMove(u32 *state, const MoveDrawRules *rules, u16 type1, const u8 *seen)
 {
     u16 cand = 0;
 
@@ -220,19 +306,26 @@ static u16 DrawMove(u32 *state, u32 role, const u8 *seen)
         cand = 1 + (u16)(PrngNext(state) % MOVE_ID_MAX);
         ReadWholeNarcMemberByIdPair(&bm, ARC_MOVE_DATA, cand);
 
-        if (bm.flag & FLAG_UNUSED_MOVE) {
-            continue; // same rule the game applies when learning moves
+        if (MoveValid(cand, &bm, rules, type1, seen)) {
+            return cand;
         }
-        if (role == MOVE_ROLE_NON_STATUS && bm.split == SPLIT_STATUS) {
-            continue;
+    }
+
+    // random draws can miss (e.g. the level-1 rule); scan from a random start
+    // to guarantee a valid move is found
+    {
+        u16 start = (u16)(PrngNext(state) % MOVE_ID_MAX);
+
+        for (u32 i = 0; i < MOVE_ID_MAX; i++) {
+            struct BattleMove bm;
+
+            cand = 1 + (u16)((start + i) % MOVE_ID_MAX);
+            ReadWholeNarcMemberByIdPair(&bm, ARC_MOVE_DATA, cand);
+
+            if (MoveValid(cand, &bm, rules, type1, seen)) {
+                return cand;
+            }
         }
-        if (role == MOVE_ROLE_STATUS && bm.split != SPLIT_STATUS) {
-            continue;
-        }
-        if (seen[cand >> 3] & (1u << (cand & 7))) {
-            continue; // already in this learnset
-        }
-        break;
     }
 
     return cand;
@@ -243,8 +336,8 @@ BOOL LONG_CALL MonRandom_LearnsetTry(u32 index, u32 species, u32 *out)
     // one bit per move id: keeps the drawn moves of this learnset distinct
     u8 seen[MOVE_SEEN_BYTES];
     u32 state;
+    u16 type1;
     int w = 0;
-    BOOL starter;
 
     Prepare();
 
@@ -252,7 +345,7 @@ BOOL LONG_CALL MonRandom_LearnsetTry(u32 index, u32 species, u32 *out)
         return FALSE;
     }
 
-    starter = IsStarterSpecies(species);
+    type1 = (u16)PokePersonalParaGet(species, PERSONAL_TYPE_1);
 
     for (int i = 0; i < MOVE_SEEN_BYTES; i++) {
         seen[i] = 0;
@@ -266,18 +359,11 @@ BOOL LONG_CALL MonRandom_LearnsetTry(u32 index, u32 species, u32 *out)
     for (u32 step = 0; step < LEARNSET_ENTRY_COUNT; step++) {
         // step 0 = level 1; steps 1..20 = levels 5, 10, ..., 100
         u32 level = step == 0 ? LEARNSET_FIRST_LEVEL : (step * LEARNSET_LEVEL_STEP);
-        u32 role = MOVE_ROLE_ANY;
+        MoveDrawRules rules;
         u16 move;
 
-        if (starter) {
-            if (level == 1) {
-                role = MOVE_ROLE_NON_STATUS; // starter's first move: never a status move
-            } else if (level == 5) {
-                role = MOVE_ROLE_STATUS;     // starter's second move (received at level 5): a status move
-            }
-        }
-
-        move = DrawMove(&state, role, seen);
+        GetMoveRules(level, &rules);
+        move = DrawMove(&state, &rules, type1, seen);
         seen[move >> 3] |= (1u << (move & 7));
         out[w++] = ((u32)level << LEARNSET_LEVEL_SHIFT) | move;
     }

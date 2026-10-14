@@ -174602,8 +174602,7 @@ const ITEMDATA __data[] =
 
 [ITEM_AM_ADAPTABILITY] =
 {
-    // TEMP: free while testing the old save; restore to ITEM_PRICE(5000) afterwards
-    ITEM_PRICE(0),
+    ITEM_PRICE(5000),
     .fieldPocket = POCKET_TMHMS,
     .fieldUseFunc = 32,
     .partyUse = 1,

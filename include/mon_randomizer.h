@@ -27,7 +27,7 @@ u16 LONG_CALL MonRandom_Ability(u32 species, u32 slot, u16 vanilla);
  *         species' randomized level-up moves: one move at level 1, then one
  *         random move every 5 levels; deterministic per save + species
  *  @param index learnset table index (PokeOtherFormMonsNoGet of species+form)
- *  @param species base species (for the starter-species special rules)
+ *  @param species base species (used for the per-species move pool rules)
  *  @param out buffer of MAX_LEVELUP_MOVES u32 entries
  *  @return FALSE while the randomizer is inactive (caller uses vanilla data)
  */
