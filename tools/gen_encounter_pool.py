@@ -103,12 +103,22 @@ def main():
                 return i
         return -1
 
+    # the const dict is keyed by "SPECIES_XXX" while the lists above use bare
+    # names, so resolve them to species *values* for the exclusion checks
+    excluded_vals = set()
+    for n in MYTHICALS + KEEP_VANILLA:
+        key = "SPECIES_" + n
+        if key in const:
+            excluded_vals.add(const[key])
+        else:
+            print(f"WARNING: {key} not found in species.h")
+
     # ---- candidate pool: final-stage, non-mythical, base species ----
     pool = []
     for name, val in sorted(const.items(), key=lambda kv: kv[1]):
         if not in_base_range(val):
             continue
-        if name in MYTHICALS or name in KEEP_VANILLA:
+        if val in excluded_vals:
             continue
         if name not in bst or bst[name] == 0:
             continue
@@ -122,13 +132,13 @@ def main():
     origins = set()
     for path in ("data/Encounters.c", "data/SafariEncounters.c", "data/Headbutt.c"):
         for name in species_names_in(path):
-            if name in const and const[name] != 0 and name not in KEEP_VANILLA:
+            if name in const and const[name] != 0 and const[name] not in excluded_vals:
                 origins.add(const[name])
 
     mushi = open("base_dsrom/files/data/mushi/mushi_encount.bin", "rb").read()
     for i in range(0, len(mushi) // 8):
         v = struct.unpack_from("<H", mushi, i * 8)[0]
-        if 0 < v < 1100:
+        if 0 < v < 1100 and v not in excluded_vals:
             origins.add(v)
 
     origins = sorted(origins)

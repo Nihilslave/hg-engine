@@ -15,6 +15,7 @@
 #include "battle.h"
 #include "mon_randomizer.h"
 #include "pokemon.h"
+#include "rival_typechart.h"
 #include "rtc.h"
 #include "save.h"
 #include "script.h"
@@ -56,7 +57,100 @@ void randomize(int arr[], int n)
         swap(&arr[i], &arr[j]);
     }
 }
+// ---------------------------------------------------------------------------
+// first rival battle support (Cherrygrove City; script scr_seq_0850_T21.s)
+//
+// In vanilla the script compares the player's starter species (VAR_PLAYER_STARTER
+// 0x4030, set when the starter is received) against 152/155/158 and picks one of
+// three fixed "Passerby Boy" trainer ids (495/496/497) - each resolving to the
+// starter that beats the player's.  With the randomized starters those
+// comparisons can never match, so instead the rival is given one of the two
+// starter species the player did NOT pick, preferring the one whose primary
+// type hits the player's starter hardest.  The mon keeps the data entry's level
+// (5), and moves/abilities keep flowing through the usual randomized systems.
+// ---------------------------------------------------------------------------
 
+// trainer ids of the first rival battle variants (TRAINER_PASSERBY_BOY..,
+// see include/constants/trainers.h)
+#define TRAINER_FIRST_BATTLE_1 495
+#define TRAINER_FIRST_BATTLE_2 496
+#define TRAINER_FIRST_BATTLE_3 497
+
+// script vars (mirror asm/include/vars.inc)
+#define VAR_PLAYER_STARTER 0x4030 // species the player picked
+#define VAR_DRAWN_STARTER_0 0x4038 // the three species drawn by the quiz
+#define VAR_DRAWN_STARTER_1 0x4039
+#define VAR_DRAWN_STARTER_2 0x403A
+
+/**
+ *  @brief base type effectiveness multiplier of one attacking type against one
+ *         defending type (TYPE_MUL_* convention: 0/5/10/20/30);  reads the
+ *         local copy of the type chart, see rival_typechart.h for why
+ */
+static u8 TypeMultiplierVs(u8 attackType, u8 defType)
+{
+    if (attackType >= NELEMS(sRivalTypeChart) || defType >= NELEMS(sRivalTypeChart[0])) {
+        return TYPE_MUL_NORMAL;
+    }
+
+    return sRivalTypeChart[attackType][defType];
+}
+
+/**
+ *  @brief returns the species the rival should use in the first battle: of the
+ *         two quiz starters the player did not pick, the one whose primary type
+ *         deals the most damage to the player's starter (ties keep the earlier
+ *         slot); 0 = do not replace (no quiz data / unexpected state)
+ *
+ *  @param playerPick species id the player picked (VAR_PLAYER_STARTER)
+ */
+static u16 RivalFirstBattleSpecies(u16 playerPick)
+{
+    u16 drawn[3];
+    u16 best = 0;
+    int bestScore = -1;
+    BOOL playerFound = FALSE;
+    int i;
+
+    drawn[0] = GetScriptVar(VAR_DRAWN_STARTER_0) & 0x7FF;
+    drawn[1] = GetScriptVar(VAR_DRAWN_STARTER_1) & 0x7FF;
+    drawn[2] = GetScriptVar(VAR_DRAWN_STARTER_2) & 0x7FF;
+    playerPick &= 0x7FF;
+
+    if (drawn[0] == 0 || drawn[1] == 0 || drawn[2] == 0 || playerPick == 0) {
+        return 0;
+    }
+
+    for (i = 0; i < 3; i++) {
+        if (drawn[i] == playerPick) {
+            playerFound = TRUE;
+        }
+    }
+
+    if (!playerFound) {
+        return 0; // old save / quiz never ran: keep the script's vanilla pick
+    }
+
+    for (i = 0; i < 3; i++) {
+        u8 candType;
+        int score;
+
+        if (drawn[i] == playerPick) {
+            continue;
+        }
+
+        candType = (u8)PokePersonalParaGet(drawn[i], PERSONAL_TYPE_1);
+        score = TypeMultiplierVs(candType, (u8)PokePersonalParaGet(playerPick, PERSONAL_TYPE_1))
+              * TypeMultiplierVs(candType, (u8)PokePersonalParaGet(playerPick, PERSONAL_TYPE_2));
+
+        if (score > bestScore) {
+            bestScore = score;
+            best = drawn[i];
+        }
+    }
+
+    return best;
+}
 extern u32 gLastPokemonLevelForMoneyCalc;
 
 /**
@@ -150,6 +244,19 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
         offset += 2;
         form_no = (species & 0xF800) >> 11;
         species &= 0x07FF;
+
+        // first rival battle: hand the rival one of the player's unchosen
+        // starter species instead of the fixed vanilla script pick
+        if (bp->trainer_id[num] == TRAINER_FIRST_BATTLE_1
+            || bp->trainer_id[num] == TRAINER_FIRST_BATTLE_2
+            || bp->trainer_id[num] == TRAINER_FIRST_BATTLE_3) {
+            u16 rivalSpecies = RivalFirstBattleSpecies(GetScriptVar(VAR_PLAYER_STARTER));
+
+            if (rivalSpecies != 0) {
+                species = rivalSpecies;
+                form_no = 0;
+            }
+        }
 
         // item field - conditional
         if (bp->trainer_data[num].data_type & TRAINER_DATA_TYPE_ITEMS) {

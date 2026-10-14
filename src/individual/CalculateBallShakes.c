@@ -421,13 +421,22 @@ u32 __attribute__((section(".init"))) CalculateBallShakesInternal(void *bw, stru
 
 //=====Step 6
 #ifdef DEBUG_CAPTURE_RATE_PERCENTAGES
-    debug_printf("Step 6: Apply the low level bonus if the wild Pokémon is level 13 or under\n");
+    debug_printf("Step 6: Apply the low level bonus if the wild Pokémon is level 50 or under\n");
 #endif
-    if (sp->battlemon[sp->defence_client].level <= 13) {
+    // Mod: enlarged low level bonus, x(110 - 2 * level)/10 for levels up to 50
+    // (x10.4 at level 3, tapering to x1.0 at level 50).  Never lets the factor
+    // go below x1.0.  Sized against the acceptance test "level 3, half hp
+    // Groudon (catch rate 3) caught with <= 5 Poké Balls with >50% chance":
+    // single ball ~14.8%, five balls ~55.1% (the previous x(36 - 2 * level)/10
+    // curve for levels up to 13 gave 5.2% / 23.6%).
+    if (sp->battlemon[sp->defence_client].level <= 50) {
 #ifdef DEBUG_CAPTURE_RATE_PERCENTAGES
         debug_printf("Need to apply low level bonus\n", f);
 #endif
-        f = (36 - 2 * sp->battlemon[sp->defence_client].level) * e / 10;
+        f = (110 - 2 * sp->battlemon[sp->defence_client].level) * e / 10;
+        if (f < e) { // guard: never worse than the plain formula
+            f = e;
+        }
     } else {
 #ifdef DEBUG_CAPTURE_RATE_PERCENTAGES
         debug_printf("No need to apply low level bonus\n", f);
