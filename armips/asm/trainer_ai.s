@@ -97,9 +97,9 @@
 
 //need a free space, figure out what to do with this part.
 .if (fileexists("base/overlay/overlay_0129.bin"))
-    .open "base/overlay/overlay_0129.bin", 0x023D8000
+    .open "base/overlay/overlay_0129.bin", 0x023D7000
 .else
-    .create "base/overlay/overlay_0129.bin", 0x023D8000
+    .create "base/overlay/overlay_0129.bin", 0x023D7000
 .endif
 
 .orga 0

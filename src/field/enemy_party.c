@@ -13,6 +13,7 @@
 
 #include "bag.h"
 #include "battle.h"
+#include "mon_randomizer.h"
 #include "pokemon.h"
 #include "rtc.h"
 #include "save.h"
@@ -286,8 +287,8 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 
         // set default abilities
         adjustedSpecies = PokeOtherFormMonsNoGet(species, form_no);
-        ab1 = PokePersonalParaGet(adjustedSpecies, PERSONAL_ABILITY_1);
-        ab2 = PokePersonalParaGet(adjustedSpecies, PERSONAL_ABILITY_2);
+        ab1 = MonRandom_Ability(species, 0, PokePersonalParaGet(adjustedSpecies, PERSONAL_ABILITY_1));
+        ab2 = MonRandom_Ability(species, 1, PokePersonalParaGet(adjustedSpecies, PERSONAL_ABILITY_2));
         if (ab2 != 0) {
             if (abilityslot & 1 || abilityslot == TRAINER_POKEMON_ABILITY_2) {
                 SetMonData(mons[i], MON_DATA_ABILITY, (u16 *)&ab2);
@@ -300,7 +301,7 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 
         // if abilityslot is 2 force hidden ability with the bit set.  this specifically to cover darmanitan with zen mode switching between forms and such.
         if (abilityslot == TRAINER_POKEMON_ABILITY_HIDDEN) {
-            u16 hiddenability = GetMonHiddenAbility(species, form_no);
+            u16 hiddenability = MonRandom_Ability(species, 2, GetMonHiddenAbility(species, form_no));
             SET_MON_HIDDEN_ABILITY_BIT(mons[i]);
             SetMonData(mons[i], MON_DATA_ABILITY, (u16 *)&hiddenability);
         }

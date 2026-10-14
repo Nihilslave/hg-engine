@@ -15,6 +15,7 @@
 
 #include "bag.h"
 #include "battle.h"
+#include "mon_randomizer.h"
 #include "overlay.h"
 #include "party_menu.h"
 #include "pokemon.h"
@@ -344,8 +345,8 @@ u32 CanUseAbilityCapsule(struct PartyPokemon *pp)
     u32 species = GetMonData(pp, MON_DATA_SPECIES, NULL);
     u32 form = GetMonData(pp, MON_DATA_FORM, NULL);
     u32 hidden_ability = GET_MON_HIDDEN_ABILITY_BIT(pp);
-    u32 ability1 = PokeFormNoPersonalParaGet(species, form, PERSONAL_ABILITY_1);
-    u32 ability2 = PokeFormNoPersonalParaGet(species, form, PERSONAL_ABILITY_2);
+    u32 ability1 = MonRandom_Ability(species, 0, PokeFormNoPersonalParaGet(species, form, PERSONAL_ABILITY_1));
+    u32 ability2 = MonRandom_Ability(species, 1, PokeFormNoPersonalParaGet(species, form, PERSONAL_ABILITY_2));
 
     if (hidden_ability) {
         return FALSE;
@@ -359,7 +360,7 @@ u32 CanUseAbilityPatch(struct PartyPokemon *pp)
 {
     u32 species = GetMonData(pp, MON_DATA_SPECIES, NULL);
     u32 form = GetMonData(pp, MON_DATA_FORM, NULL);
-    u32 hidden_ability = GetMonHiddenAbility(species, form);
+    u32 hidden_ability = MonRandom_Ability(species, 2, GetMonHiddenAbility(species, form));
 
     return hidden_ability != 0;
 }

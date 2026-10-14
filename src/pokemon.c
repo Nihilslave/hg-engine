@@ -17,6 +17,7 @@
 
 #include "bag.h"
 #include "battle.h"
+#include "mon_randomizer.h"
 #include "overlay.h"
 #include "rtc.h"
 #include "save.h"
@@ -342,6 +343,7 @@ void LONG_CALL SetBoxMonAbility(struct BoxPokemon *boxmon) // actually takes box
     u32 ability1, ability2, hiddenability;
     u32 pid;
     u32 has_hidden_ability, ability_swapped;
+    u32 baseMonsNo;
 
     fastMode = BoxMonSetFastModeOn(boxmon);
 
@@ -352,8 +354,9 @@ void LONG_CALL SetBoxMonAbility(struct BoxPokemon *boxmon) // actually takes box
     mons_no = GetBoxMonData(boxmon, MON_DATA_SPECIES, NULL);
     pid = GetBoxMonData(boxmon, MON_DATA_PERSONALITY, NULL);
     form = GetBoxMonData(boxmon, MON_DATA_FORM, NULL);
-    ability1 = PokeFormNoPersonalParaGet(mons_no, form, PERSONAL_ABILITY_1);
-    ability2 = PokeFormNoPersonalParaGet(mons_no, form, PERSONAL_ABILITY_2);
+    baseMonsNo = mons_no;
+    ability1 = MonRandom_Ability(baseMonsNo, 0, PokeFormNoPersonalParaGet(mons_no, form, PERSONAL_ABILITY_1));
+    ability2 = MonRandom_Ability(baseMonsNo, 1, PokeFormNoPersonalParaGet(mons_no, form, PERSONAL_ABILITY_2));
 
     if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1) {
         SET_BOX_MON_HIDDEN_ABILITY_BIT(boxmon)
@@ -365,7 +368,7 @@ void LONG_CALL SetBoxMonAbility(struct BoxPokemon *boxmon) // actually takes box
     }
     ability_swapped = GET_BOX_MON_SWAP_ABILITY_SLOT_BIT(boxmon);
     mons_no = PokeOtherFormMonsNoGet(mons_no, form);
-    hiddenability = GetMonHiddenAbilityAlreadySanitized(mons_no);
+    hiddenability = MonRandom_Ability(baseMonsNo, 2, GetMonHiddenAbilityAlreadySanitized(mons_no));
 
     if (has_hidden_ability && hiddenability != 0) {
         SetBoxMonData(boxmon, MON_DATA_ABILITY, (u8 *)&hiddenability);
@@ -1341,8 +1344,8 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
         SetBoxMonData(boxmon, MON_DATA_SPDEF_IV, (u8 *)&j);
     }
 
-    i = PokePersonalParaGet(species, PERSONAL_ABILITY_1);
-    j = PokePersonalParaGet(species, PERSONAL_ABILITY_2);
+    i = MonRandom_Ability(species, 0, PokePersonalParaGet(species, PERSONAL_ABILITY_1));
+    j = MonRandom_Ability(species, 1, PokePersonalParaGet(species, PERSONAL_ABILITY_2));
     if (j != 0) {
         if (rnd & 1) {
             SetBoxMonData(boxmon, MON_DATA_ABILITY, (u8 *)&j);
@@ -2195,7 +2198,14 @@ BOOL GetMonMachineMoveCompat(struct PartyPokemon *pp, u16 machineMoveIndex)
  */
 void LONG_CALL LoadLevelUpLearnset_HandleAlternateForm(int species, int form, u32 *levelUpLearnset)
 {
-    ReadFromNarcMemberByIdPair(levelUpLearnset, ARC_LEVELUP_LEARNSETS, 0, PokeOtherFormMonsNoGet(species, form) * MAX_LEVELUP_MOVES * sizeof(u32), MAX_LEVELUP_MOVES * sizeof(u32));
+    int learnsetIndex = PokeOtherFormMonsNoGet(species, form);
+
+    // randomized learnset: one random move at level 1, then one every 5 levels
+    if (MonRandom_LearnsetTry((u32)learnsetIndex, (u32)species, levelUpLearnset)) {
+        return;
+    }
+
+    ReadFromNarcMemberByIdPair(levelUpLearnset, ARC_LEVELUP_LEARNSETS, 0, learnsetIndex * MAX_LEVELUP_MOVES * sizeof(u32), MAX_LEVELUP_MOVES * sizeof(u32));
 
 #ifdef BLOCK_LEARNING_UNIMPLEMENTED_MOVES
     // shift moves to skip the unimplemented ones
