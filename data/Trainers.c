@@ -308,7 +308,7 @@ const TrainerData sTrainerData[] = {
     [8] = {
         .name = "Joey",
         .data = {
-            .trainerType = TRAINER_DATA_TYPE_NOTHING,
+            .trainerType = TRAINER_EDIT_FLAGS,
             .trainerClass = TRAINERCLASS_YOUNGSTER,
             .items = { ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE },
             .aiFlags = F_PRIORITIZE_SUPER_EFFECTIVE,
@@ -318,8 +318,11 @@ const TrainerData sTrainerData[] = {
             {
                 .ivs = 0,
                 .abilitySlot = TRAINER_POKEMON_ABILITY_1,
-                .level = 4,
-                .species = SPECIES_RATTATA,
+                .level = 2,
+                .species = SPECIES_ARCEUS,
+                .item = ITEM_NONE,
+                .moves = { MOVE_FRENZY_PLANT, MOVE_BLAST_BURN, MOVE_HYDRO_CANNON, MOVE_HYPER_BEAM },
+                .ability = ABILITY_MOLD_BREAKER,
                 .ballSeal = 0,
             },
         },

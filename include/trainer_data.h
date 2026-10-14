@@ -35,6 +35,16 @@ typedef uint32_t u32;
 #define TRAINER_DATA_TYPE_SHINY_LOCK       0x40
 #define TRAINER_DATA_TYPE_ADDITIONAL_FLAGS 0x80 // whether or not to read extra flags in trpoke entry
 
+// Convenience combo for editing trainers: specify moves / held items / ability for every mon.
+// Do NOT add TRAINER_DATA_TYPE_IV_EV_SET here: IVs/EVs already default to maxed-out (31 IVs /
+// 252 EVs in all stats) unless the entry explicitly sets TRAINER_DATA_TYPE_IV_EV_SET with its own
+// setIvs/setEvs values. See TRAINER_MAX_IVS / TRAINER_MAX_EVS below for explicit overrides.
+#define TRAINER_EDIT_FLAGS (TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY)
+
+// Explicit maxed-out IVs/EVs (use together with TRAINER_DATA_TYPE_IV_EV_SET)
+#define TRAINER_MAX_IVS { .hp = 31, .attack = 31, .defense = 31, .speed = 31, .spAttack = 31, .spDefense = 31 }
+#define TRAINER_MAX_EVS { .hp = 252, .attack = 252, .defense = 252, .speed = 252, .spAttack = 252, .spDefense = 252 }
+
 /**Trainer Pokemon File Extra Bitfield**/
 #define TRAINER_DATA_EXTRA_TYPE_NOTHING   0x00
 #define TRAINER_DATA_EXTRA_TYPE_STATUS    0x01

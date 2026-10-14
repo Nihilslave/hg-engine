@@ -214,6 +214,11 @@
 // based on the move having FLAG_UNUSABLE_UNIMPLEMENTED
 #define BLOCK_LEARNING_UNIMPLEMENTED_MOVES
 
+// TRAINER_MAX_IV_EVS_BY_DEFAULT gives every trainer Pokemon max IVs (31) and max EVs (252 in all
+// stats) when its trainer entry does not explicitly specify IVs/EVs (TRAINER_DATA_TYPE_IV_EV_SET).
+// Comment this out to restore vanilla behavior.
+#define TRAINER_MAX_IV_EVS_BY_DEFAULT
+
 // VANILLA_PARADOX_BOOSTER_ENERGY_BEHAVIOUR makes the Paradox Booster item behave as it does in vanilla, where the
 // DLC paradox forms can have Booster Energy tricked onto them.
 // Further info: vxtwitter.com/DaWoblefet/status/1737659599480565762

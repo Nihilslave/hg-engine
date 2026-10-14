@@ -442,6 +442,18 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
                 SetMonData(mons[i], MON_DATA_HP_EV + j, &evnums[j]);
             }
         }
+#ifdef TRAINER_MAX_IV_EVS_BY_DEFAULT
+        else {
+            // Default for trainers without explicit IV/EV data: max out everything (31 IVs / 252 EVs in all stats).
+            u8 maxiv = 31;
+            u8 maxev = 252;
+
+            for (j = 0; j < 6; j++) {
+                SetMonData(mons[i], MON_DATA_HP_IV + j, &maxiv);
+                SetMonData(mons[i], MON_DATA_HP_EV + j, &maxev);
+            }
+        }
+#endif
         if (bp->trainer_data[num].data_type & TRAINER_DATA_TYPE_NATURE_SET) {
             u32 pid = GetMonData(mons[i], MON_DATA_PERSONALITY, NULL);
             u8 currentNature = pid % 25;
