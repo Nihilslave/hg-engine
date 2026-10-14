@@ -1,0 +1,1142 @@
+# 训练师调整顺序清单
+
+> 按主线剧情推荐顺序（城都 → 联盟 → 关都 → 通关后）。**编号 # 可直接用于沟通**（如“改一下 12 号”）。
+
+> 同一区域内的先后顺序仅供参考（以实际游戏内遭遇为准）；标【可选】/关卡为非必经。
+
+> 电话重战 / 未引用变体以空编号行附在主条目下方。
+>
+
+> 生成：`python3 tools/gen_trainer_order.py`；数据：trainers.inc(738) / Trainers.c(738) / 事件对象+脚本引用(489) / 未引用(100)
+
+>
+> 队伍列：`物种 L等级@道具`；【双打】=双打战斗。调整目标文件：`data/Trainers.c`（按 ID 搜索 `[ID] = {`）。
+
+>
+> 注意：初始宝可梦与劲敌还会受 `src/starters.c` / `src/field/enemy_party.c` 的运行时逻辑影响。
+
+
+## 樱花镇（含劲敌·首战）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 1 | 496 | `TRAINER_PASSERBY_BOY_2` | PASSERBY | Boy | CYNDAQUIL L5 | 脚本 scr_seq_0850_T21.s:550 |  |
+| 2 | 497 | `TRAINER_PASSERBY_BOY_3` | PASSERBY | Boy | TOTODILE L5 | 脚本 scr_seq_0850_T21.s:556 |  |
+| 3 | 495 | `TRAINER_PASSERBY_BOY` | PASSERBY | Boy | CHIKORITA L5 | 脚本 scr_seq_0850_T21.s:560 |  |
+
+## 30号道路（含大木博士小屋）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 4 | 249 | `TRAINER_BUG_CATCHER_DON` | BUG_CATCHER | Don | CATERPIE L3 / CATERPIE L3 | 对象(ROUTE_30) |  |
+| 5 | 8 | `TRAINER_YOUNGSTER_JOEY` | YOUNGSTER | Joey | RATTATA L4 | 对象(ROUTE_30) |  |
+|  | 279 | `TRAINER_YOUNGSTER_JOEY_2` | YOUNGSTER | Joey | RATICATE L34 | 电话重战变体（联系人 JOEY） |  |
+|  | 280 | `TRAINER_YOUNGSTER_JOEY_3` | YOUNGSTER | Joey | RATICATE L40 | 电话重战变体（联系人 JOEY） |  |
+|  | 510 | `TRAINER_YOUNGSTER_JOEY_4` | YOUNGSTER | Joey | RATICATE L54 | 电话重战变体（联系人 JOEY） |  |
+| 6 | 47 | `TRAINER_YOUNGSTER_MIKEY` | YOUNGSTER | Mikey | PIDGEY L2 / RATTATA L4 | 对象(ROUTE_30) |  |
+
+## 31号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 7 | 4 | `TRAINER_BUG_CATCHER_WADE` | BUG_CATCHER | Wade | CATERPIE L2 / CATERPIE L2 / WEEDLE L3 / CATERPIE L2 | 对象(ROUTE_31) |  |
+|  | 460 | `TRAINER_BUG_CATCHER_WADE_2` | BUG_CATCHER | Wade | BUTTERFREE L28 / BUTTERFREE L40 / BEEDRILL L37 / BUTTERFREE L28 | 电话重战变体（联系人 WADE） |  |
+|  | 461 | `TRAINER_BUG_CATCHER_WADE_3` | BUG_CATCHER | Wade | METAPOD L18 / BUTTERFREE L29 / KAKUNA L22 / METAPOD L18 | 电话重战变体（联系人 WADE） |  |
+|  | 512 | `TRAINER_BUG_CATCHER_WADE_4` | BUG_CATCHER | Wade | BUTTERFREE L36 / BUTTERFREE L52 / BEEDRILL L43 / BUTTERFREE L36 | 电话重战变体（联系人 WADE） |  |
+
+## 桔梗市·喇叭芽之塔
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 8 | 43 | `TRAINER_SAGE_CHOW` | SAGE | Chow | BELLSPROUT L3 / BELLSPROUT L3 / BELLSPROUT L3 | 对象(SPROUT_TOWER_1F) |  |
+| 9 | 51 | `TRAINER_SAGE_NICO` | SAGE | Nico | BELLSPROUT L3 / BELLSPROUT L3 / BELLSPROUT L3 | 对象(SPROUT_TOWER_2F) |  |
+| 10 | 52 | `TRAINER_SAGE_EDMOND` | SAGE | Edmond | BELLSPROUT L3 / BELLSPROUT L3 / BELLSPROUT L3 | 对象(SPROUT_TOWER_2F) |  |
+| 11 | 53 | `TRAINER_SAGE_JIN` | SAGE | Jin | BELLSPROUT L6 | 对象(SPROUT_TOWER_3F) |  |
+| 12 | 55 | `TRAINER_SAGE_NEAL` | SAGE | Neal | BELLSPROUT L6 | 对象(SPROUT_TOWER_3F) |  |
+| 13 | 54 | `TRAINER_SAGE_TROY` | SAGE | Troy | BELLSPROUT L7 / HOOTHOOT L7 | 对象(SPROUT_TOWER_3F) |  |
+| 14 | 290 | `TRAINER_ELDER_LI` | ELDER | Li | BELLSPROUT L7 / BELLSPROUT L7 / HOOTHOOT L10 | 脚本 scr_seq_0018_D15R0103.s:118 |  |
+
+## 桔梗市·道馆（阿速）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 15 | 50 | `TRAINER_BIRD_KEEPER_GS_ABE` | BIRD_KEEPER_GS | Abe | SPEAROW L9 | 对象(VIOLET_GYM) |  |
+| 16 | 29 | `TRAINER_BIRD_KEEPER_GS_ROD` | BIRD_KEEPER_GS | Rod | PIDGEY L7 / PIDGEY L7 | 对象(VIOLET_GYM) |  |
+| 17 | 20 | `TRAINER_LEADER_FALKNER_FALKNER` | LEADER_FALKNER | Falkner | PIDGEY L9 / PIDGEOTTO L13 | 脚本 scr_seq_0859_T22GYM0101.s:71 |  |
+
+## 32号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 18 | 49 | `TRAINER_YOUNGSTER_ALBERT` | YOUNGSTER | Albert | RATTATA L6 / ZUBAT L8 | 对象(ROUTE_32) |  |
+| 19 | 27 | `TRAINER_PICNICKER_LIZ` | PICNICKER | Liz | NIDORAN_F L8 | 对象(ROUTE_32) |  |
+|  | 276 | `TRAINER_PICNICKER_LIZ_2` | PICNICKER | Liz | WEEPINBELL L35 / NIDORINA L38 | 电话重战变体（联系人 LIZ） |  |
+|  | 277 | `TRAINER_PICNICKER_LIZ_3` | PICNICKER | Liz | WEEPINBELL L39 / NIDORINO L38 / NIDOQUEEN L40 | 电话重战变体（联系人 LIZ） |  |
+|  | 518 | `TRAINER_PICNICKER_LIZ_4` | PICNICKER | Liz | VICTREEBEL L47 / NIDOKING L58 / NIDOQUEEN L60 | 电话重战变体（联系人 LIZ） |  |
+| 20 | 60 | `TRAINER_FISHERMAN_HENRY` | FISHERMAN | Henry | POLIWAG L8 / POLIWAG L8 | 对象(ROUTE_32) |  |
+| 21 | 18 | `TRAINER_FISHERMAN_JUSTIN` | FISHERMAN | Justin | MAGIKARP L5 / MAGIKARP L5 / MAGIKARP L15 / MAGIKARP L5 | 对象(ROUTE_32) |  |
+| 22 | 57 | `TRAINER_FISHERMAN_RALPH` | FISHERMAN | Ralph | GOLDEEN L10 | 对象(ROUTE_32) |  |
+|  | 462 | `TRAINER_FISHERMAN_RALPH_2` | FISHERMAN | Ralph | SEAKING L40 | 电话重战变体（联系人 RALPH） |  |
+|  | 463 | `TRAINER_FISHERMAN_RALPH_3` | FISHERMAN | Ralph | QWILFISH L45 / SEAKING L42 | 电话重战变体（联系人 RALPH） |  |
+|  | 515 | `TRAINER_FISHERMAN_RALPH_4` | FISHERMAN | Ralph | QWILFISH L53 / SEAKING L56 | 电话重战变体（联系人 RALPH） |  |
+| 23 | 26 | `TRAINER_CAMPER_ROLAND` | CAMPER | Roland | NIDORAN_M L9 | 对象(ROUTE_32) |  |
+| 24 | 56 | `TRAINER_YOUNGSTER_GORDON` | YOUNGSTER | Gordon | WOOPER L10 | 对象(ROUTE_32) |  |
+| 25 | 383 | `TRAINER_BIRD_KEEPER_GS_PETER` | BIRD_KEEPER_GS | Peter | PIDGEY L6 / PIDGEY L6 / SPEAROW L8 | 对象(ROUTE_32) |  |
+
+## 阿露福遗迹（可选）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 26 | 42 | `TRAINER_PSYCHIC_M_NATHAN` | PSYCHIC_M | Nathan | GIRAFARIG L26 | 对象(RUINS_OF_ALPH) |  |
+
+## 连结洞窟
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 27 | 384 | `TRAINER_HIKER_DANIEL` | HIKER | Daniel | ONIX L11 | 对象(UNION_CAVE_1F) |  |
+| 28 | 25 | `TRAINER_HIKER_RUSSEL` | HIKER | Russel | GEODUDE L4 / GEODUDE L6 / GEODUDE L8 | 对象(UNION_CAVE_1F) |  |
+| 29 | 319 | `TRAINER_FIREBREATHER_BILL` | FIREBREATHER | Bill | KOFFING L6 / KOFFING L6 | 对象(UNION_CAVE_1F) |  |
+| 30 | 390 | `TRAINER_FIREBREATHER_RAY` | FIREBREATHER | Ray | VULPIX L9 | 对象(UNION_CAVE_1F) |  |
+| 31 | 23 | `TRAINER_POKE_MANIAC_LARRY` | POKE_MANIAC | Larry | SLOWPOKE L11 | 对象(UNION_CAVE_1F) |  |
+| 32 | 203 | `TRAINER_HIKER_PHILLIP` | HIKER | Phillip | GEODUDE L23 / GRAVELER L25 | 对象(UNION_CAVE_B1F) |  |
+| 33 | 204 | `TRAINER_HIKER_LEONARD` | HIKER | Leonard | GEODUDE L23 / MACHOP L25 | 对象(UNION_CAVE_B1F) |  |
+| 34 | 201 | `TRAINER_POKE_MANIAC_ANDREW` | POKE_MANIAC | Andrew | MAROWAK L24 / MAROWAK L24 | 对象(UNION_CAVE_B1F) |  |
+| 35 | 202 | `TRAINER_POKE_MANIAC_CALVIN` | POKE_MANIAC | Calvin | KANGASKHAN L26 | 对象(UNION_CAVE_B1F) |  |
+| 36 | 205 | `TRAINER_ACE_TRAINER_M_NICK` | ACE_TRAINER_M | Nick | CHARMANDER L26 / SQUIRTLE L26 / BULBASAUR L26 | 对象(UNION_CAVE_B2F) |  |
+| 37 | 206 | `TRAINER_ACE_TRAINER_F_GWEN` | ACE_TRAINER_F | Gwen | EEVEE L26 / FLAREON L22 / VAPOREON L22 / JOLTEON L22 | 对象(UNION_CAVE_B2F) |  |
+| 38 | 363 | `TRAINER_ACE_TRAINER_F_EMMA` | ACE_TRAINER_F | Emma | POLIWHIRL L28 | 对象(UNION_CAVE_B2F) |  |
+
+## 33号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 39 | 61 | `TRAINER_HIKER_ANTHONY` | HIKER | Anthony | GEODUDE L11 / MACHOP L11 | 对象(ROUTE_33) |  |
+|  | 100 | `TRAINER_HIKER_ANTHONY_2` | HIKER | Anthony | GRAVELER L33 / MACHOKE L32 | 电话重战变体（联系人 ANTHONY） |  |
+|  | 155 | `TRAINER_HIKER_ANTHONY_3` | HIKER | Anthony | GRAVELER L37 / GRAVELER L38 / MACHOKE L40 | 电话重战变体（联系人 ANTHONY） |  |
+|  | 523 | `TRAINER_HIKER_ANTHONY_4` | HIKER | Anthony | GRAVELER L41 / GOLEM L49 / MACHAMP L55 | 电话重战变体（联系人 ANTHONY） |  |
+
+## 桧皮镇·呆呆兽之井
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 40 | 101 | `TRAINER_TEAM_ROCKET_GRUNT_2` | TEAM_ROCKET | Grunt | RATTATA L9 / RATTATA L9 | 对象(SLOWPOKE_WELL_B1F) |  |
+| 41 | 12 | `TRAINER_TEAM_ROCKET_GRUNT` | TEAM_ROCKET | Grunt | RATTATA L7 / ZUBAT L9 / ZUBAT L9 | 对象(SLOWPOKE_WELL_B1F) |  |
+|  | 499 | `TRAINER_TEAM_ROCKET_GRUNT_25` | TEAM_ROCKET | Grunt | DROWZEE L18 / GRIMER L20 | 未引用变体（预留/残留，用途待确认） |  |
+| 42 | 13 | `TRAINER_TEAM_ROCKET_F_GRUNT` | TEAM_ROCKET_F | Grunt | ZUBAT L9 / EKANS L11 | 对象(SLOWPOKE_WELL_B1F) |  |
+| 43 | 486 | `TRAINER_EXECUTIVE_PROTON_PROTON` | EXECUTIVE_PROTON | Proton | ZUBAT L8 / KOFFING L12 | 脚本 scr_seq_0060_D26R0102.s:45 |  |
+
+## 桧皮镇·道馆（阿笔）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 44 | 68 | `TRAINER_BUG_CATCHER_AL` | BUG_CATCHER | Al | CATERPIE L12 / WEEDLE L12 | 对象(AZALEA_GYM) |  |
+| 45 | 67 | `TRAINER_BUG_CATCHER_BENNY` | BUG_CATCHER | Benny | WEEDLE L7 / KAKUNA L9 / BEEDRILL L12 | 对象(AZALEA_GYM) |  |
+| 46 | 10 | `TRAINER_TWINS_AMY_AND_MIMI` | TWINS | Amy & Mimi | 【双打】SPINARAK L10 / LEDYBA L10 | 对象(AZALEA_GYM) |  |
+|  | 387 | `TRAINER_TWINS_AMY_AND_MIMI_2` | TWINS | Amy & Mimi | 【双打】LEDYBA L10 / SPINARAK L10 | 未引用变体（预留/残留，用途待确认） |  |
+| 47 | 69 | `TRAINER_BUG_CATCHER_JOSH` | BUG_CATCHER | Josh | PARAS L13 | 对象(AZALEA_GYM) |  |
+| 48 | 21 | `TRAINER_LEADER_BUGSY_BUGSY` | LEADER_BUGSY | Bugsy | SCYTHER L17@SITRUS_BERRY / KAKUNA L15 / METAPOD L15 | 脚本 scr_seq_0869_T23GYM0102.s:73 |  |
+
+## 桧皮镇（含劲敌·二战）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 49 | 266 | `TRAINER_RIVAL_SILVER_7` | RIVAL | Silver | GASTLY L14 / ZUBAT L16 / QUILAVA L18 | 脚本 scr_seq_0866_T23.s:106 |  |
+| 50 | 269 | `TRAINER_RIVAL_SILVER_10` | RIVAL | Silver | GASTLY L14 / ZUBAT L16 / CROCONAW L18 | 脚本 scr_seq_0866_T23.s:112 |  |
+| 51 | 1 | `TRAINER_RIVAL_SILVER` | RIVAL | Silver | GASTLY L14 / ZUBAT L16 / BAYLEEF L18 | 脚本 scr_seq_0866_T23.s:116 |  |
+|  | 2 | `TRAINER_RIVAL_SILVER_2` | RIVAL | Silver | CYNDAQUIL L5 | 未引用变体（预留/残留，用途待确认） |  |
+|  | 3 | `TRAINER_RIVAL_SILVER_3` | RIVAL | Silver | TOTODILE L5 | 未引用变体（预留/残留，用途待确认） |  |
+|  | 265 | `TRAINER_RIVAL_SILVER_6` | RIVAL | Silver | CHIKORITA L5 | 未引用变体（预留/残留，用途待确认） |  |
+
+## 34号道路（含饲育屋）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 52 | 62 | `TRAINER_YOUNGSTER_SAMUEL` | YOUNGSTER | Samuel | RATTATA L7 / SANDSHREW L10 / SPEAROW L8 / SPEAROW L8 | 对象(ROUTE_34) |  |
+| 53 | 65 | `TRAINER_PICNICKER_GINA` | PICNICKER | Gina | HOPPIP L9 / HOPPIP L9 / BULBASAUR L12 | 对象(ROUTE_34) |  |
+|  | 142 | `TRAINER_PICNICKER_GINA_2` | PICNICKER | Gina | HOPPIP L24 / HOPPIP L24 / IVYSAUR L32 | 电话重战变体（联系人 GINA） |  |
+|  | 334 | `TRAINER_PICNICKER_GINA_3` | PICNICKER | Gina | SKIPLOOM L26 / SKIPLOOM L26 / IVYSAUR L44 | 电话重战变体（联系人 GINA） |  |
+|  | 520 | `TRAINER_PICNICKER_GINA_4` | PICNICKER | Gina | SKIPLOOM L30 / JUMPLUFF L36 / VENUSAUR L55 | 电话重战变体（联系人 GINA） |  |
+| 54 | 64 | `TRAINER_YOUNGSTER_IAN` | YOUNGSTER | Ian | MANKEY L10 / DIGLETT L12 | 对象(ROUTE_34) |  |
+|  | 616 | `TRAINER_YOUNGSTER_IAN_2` | YOUNGSTER | Ian | MANKEY L27 / DUGTRIO L33 | 电话重战变体（联系人 IAN） |  |
+|  | 617 | `TRAINER_YOUNGSTER_IAN_3` | YOUNGSTER | Ian | PRIMEAPE L38 / DUGTRIO L40 | 电话重战变体（联系人 IAN） |  |
+|  | 618 | `TRAINER_YOUNGSTER_IAN_4` | YOUNGSTER | Ian | PRIMEAPE L47 / DUGTRIO L58 | 电话重战变体（联系人 IAN） |  |
+| 55 | 6 | `TRAINER_POLICEMAN_KEITH` | POLICEMAN | Keith | GROWLITHE L17 | 对象(ROUTE_34) |  |
+| 56 | 66 | `TRAINER_CAMPER_TODD` | CAMPER | Todd | PSYDUCK L14 | 对象(ROUTE_34) |  |
+|  | 274 | `TRAINER_CAMPER_TODD_2` | CAMPER | Todd | GEODUDE L17 / GEODUDE L17 / PSYDUCK L31 | 电话重战变体（联系人 TODD） |  |
+|  | 275 | `TRAINER_CAMPER_TODD_3` | CAMPER | Todd | GEODUDE L23 / GRAVELER L33 / GOLDUCK L36 / SLUGMA L32 | 电话重战变体（联系人 TODD） |  |
+|  | 525 | `TRAINER_CAMPER_TODD_4` | CAMPER | Todd | GRAVELER L36 / GRAVELER L44 / MAGCARGO L54 / GOLDUCK L56 | 电话重战变体（联系人 TODD） |  |
+| 57 | 409 | `TRAINER_POKEFAN_M_BRANDON` | POKEFAN_M | Brandon | SNUBBULL L13 / MAREEP L13 | 对象(ROUTE_34) |  |
+| 58 | 120 | `TRAINER_ACE_TRAINER_F_IRENE` | ACE_TRAINER_F | Irene | GOLDEEN L22 / SEAKING L24 | 脚本 scr_seq_0237_R34.s:629 | Route 34 秘密基地事件（三姐妹，胜后得 Power Herb） |
+| 59 | 417 | `TRAINER_ACE_TRAINER_F_JENN` | ACE_TRAINER_F | Jenn | STARYU L24 / STARMIE L26 | 脚本 scr_seq_0237_R34.s:645 等2处 | 同三姐妹事件 |
+| 60 | 118 | `TRAINER_ACE_TRAINER_F_KATE` | ACE_TRAINER_F | Kate | SHELLDER L26 / CLOYSTER L28 | 脚本 scr_seq_0237_R34.s:749 | 同三姐妹事件 |
+
+## 满金市·道馆（小茜）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 61 | 71 | `TRAINER_LASS_CATHY` | LASS | Cathy | JIGGLYPUFF L15 / JIGGLYPUFF L15 / JIGGLYPUFF L15 | 对象(GOLDENROD_GYM) |  |
+| 62 | 22 | `TRAINER_LASS_CARRIE` | LASS | Carrie | SNUBBULL L17 | 对象(GOLDENROD_GYM) |  |
+| 63 | 5 | `TRAINER_BEAUTY_VICTORIA` | BEAUTY | Victoria | SENTRET L9 / SENTRET L13 / SENTRET L16 | 对象(GOLDENROD_GYM) |  |
+| 64 | 70 | `TRAINER_BEAUTY_SAMANTHA` | BEAUTY | Samantha | MEOWTH L16 / MEOWTH L16 | 对象(GOLDENROD_GYM) |  |
+| 65 | 30 | `TRAINER_LEADER_WHITNEY` | LEADER_WHITNEY | Whitney | CLEFAIRY L17 / MILTANK L19@LUM_BERRY | 脚本 scr_seq_0886_T25GYM0101.s:97 |  |
+
+## 满金市·地下通道 B1F
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 66 | 392 | `TRAINER_POKE_MANIAC_DONALD` | POKE_MANIAC | Donald | SLOWPOKE L11 / SLOWPOKE L11 | 对象(GOLDENROD_TUNNEL_B1F) |  |
+| 67 | 393 | `TRAINER_SUPER_NERD_TERU` | SUPER_NERD | Teru | MAGNEMITE L7 / VOLTORB L11 / MAGNEMITE L7 / MAGNEMITE L9 | 对象(GOLDENROD_TUNNEL_B1F) |  |
+| 68 | 391 | `TRAINER_POKE_MANIAC_ISSAC` | POKE_MANIAC | Issac | LICKITUNG L12 | 对象(GOLDENROD_TUNNEL_B1F) |  |
+| 69 | 233 | `TRAINER_SUPER_NERD_ERIC` | SUPER_NERD | Eric | GRIMER L11 / GRIMER L11 | 对象(GOLDENROD_TUNNEL_B1F) |  |
+
+## 35号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 70 | 80 | `TRAINER_POLICEMAN_DIRK` | POLICEMAN | Dirk | GROWLITHE L14 / GROWLITHE L14 | 对象(ROUTE_35) |  |
+| 71 | 77 | `TRAINER_PICNICKER_KIM` | PICNICKER | Kim | VULPIX L15 | 对象(ROUTE_35) |  |
+| 72 | 75 | `TRAINER_CAMPER_ELLIOT` | CAMPER | Elliot | SANDSHREW L13 / MARILL L15 | 对象(ROUTE_35) |  |
+| 73 | 76 | `TRAINER_PICNICKER_BROOKE` | PICNICKER | Brooke | PIKACHU L16 | 对象(ROUTE_35) |  |
+| 74 | 74 | `TRAINER_CAMPER_IVAN` | CAMPER | Ivan | DIGLETT L10 / ZUBAT L10 / DIGLETT L14 | 对象(ROUTE_35) |  |
+| 75 | 7 | `TRAINER_JUGGLER_IRWIN` | JUGGLER | Irwin | VOLTORB L2 / VOLTORB L6 / VOLTORB L10 / VOLTORB L14 | 对象(ROUTE_35) |  |
+|  | 454 | `TRAINER_JUGGLER_IRWIN_2` | JUGGLER | Irwin | VOLTORB L22 / VOLTORB L26 / VOLTORB L28 / VOLTORB L34 | 电话重战变体（联系人 IRWIN） |  |
+|  | 455 | `TRAINER_JUGGLER_IRWIN_3` | JUGGLER | Irwin | VOLTORB L34 / VOLTORB L36 / VOLTORB L38 / ELECTRODE L42 | 电话重战变体（联系人 IRWIN） |  |
+|  | 527 | `TRAINER_JUGGLER_IRWIN_4` | JUGGLER | Irwin | VOLTORB L40 / VOLTORB L40 / ELECTRODE L46 / ELECTRODE L51 | 电话重战变体（联系人 IRWIN） |  |
+| 76 | 78 | `TRAINER_BUG_CATCHER_ARNIE` | BUG_CATCHER | Arnie | VENONAT L15 | 对象(ROUTE_35) |  |
+|  | 360 | `TRAINER_BUG_CATCHER_ARNIE_2` | BUG_CATCHER | Arnie | VENONAT L36 | 电话重战变体（联系人 ARNIE） |  |
+|  | 449 | `TRAINER_BUG_CATCHER_ARNIE_3` | BUG_CATCHER | Arnie | VENOMOTH L43 | 电话重战变体（联系人 ARNIE） |  |
+|  | 513 | `TRAINER_BUG_CATCHER_ARNIE_4` | BUG_CATCHER | Arnie | NINCADA L45 / VENOMOTH L56 | 电话重战变体（联系人 ARNIE） |  |
+| 77 | 72 | `TRAINER_BIRD_KEEPER_GS_BRYAN` | BIRD_KEEPER_GS | Bryan | PIDGEY L12 / PIDGEOTTO L14 | 对象(ROUTE_35) |  |
+| 78 | 388 | `TRAINER_FIREBREATHER_WALT` | FIREBREATHER | Walt | MAGMAR L11 / MAGMAR L16 | 对象(ROUTE_35) |  |
+|  | 619 | `TRAINER_FIREBREATHER_WALT_2` | FIREBREATHER | Walt | MAGMAR L25 / MAGMAR L32 | 电话重战变体（联系人 WALT） |  |
+|  | 620 | `TRAINER_FIREBREATHER_WALT_3` | FIREBREATHER | Walt | MAGMAR L34 / MAGMAR L37 | 电话重战变体（联系人 WALT） |  |
+|  | 621 | `TRAINER_FIREBREATHER_WALT_4` | FIREBREATHER | Walt | MAGBY L26 / MAGMAR L49 / MAGMORTAR L58 | 电话重战变体（联系人 WALT） |  |
+
+## 自然公园
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 79 | 182 | `TRAINER_POKEFAN_BEVERLY` | POKEFAN | Beverly | SNUBBULL L16 | 对象(NATIONAL_PARK) |  |
+|  | 436 | `TRAINER_POKEFAN_BEVERLY_2` | POKEFAN | Beverly | SNUBBULL L31 | 电话重战变体（联系人 BEVERLY） |  |
+|  | 437 | `TRAINER_POKEFAN_BEVERLY_3` | POKEFAN | Beverly | GRANBULL L43 | 电话重战变体（联系人 BEVERLY） |  |
+|  | 611 | `TRAINER_POKEFAN_BEVERLY_4` | POKEFAN | Beverly | GRANBULL L53 | 电话重战变体（联系人 BEVERLY） |  |
+| 80 | 184 | `TRAINER_LASS_KRISE` | LASS | Krise | ODDISH L14 / CUBONE L17 | 对象(NATIONAL_PARK) |  |
+|  | 613 | `TRAINER_LASS_KRISE_2` | LASS | Krise | ODDISH L21 / CUBONE L31 | 电话重战变体（联系人 KRISE） |  |
+|  | 614 | `TRAINER_LASS_KRISE_3` | LASS | Krise | GLOOM L32 / MAROWAK L38 | 电话重战变体（联系人 KRISE） |  |
+|  | 615 | `TRAINER_LASS_KRISE_4` | LASS | Krise | VILEPLUME L53 / MAROWAK L54 | 电话重战变体（联系人 KRISE） |  |
+| 81 | 181 | `TRAINER_POKEFAN_M_WILLIAM` | POKEFAN_M | William | RAICHU L16 | 对象(NATIONAL_PARK) |  |
+| 82 | 178 | `TRAINER_SCHOOL_KID_M_JACK` | SCHOOL_KID_M | Jack | ODDISH L12 / VOLTORB L15 | 对象(NATIONAL_PARK) |  |
+|  | 430 | `TRAINER_SCHOOL_KID_M_JACK_2` | SCHOOL_KID_M | Jack | GLOOM L29 / VOLTORB L17 | 电话重战变体（联系人 JACK） |  |
+|  | 431 | `TRAINER_SCHOOL_KID_M_JACK_3` | SCHOOL_KID_M | Jack | VILEPLUME L38 / ELECTRODE L31 | 电话重战变体（联系人 JACK） |  |
+|  | 503 | `TRAINER_SCHOOL_KID_M_JACK_4` | SCHOOL_KID_M | Jack | ELECTRODE L43 / VILEPLUME L52 / ARCANINE L52 | 电话重战变体（联系人 JACK） |  |
+
+## 36号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 83 | 395 | `TRAINER_PSYCHIC_M_MARK` | PSYCHIC_M | Mark | ABRA L14 / ABRA L14 / KADABRA L16 | 对象(ROUTE_36) |  |
+| 84 | 24 | `TRAINER_SCHOOL_KID_M_ALAN` | SCHOOL_KID_M | Alan | TANGELA L17 | 对象(ROUTE_36) |  |
+|  | 432 | `TRAINER_SCHOOL_KID_M_ALAN_2` | SCHOOL_KID_M | Alan | TANGELA L32 / YANMA L30 | 电话重战变体（联系人 ALAN） |  |
+|  | 433 | `TRAINER_SCHOOL_KID_M_ALAN_3` | SCHOOL_KID_M | Alan | XATU L32 / TANGROWTH L36 / QUAGSIRE L32 / YANMEGA L34 | 电话重战变体（联系人 ALAN） |  |
+|  | 505 | `TRAINER_SCHOOL_KID_M_ALAN_4` | SCHOOL_KID_M | Alan | XATU L47 / TANGROWTH L54 / QUAGSIRE L47 / YANMEGA L54 | 电话重战变体（联系人 ALAN） |  |
+
+## 37号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 85 | 81 | `TRAINER_TWINS_TORI_AND_TIL` | TWINS | Tori & Til | 【双打】MARILL L16 / MAREEP L16 | 对象(ROUTE_37) |  |
+| 86 | 386 | `TRAINER_PSYCHIC_M_GREG` | PSYCHIC_M | Greg | DROWZEE L17 | 对象(ROUTE_37) |  |
+| 87 | 679 | `TRAINER_BEAUTY_CALLIE` | BEAUTY | Callie | CLEFABLE L16 / WIGGLYTUFF L16 | 对象(ROUTE_37) |  |
+| 88 | 680 | `TRAINER_BEAUTY_KASSANDRA` | BEAUTY | Kassandra | WIGGLYTUFF L16 / CLEFABLE L16 | 对象(ROUTE_37) |  |
+
+## 圆朱市·烧焦塔（含劲敌·三战）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 89 | 281 | `TRAINER_FIREBREATHER_RICHARD` | FIREBREATHER | Richard | CHARMELEON L18 | 对象(BURNED_TOWER_1F) |  |
+| 90 | 282 | `TRAINER_FIREBREATHER_NED` | FIREBREATHER | Ned | KOFFING L16 / GROWLITHE L17 / KOFFING L16 | 对象(BURNED_TOWER_1F) |  |
+| 91 | 267 | `TRAINER_RIVAL_SILVER_8` | RIVAL | Silver | GASTLY L20 / MAGNEMITE L18 / ZUBAT L20 / QUILAVA L22 | 脚本 scr_seq_0023_D18R0101.s:25 |  |
+| 92 | 270 | `TRAINER_RIVAL_SILVER_11` | RIVAL | Silver | GASTLY L20 / MAGNEMITE L18 / ZUBAT L20 / CROCONAW L22 | 脚本 scr_seq_0023_D18R0101.s:31 |  |
+| 93 | 263 | `TRAINER_RIVAL_SILVER_4` | RIVAL | Silver | GASTLY L20 / MAGNEMITE L18 / ZUBAT L20 / BAYLEEF L22 | 脚本 scr_seq_0023_D18R0101.s:35 |  |
+
+## 圆朱市·道馆（松叶）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 94 | 494 | `TRAINER_MEDIUM_GEORGINA` | MEDIUM | Georgina | GASTLY L16 / GASTLY L16 / GASTLY L16 / GASTLY L16 / GASTLY L16 | 对象(ECRUTEAK_GYM) |  |
+| 95 | 89 | `TRAINER_MEDIUM_GRACE` | MEDIUM | Grace | HAUNTER L20 / HAUNTER L20 | 对象(ECRUTEAK_GYM) |  |
+| 96 | 493 | `TRAINER_MEDIUM_EDITH` | MEDIUM | Edith | HAUNTER L22 | 对象(ECRUTEAK_GYM) |  |
+| 97 | 46 | `TRAINER_MEDIUM_MARTHA` | MEDIUM | Martha | GASTLY L18 / HAUNTER L20 / GASTLY L20 | 对象(ECRUTEAK_GYM) |  |
+| 98 | 31 | `TRAINER_LEADER_MORTY_MORTY` | LEADER_MORTY | Morty | GASTLY L21 / HAUNTER L21 / GENGAR L25@SITRUS_BERRY / HAUNTER L23 | 脚本 scr_seq_0922_T27GYM0101.s:110 |  |
+
+## 圆朱市·舞蹈剧院（早期打退火箭队员；五姐妹对战在剧情后期）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 99 | 601 | `TRAINER_TEAM_ROCKET_GRUNT_26` | TEAM_ROCKET | Grunt | KOFFING L12 | 脚本 scr_seq_0928_T27R0501.s:225 | 舞蹈剧院（早期剧情） |
+| 100 | 162 | `TRAINER_KIMONO_GIRL_ZUKI` | KIMONO_GIRL | Zuki | UMBREON L38 | 脚本 scr_seq_0928_T27R0501.s:749 | 五姐妹对战为剧情后期 |
+| 101 | 160 | `TRAINER_KIMONO_GIRL_NAOKO` | KIMONO_GIRL | Naoko | ESPEON L38 | 脚本 scr_seq_0928_T27R0501.s:761 | 五姐妹对战为剧情后期 |
+| 102 | 164 | `TRAINER_KIMONO_GIRL_MIKI` | KIMONO_GIRL | Miki | FLAREON L38 | 脚本 scr_seq_0928_T27R0501.s:773 | 五姐妹对战为剧情后期 |
+| 103 | 161 | `TRAINER_KIMONO_GIRL_SAYO` | KIMONO_GIRL | Sayo | JOLTEON L38 | 脚本 scr_seq_0928_T27R0501.s:785 | 五姐妹对战为剧情后期 |
+| 104 | 163 | `TRAINER_KIMONO_GIRL_KUNI` | KIMONO_GIRL | Kuni | VAPOREON L38 | 脚本 scr_seq_0928_T27R0501.s:797 | 五姐妹对战为剧情后期 |
+
+## 38号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 105 | 397 | `TRAINER_SCHOOL_KID_M_CHAD` | SCHOOL_KID_M | Chad | MR_MIME L20 | 对象(ROUTE_38) |  |
+|  | 434 | `TRAINER_SCHOOL_KID_M_CHAD_2` | SCHOOL_KID_M | Chad | MR_MIME L29 / MAGNEMITE L30 | 电话重战变体（联系人 CHAD） |  |
+|  | 435 | `TRAINER_SCHOOL_KID_M_CHAD_3` | SCHOOL_KID_M | Chad | MR_MIME L39 / MAGNETON L38 | 电话重战变体（联系人 CHAD） |  |
+|  | 507 | `TRAINER_SCHOOL_KID_M_CHAD_4` | SCHOOL_KID_M | Chad | MR_MIME L46 / MAGNETON L56 | 电话重战变体（联系人 CHAD） |  |
+| 106 | 82 | `TRAINER_BIRD_KEEPER_GS_TOBY` | BIRD_KEEPER_GS | Toby | DODUO L16 / DODUO L17 / DODUO L18 | 对象(ROUTE_38) |  |
+| 107 | 400 | `TRAINER_LASS_DANA` | LASS | Dana | FLAAFFY L19 / PSYDUCK L19 | 对象(ROUTE_38) |  |
+|  | 464 | `TRAINER_LASS_DANA_2` | LASS | Dana | FLAAFFY L32 / PSYDUCK L31 | 电话重战变体（联系人 DANA） |  |
+|  | 465 | `TRAINER_LASS_DANA_3` | LASS | Dana | GOLDUCK L36 / AMPHAROS L38 | 电话重战变体（联系人 DANA） |  |
+|  | 528 | `TRAINER_LASS_DANA_4` | LASS | Dana | GOLDUCK L51 / AMPHAROS L54 | 电话重战变体（联系人 DANA） |  |
+| 108 | 398 | `TRAINER_BEAUTY_VALERIE` | BEAUTY | Valerie | HOPPIP L18 / SKIPLOOM L18 | 对象(ROUTE_38) |  |
+| 109 | 410 | `TRAINER_SAILOR_HARRY` | SAILOR | Harry | WOOPER L20 | 对象(ROUTE_38) |  |
+
+## 39号道路（含牧场）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 110 | 39 | `TRAINER_SAILOR_EUGENE` | SAILOR | Eugene | POLIWHIRL L17 / RATICATE L17 / KRABBY L19 | 对象(ROUTE_39) |  |
+| 111 | 44 | `TRAINER_POKEFAN_M_DEREK` | POKEFAN_M | Derek | PIKACHU L18 | 对象(ROUTE_39) |  |
+|  | 438 | `TRAINER_POKEFAN_M_DEREK_2` | POKEFAN_M | Derek | TEDDIURSA L24 / PIKACHU L30 | 电话重战变体（联系人 DEREK） |  |
+|  | 439 | `TRAINER_POKEFAN_M_DEREK_3` | POKEFAN_M | Derek | PICHU L13 / TEDDIURSA L15 / PIKACHU L37 / TEDDIURSA L29 | 电话重战变体（联系人 DEREK） |  |
+|  | 610 | `TRAINER_POKEFAN_M_DEREK_4` | POKEFAN_M | Derek | PICHU L18 / TEDDIURSA L22 / PIKACHU L39 / URSARING L47 | 电话重战变体（联系人 DEREK） |  |
+| 112 | 45 | `TRAINER_POKEFAN_RUTH` | POKEFAN | Ruth | PIKACHU L17 | 对象(ROUTE_39) |  |
+| 113 | 389 | `TRAINER_PSYCHIC_M_NELSON` | PSYCHIC_M | Nelson | SLOWPOKE L17 / SLOWPOKE L20 | 对象(ROUTE_39) |  |
+
+## 浅葱市·灯塔
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 114 | 401 | `TRAINER_GENTLEMAN_ALFRED` | GENTLEMAN | Alfred | NOCTOWL L22 | 对象(OLIVINE_LIGHTHOUSE_2F) |  |
+|  | 672 | `TRAINER_GENTLEMAN_ALFRED_2` | GENTLEMAN | Alfred | NOCTOWL L36 | 电话重战变体（联系人 ALFRED） |  |
+|  | 673 | `TRAINER_GENTLEMAN_ALFRED_3` | GENTLEMAN | Alfred | NOCTOWL L42 | 电话重战变体（联系人 ALFRED） |  |
+|  | 674 | `TRAINER_GENTLEMAN_ALFRED_4` | GENTLEMAN | Alfred | NOCTOWL L58 | 电话重战变体（联系人 ALFRED） |  |
+| 115 | 211 | `TRAINER_SAILOR_HUEY` | SAILOR | Huey | POLIWAG L18 / POLIWHIRL L20 | 对象(OLIVINE_LIGHTHOUSE_2F) |  |
+|  | 440 | `TRAINER_SAILOR_HUEY_2` | SAILOR | Huey | POLIWHIRL L34 / POLIWHIRL L36 | 电话重战变体（联系人 HUEY） |  |
+|  | 441 | `TRAINER_SAILOR_HUEY_3` | SAILOR | Huey | POLIWHIRL L38 / POLIWRATH L41 | 电话重战变体（联系人 HUEY） |  |
+|  | 509 | `TRAINER_SAILOR_HUEY_4` | SAILOR | Huey | POLITOED L48 / POLIWRATH L52 | 电话重战变体（联系人 HUEY） |  |
+| 116 | 213 | `TRAINER_SAILOR_KENT` | SAILOR | Kent | KRABBY L18 / KRABBY L20 | 对象(OLIVINE_LIGHTHOUSE_3F) |  |
+| 117 | 217 | `TRAINER_BIRD_KEEPER_GS_DENIS` | BIRD_KEEPER_GS | Denis | SPEAROW L18 / FEAROW L20 / SPEAROW L18 | 对象(OLIVINE_LIGHTHOUSE_3F) |  |
+| 118 | 73 | `TRAINER_BIRD_KEEPER_GS_THEO` | BIRD_KEEPER_GS | Theo | PIDGEY L17 / PIDGEY L15 / PIDGEY L19 / PIDGEY L15 / PIDGEY L15 | 对象(OLIVINE_LIGHTHOUSE_3F) |  |
+| 119 | 215 | `TRAINER_LASS_CONNIE` | LASS | Connie | MARILL L21 | 对象(OLIVINE_LIGHTHOUSE_4F) |  |
+| 120 | 37 | `TRAINER_GENTLEMAN_PRESTON` | GENTLEMAN | Preston | GROWLITHE L18 / GROWLITHE L18 | 对象(OLIVINE_LIGHTHOUSE_4F) |  |
+| 121 | 212 | `TRAINER_SAILOR_TERRELL` | SAILOR | Terrell | POLIWHIRL L20 | 对象(OLIVINE_LIGHTHOUSE_5F) |  |
+| 122 | 214 | `TRAINER_SAILOR_ROBERTO` | SAILOR | Roberto | MACHOP L18 / MACHOP L18 / POLIWHIRL L18 | 对象(OLIVINE_LIGHTHOUSE_5F) |  |
+
+## 浅葱市·道馆（阿蜜）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 123 | 33 | `TRAINER_LEADER_JASMINE_JASMINE` | LEADER_JASMINE | Jasmine | MAGNEMITE L30 / MAGNEMITE L30 / STEELIX L35@SITRUS_BERRY | 脚本 scr_seq_0913_T26GYM0101.s:125 |  |
+
+## 浅葱市
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 124 | 728 | `TRAINER_BEAUTY_CHARLOTTE` | BEAUTY | Charlotte | BELLOSSOM L16 | 脚本 scr_seq_0914_T26PC0101.s:48 |  |
+
+## 40号水路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 125 | 16 | `TRAINER_SWIMMER_M_SIMON` | SWIMMER_M | Simon | TENTACOOL L20 / TENTACOOL L20 | 对象(ROUTE_40) |  |
+| 126 | 9 | `TRAINER_SWIMMER_F_ELAINE` | SWIMMER_F | Elaine | STARYU L21 | 对象(ROUTE_40) |  |
+| 127 | 86 | `TRAINER_SWIMMER_M_RANDALL` | SWIMMER_M | Randall | SHELLDER L18 / WARTORTLE L20 / SHELLDER L18 | 对象(ROUTE_40) |  |
+| 128 | 85 | `TRAINER_SWIMMER_F_PAULA` | SWIMMER_F | Paula | STARYU L19 / SHELLDER L19 | 对象(ROUTE_40) |  |
+
+## 41号水路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 129 | 95 | `TRAINER_SWIMMER_M_CHARLIE` | SWIMMER_M | Charlie | SHELLDER L21 / TENTACOOL L19 / TENTACRUEL L19 | 对象(ROUTE_41) |  |
+| 130 | 96 | `TRAINER_SWIMMER_M_GEORGE` | SWIMMER_M | George | TENTACOOL L16 / TENTACOOL L17 / TENTACOOL L16 / STARYU L19 / TENTACOOL L17 / REMORAID L19 | 对象(ROUTE_41) |  |
+| 131 | 97 | `TRAINER_SWIMMER_M_BERKE` | SWIMMER_M | Berke | QWILFISH L23 | 对象(ROUTE_41) |  |
+| 132 | 99 | `TRAINER_SWIMMER_M_MATTHEW` | SWIMMER_M | Matthew | KRABBY L23 | 对象(ROUTE_41) |  |
+| 133 | 98 | `TRAINER_SWIMMER_M_RONALD` | SWIMMER_M | Ronald | GYARADOS L20 / GYARADOS L20 | 对象(ROUTE_41) |  |
+| 134 | 90 | `TRAINER_SWIMMER_F_KAYLEE` | SWIMMER_F | Kaylee | GOLDEEN L18 / GOLDEEN L20 / SEAKING L20 | 对象(ROUTE_41) |  |
+| 135 | 91 | `TRAINER_SWIMMER_F_SUSIE` | SWIMMER_F | Susie | PSYDUCK L20 / GOLDEEN L22 | 对象(ROUTE_41) |  |
+| 136 | 92 | `TRAINER_SWIMMER_F_DENISE` | SWIMMER_F | Denise | SEEL L22 | 对象(ROUTE_41) |  |
+| 137 | 93 | `TRAINER_SWIMMER_F_KARA` | SWIMMER_F | Kara | STARYU L20 / STARMIE L20 | 对象(ROUTE_41) |  |
+| 138 | 94 | `TRAINER_SWIMMER_F_WENDY` | SWIMMER_F | Wendy | HORSEA L21 / HORSEA L21 | 对象(ROUTE_41) |  |
+
+## 湛蓝市（含神秘人尤塞恩战）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 139 | 498 | `TRAINER_MYSTERY_MAN_EUSINE` | MYSTERY_MAN | Eusine | DROWZEE L25 / HAUNTER L25 / ELECTRODE L27 | 脚本 scr_seq_0875_T24.s:136 | 水君剧情（初次到湛蓝市时） |
+
+## 湛蓝市·道馆（阿四）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 140 | 156 | `TRAINER_BLACK_BELT_YOSHI` | BLACK_BELT | Yoshi | HITMONLEE L27 | 对象(CIANWOOD_GYM) |  |
+| 141 | 157 | `TRAINER_BLACK_BELT_LAO` | BLACK_BELT | Lao | HITMONCHAN L27 | 对象(CIANWOOD_GYM) |  |
+| 142 | 251 | `TRAINER_BLACK_BELT_NOB` | BLACK_BELT | Nob | MACHOP L25 / MACHOKE L25 | 对象(CIANWOOD_GYM) |  |
+| 143 | 159 | `TRAINER_BLACK_BELT_LUNG` | BLACK_BELT | Lung | MANKEY L23 / MANKEY L23 / PRIMEAPE L25 | 对象(CIANWOOD_GYM) |  |
+| 144 | 34 | `TRAINER_LEADER_CHUCK_CHUCK` | LEADER_CHUCK | Chuck | PRIMEAPE L29 / POLIWRATH L31@SITRUS_BERRY | 脚本 scr_seq_0877_T24GYM0101.s:29 |  |
+
+## 42号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 145 | 123 | `TRAINER_FISHERMAN_TULLY` | FISHERMAN | Tully | QWILFISH L19 | 对象(ROUTE_42) |  |
+|  | 323 | `TRAINER_FISHERMAN_TULLY_2` | FISHERMAN | Tully | QWILFISH L33 | 电话重战变体（联系人 TULLY） |  |
+|  | 324 | `TRAINER_FISHERMAN_TULLY_3` | FISHERMAN | Tully | GOLDEEN L30 / GOLDEEN L30 / QWILFISH L38 | 电话重战变体（联系人 TULLY） |  |
+|  | 517 | `TRAINER_FISHERMAN_TULLY_4` | FISHERMAN | Tully | SEAKING L41 / SEAKING L50 / QWILFISH L53 | 电话重战变体（联系人 TULLY） |  |
+| 146 | 129 | `TRAINER_POKE_MANIAC_SHANE` | POKE_MANIAC | Shane | NIDORINA L17 / NIDORINO L17 | 对象(ROUTE_42) |  |
+| 147 | 134 | `TRAINER_HIKER_BENJAMIN` | HIKER | Benjamin | DIGLETT L15 / GEODUDE L15 / DUGTRIO L17 | 对象(ROUTE_42) |  |
+
+## 钢铁山（深层需冲浪/攀瀑）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 148 | 537 | `TRAINER_POKE_MANIAC_HARRISON` | POKE_MANIAC | Harrison | NIDOKING L17 / NIDOQUEEN L17 | 对象(MOUNT_MORTAR_1F_BACK) |  |
+| 149 | 539 | `TRAINER_SUPER_NERD_MARKUS` | SUPER_NERD | Markus | SLOWPOKE L19 | 对象(MOUNT_MORTAR_1F_BACK) |  |
+| 150 | 538 | `TRAINER_SUPER_NERD_HUGH` | SUPER_NERD | Hugh | SEADRA L39 | 对象(MOUNT_MORTAR_2F) |  |
+| 151 | 158 | `TRAINER_BLACK_BELT_KIYO` | BLACK_BELT | Kiyo | HITMONLEE L34 / HITMONCHAN L34 | 脚本 scr_seq_0098_D38R0104.s:18 |  |
+
+## 43号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 152 | 403 | `TRAINER_CAMPER_SPENCER` | CAMPER | Spencer | SANDSHREW L18 / SANDSLASH L18 / ZUBAT L20 | 对象(ROUTE_43) |  |
+| 153 | 402 | `TRAINER_PICNICKER_TIFFANY` | PICNICKER | Tiffany | CLEFAIRY L21 | 对象(ROUTE_43) |  |
+|  | 466 | `TRAINER_PICNICKER_TIFFANY_2` | PICNICKER | Tiffany | CLEFAIRY L34 | 电话重战变体（联系人 TIFFANY） |  |
+|  | 467 | `TRAINER_PICNICKER_TIFFANY_3` | PICNICKER | Tiffany | CLEFABLE L41 | 电话重战变体（联系人 TIFFANY） |  |
+|  | 522 | `TRAINER_PICNICKER_TIFFANY_4` | PICNICKER | Tiffany | CLEFABLE L61 | 电话重战变体（联系人 TIFFANY） |  |
+| 154 | 131 | `TRAINER_POKE_MANIAC_BRENT` | POKE_MANIAC | Brent | NIDORINA L20 / NIDORINO L24 | 对象(ROUTE_43) |  |
+|  | 172 | `TRAINER_POKE_MANIAC_BRENT_2` | POKE_MANIAC | Brent | NIDORINA L32 / NIDORINO L34 / GYARADOS L32 | 电话重战变体（联系人 BRENT） |  |
+|  | 173 | `TRAINER_POKE_MANIAC_BRENT_3` | POKE_MANIAC | Brent | GYARADOS L41 / LICKITUNG L38 / NIDORINA L38 / NIDORINO L43 | 电话重战变体（联系人 BRENT） |  |
+|  | 530 | `TRAINER_POKE_MANIAC_BRENT_4` | POKE_MANIAC | Brent | GYARADOS L48 / LICKITUNG L40 / NIDOQUEEN L58 / NIDOKING L58 | 电话重战变体（联系人 BRENT） |  |
+| 155 | 130 | `TRAINER_POKE_MANIAC_BECKETT` | POKE_MANIAC | Beckett | SLOWBRO L20 | 对象(ROUTE_43) |  |
+| 156 | 132 | `TRAINER_POKE_MANIAC_RON` | POKE_MANIAC | Ron | NIDOKING L20 | 对象(ROUTE_43) |  |
+| 157 | 122 | `TRAINER_FISHERMAN_MARVIN` | FISHERMAN | Marvin | MAGIKARP L10 / GYARADOS L20 / MAGIKARP L15 | 对象(ROUTE_43) |  |
+
+## 愤怒湖
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 158 | 126 | `TRAINER_FISHERMAN_ANDRE` | FISHERMAN | Andre | GYARADOS L27 | 对象(LAKE_OF_RAGE) |  |
+| 159 | 127 | `TRAINER_FISHERMAN_RAYMOND` | FISHERMAN | Raymond | MAGIKARP L22 / MAGIKARP L22 / MAGIKARP L22 / MAGIKARP L22 | 对象(LAKE_OF_RAGE) |  |
+| 160 | 109 | `TRAINER_ACE_TRAINER_M_ALTON` | ACE_TRAINER_M | Alton | IVYSAUR L24 / CHARMELEON L24 / WARTORTLE L24 | 对象(LAKE_OF_RAGE) |  |
+| 161 | 116 | `TRAINER_ACE_TRAINER_F_LOIS` | ACE_TRAINER_F | Lois | MAREEP L25 / NINETALES L25 | 对象(LAKE_OF_RAGE) |  |
+
+## 卡吉镇·火箭队总部
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 162 | 216 | `TRAINER_TEAM_ROCKET_GRUNT_15` | TEAM_ROCKET | Grunt | RATTATA L16 / RATTATA L16 / RATTATA L16 / RATTATA L16 | 对象(TEAM_ROCKET_HEADQUARTERS_B1F) |  |
+| 163 | 470 | `TRAINER_SCIENTIST_GS_GREGG` | SCIENTIST_GS | Gregg | MAGNEMITE L20 / MAGNEMITE L20 / MAGNEMITE L20 | 对象(TEAM_ROCKET_HEADQUARTERS_B1F) |  |
+| 164 | 220 | `TRAINER_TEAM_ROCKET_GRUNT_18` | TEAM_ROCKET | Grunt | VENONAT L18 / VENONAT L18 | 对象(TEAM_ROCKET_HEADQUARTERS_B2F) |  |
+| 165 | 218 | `TRAINER_TEAM_ROCKET_GRUNT_16` | TEAM_ROCKET | Grunt | GOLBAT L18 | 对象(TEAM_ROCKET_HEADQUARTERS_B2F) |  |
+| 166 | 219 | `TRAINER_TEAM_ROCKET_GRUNT_17` | TEAM_ROCKET | Grunt | RATTATA L17 / ZUBAT L17 / RATTATA L17 | 对象(TEAM_ROCKET_HEADQUARTERS_B2F) |  |
+| 167 | 468 | `TRAINER_SCIENTIST_GS_ROSS` | SCIENTIST_GS | Ross | KOFFING L22 / KOFFING L22 | 对象(TEAM_ROCKET_HEADQUARTERS_B3F) |  |
+| 168 | 469 | `TRAINER_SCIENTIST_GS_MITCH` | SCIENTIST_GS | Mitch | DITTO L24 | 对象(TEAM_ROCKET_HEADQUARTERS_B3F) |  |
+| 169 | 222 | `TRAINER_TEAM_ROCKET_GRUNT_19` | TEAM_ROCKET | Grunt | RATICATE L19 | 对象(TEAM_ROCKET_HEADQUARTERS_B3F) |  |
+| 170 | 404 | `TRAINER_TEAM_ROCKET_F_GRUNT_5` | TEAM_ROCKET_F | Grunt | EKANS L18 / GLOOM L18 | 对象(TEAM_ROCKET_HEADQUARTERS_B3F) |  |
+| 171 | 223 | `TRAINER_TEAM_ROCKET_GRUNT_20` | TEAM_ROCKET | Grunt | DROWZEE L17 / ZUBAT L19 | 脚本 scr_seq_0089_D35R0102.s:182 等10处 |  |
+| 172 | 224 | `TRAINER_TEAM_ROCKET_GRUNT_21` | TEAM_ROCKET | Grunt | ZUBAT L16 / GRIMER L17 / RATTATA L18 | 脚本 scr_seq_0089_D35R0102.s:193 等10处 |  |
+| 173 | 488 | `TRAINER_EXECUTIVE_PETREL_PETREL_2` | EXECUTIVE_PETREL | Petrel | ZUBAT L22 / RATICATE L24 / KOFFING L22 | 脚本 scr_seq_0091_D35R0104.s:285 |  |
+
+## 卡吉镇·道馆（柳伯）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 174 | 482 | `TRAINER_BOARDER_DEANDRE` | BOARDER | Deandre | SEEL L25 / DEWGONG L26 / SEEL L25 | 对象(MAHOGANY_GYM_LEADER_ROOM) |  |
+| 175 | 484 | `TRAINER_BOARDER_GERARDO` | BOARDER | Gerardo | SHELLDER L25 / CLOYSTER L26 / SEEL L25 | 对象(MAHOGANY_GYM_LEADER_ROOM) |  |
+| 176 | 481 | `TRAINER_SKIER_JILL` | SKIER | Jill | DEWGONG L29 | 对象(MAHOGANY_GYM_LEADER_ROOM) |  |
+| 177 | 480 | `TRAINER_SKIER_DIANA` | SKIER | Diana | JYNX L29 | 对象(MAHOGANY_GYM_ROOM_2) |  |
+| 178 | 483 | `TRAINER_BOARDER_PATTON` | BOARDER | Patton | SWINUB L27 / SWINUB L27 | 对象(MAHOGANY_GYM_ROOM_2) |  |
+| 179 | 32 | `TRAINER_LEADER_PRYCE_PRYCE` | LEADER_PRYCE | Pryce | SEEL L30 / DEWGONG L32 / PILOSWINE L34@SITRUS_BERRY | 脚本 scr_seq_0932_T28GYM0101.s:77 |  |
+
+## 满金市·电波塔（火箭队事件·第7枚徽章后触发）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 180 | 187 | `TRAINER_TEAM_ROCKET_GRUNT_5` | TEAM_ROCKET | Grunt | RATTATA L21 / RATTATA L21 / RATTATA L23 / RATTATA L23 / RATTATA L23 | 对象(GOLDENROD_RADIO_TOWER_2F) |  |
+| 181 | 198 | `TRAINER_TEAM_ROCKET_F_GRUNT_2` | TEAM_ROCKET_F | Grunt | ARBOK L26 | 对象(GOLDENROD_RADIO_TOWER_2F) |  |
+| 182 | 188 | `TRAINER_TEAM_ROCKET_GRUNT_6` | TEAM_ROCKET | Grunt | ZUBAT L26 / ZUBAT L26 | 对象(GOLDENROD_RADIO_TOWER_2F) |  |
+| 183 | 186 | `TRAINER_TEAM_ROCKET_GRUNT_4` | TEAM_ROCKET | Grunt | GRIMER L23 / GRIMER L23 / MUK L25 | 对象(GOLDENROD_RADIO_TOWER_2F) |  |
+| 184 | 189 | `TRAINER_TEAM_ROCKET_GRUNT_7` | TEAM_ROCKET | Grunt | KOFFING L23 / GRIMER L23 / ZUBAT L23 / RATTATA L23 | 对象(GOLDENROD_RADIO_TOWER_3F) |  |
+| 185 | 190 | `TRAINER_TEAM_ROCKET_GRUNT_8` | TEAM_ROCKET | Grunt | WEEZING L26 | 对象(GOLDENROD_RADIO_TOWER_3F) |  |
+| 186 | 471 | `TRAINER_SCIENTIST_GS_GARETT` | SCIENTIST_GS | Garett | MAGNEMITE L27 / MAGNEMITE L27 / MAGNEMITE L27 | 对象(GOLDENROD_RADIO_TOWER_3F) |  |
+| 187 | 191 | `TRAINER_TEAM_ROCKET_GRUNT_9` | TEAM_ROCKET | Grunt | RATICATE L24 / KOFFING L26 | 对象(GOLDENROD_RADIO_TOWER_3F) |  |
+| 188 | 472 | `TRAINER_SCIENTIST_GS_TRENTON` | SCIENTIST_GS | Trenton | PORYGON L30 | 对象(GOLDENROD_RADIO_TOWER_4F) |  |
+| 189 | 192 | `TRAINER_TEAM_ROCKET_GRUNT_10` | TEAM_ROCKET | Grunt | ZUBAT L22 / GOLBAT L24 / GRIMER L22 | 对象(GOLDENROD_RADIO_TOWER_4F) |  |
+| 190 | 706 | `TRAINER_EXECUTIVE_PROTON_PROTON_2` | EXECUTIVE_PROTON | Proton | GOLBAT L28 / WEEZING L33 | 对象(GOLDENROD_RADIO_TOWER_4F) |  |
+| 191 | 478 | `TRAINER_EXECUTIVE_ARIANA_ARIANA` | EXECUTIVE_ARIANA | Ariana | ARBOK L32 / VILEPLUME L32 / MURKROW L32 | 对象(GOLDENROD_RADIO_TOWER_5F) |  |
+|  | 479 | `TRAINER_EXECUTIVE_ARIANA_ARIANA_2` | EXECUTIVE_ARIANA | Ariana | ARBOK L25 / GLOOM L25 / MURKROW L27 | 未引用变体（预留/残留，用途待确认） |  |
+| 192 | 185 | `TRAINER_TEAM_ROCKET_GRUNT_3` | TEAM_ROCKET | Grunt | RATICATE L24 / RATICATE L24 | 脚本 scr_seq_0029_D23R0101.s:400 |  |
+| 193 | 200 | `TRAINER_TEAM_ROCKET_F_GRUNT_4` | TEAM_ROCKET_F | Grunt | EKANS L21 / ODDISH L23 / EKANS L21 / GLOOM L24 | 脚本 scr_seq_0032_D23R0104.s:144 |  |
+| 194 | 487 | `TRAINER_EXECUTIVE_PETREL_PETREL` | EXECUTIVE_PETREL | Petrel | KOFFING L30 / KOFFING L30 / KOFFING L30 / WEEZING L32 / KOFFING L30 / KOFFING L30 | 脚本 scr_seq_0033_D23R0105.s:123 |  |
+| 195 | 485 | `TRAINER_EXECUTIVE_ARCHER_ARCHER` | EXECUTIVE_ARCHER | Archer | HOUNDOUR L35 / KOFFING L35 / HOUNDOOM L38 | 脚本 scr_seq_0034_D23R0106.s:28 |  |
+
+## 满金市·地下通道 B2F / 仓库
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 196 | 193 | `TRAINER_TEAM_ROCKET_GRUNT_11` | TEAM_ROCKET | Grunt | MUK L23 / KOFFING L23 / RATTATA L25 | 对象(GOLDENROD_TUNNEL_B2F) |  |
+| 197 | 228 | `TRAINER_TEAM_ROCKET_GRUNT_23` | TEAM_ROCKET | Grunt | KOFFING L24 / MUK L24 | 对象(GOLDENROD_TUNNEL_B2F) |  |
+| 198 | 195 | `TRAINER_TEAM_ROCKET_GRUNT_12` | TEAM_ROCKET | Grunt | RATTATA L27 | 对象(GOLDENROD_TUNNEL_B2F) |  |
+| 199 | 199 | `TRAINER_TEAM_ROCKET_F_GRUNT_3` | TEAM_ROCKET_F | Grunt | GLOOM L25 / GLOOM L25 | 对象(GOLDENROD_TUNNEL_B2F) |  |
+| 200 | 283 | `TRAINER_BURGLAR_ORSON` | BURGLAR | Orson | GROWLITHE L26 / KOFFING L24 | 对象(GOLDENROD_TUNNEL_B2F) |  |
+| 201 | 14 | `TRAINER_BURGLAR_DUNCAN` | BURGLAR | Duncan | KOFFING L23 / MAGMAR L25 / KOFFING L23 | 对象(GOLDENROD_TUNNEL_B2F) |  |
+| 202 | 196 | `TRAINER_TEAM_ROCKET_GRUNT_13` | TEAM_ROCKET | Grunt | RATICATE L24 / GOLBAT L24 | 对象(GOLDENROD_TUNNEL_WAREHOUSE) |  |
+| 203 | 197 | `TRAINER_TEAM_ROCKET_GRUNT_14` | TEAM_ROCKET | Grunt | GRIMER L26 / WEEZING L23 | 对象(GOLDENROD_TUNNEL_WAREHOUSE) |  |
+| 204 | 227 | `TRAINER_TEAM_ROCKET_GRUNT_22` | TEAM_ROCKET | Grunt | KOFFING L25 / KOFFING L25 | 对象(GOLDENROD_TUNNEL_WAREHOUSE) |  |
+| 205 | 289 | `TRAINER_RIVAL_SILVER_18` | RIVAL | Silver | GOLBAT L32 / MAGNEMITE L30 / HAUNTER L32 / SNEASEL L34 / QUILAVA L34 | 脚本 scr_seq_0096_D37R0104.s:425 |  |
+| 206 | 271 | `TRAINER_RIVAL_SILVER_12` | RIVAL | Silver | GOLBAT L30 / MAGNEMITE L28 / HAUNTER L30 / SNEASEL L32 / FERALIGATR L32 | 脚本 scr_seq_0096_D37R0104.s:431 |  |
+| 207 | 288 | `TRAINER_RIVAL_SILVER_17` | RIVAL | Silver | GOLBAT L32 / MAGNEMITE L30 / HAUNTER L32 / SNEASEL L34 / MEGANIUM L34 | 脚本 scr_seq_0096_D37R0104.s:435 |  |
+
+## 44号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 208 | 405 | `TRAINER_PSYCHIC_M_PHIL` | PSYCHIC_M | Phil | NATU L27 / KADABRA L29 | 对象(ROUTE_44) |  |
+| 209 | 125 | `TRAINER_FISHERMAN_EDGAR` | FISHERMAN | Edgar | REMORAID L28 / REMORAID L28 | 对象(ROUTE_44) |  |
+| 210 | 124 | `TRAINER_FISHERMAN_WILTON` | FISHERMAN | Wilton | GOLDEEN L26 / GOLDEEN L26 / SEAKING L28 | 对象(ROUTE_44) |  |
+|  | 325 | `TRAINER_FISHERMAN_WILTON_2` | FISHERMAN | Wilton | GOLDEEN L32 / GOLDEEN L32 / SEAKING L36 | 电话重战变体（联系人 WILTON） |  |
+|  | 450 | `TRAINER_FISHERMAN_WILTON_3` | FISHERMAN | Wilton | GOLDEEN L32 / SEAKING L36 / SEAKING L40 | 电话重战变体（联系人 WILTON） |  |
+|  | 608 | `TRAINER_FISHERMAN_WILTON_4` | FISHERMAN | Wilton | SEAKING L42 / SEAKING L46 / SEAKING L63 | 电话重战变体（联系人 WILTON） |  |
+| 211 | 408 | `TRAINER_ACE_TRAINER_F_CYBIL` | ACE_TRAINER_F | Cybil | MAREEP L29 / BELLOSSOM L29 | 对象(ROUTE_44) |  |
+| 212 | 407 | `TRAINER_ACE_TRAINER_M_ALLEN` | ACE_TRAINER_M | Allen | CHARMELEON L29 / MAGNEMITE L29 | 对象(ROUTE_44) |  |
+| 213 | 406 | `TRAINER_POKE_MANIAC_ZACH` | POKE_MANIAC | Zach | RHYHORN L30 | 对象(ROUTE_44) |  |
+| 214 | 137 | `TRAINER_BIRD_KEEPER_GS_VANCE` | BIRD_KEEPER_GS | Vance | HOOTHOOT L28 / PIDGEOTTO L28 | 对象(ROUTE_44) |  |
+|  | 447 | `TRAINER_BIRD_KEEPER_GS_VANCE_2` | BIRD_KEEPER_GS | Vance | HOOTHOOT L33 / PIDGEOTTO L32 | 电话重战变体（联系人 VANCE） |  |
+|  | 448 | `TRAINER_BIRD_KEEPER_GS_VANCE_3` | BIRD_KEEPER_GS | Vance | PIDGEOTTO L37 / PIDGEOT L38 / NOCTOWL L42 | 电话重战变体（联系人 VANCE） |  |
+|  | 612 | `TRAINER_BIRD_KEEPER_GS_VANCE_4` | BIRD_KEEPER_GS | Vance | PIDGEOT L56 / PIDGEOT L44 / NOCTOWL L54 | 电话重战变体（联系人 VANCE） |  |
+
+## 烟墨市·道馆（小桩）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 215 | 110 | `TRAINER_ACE_TRAINER_M_PAULO` | ACE_TRAINER_M | Paulo | DRATINI L35 / SEADRA L35 / DRATINI L35 | 对象(BLACKTHORN_GYM) |  |
+| 216 | 117 | `TRAINER_ACE_TRAINER_F_LOLA` | ACE_TRAINER_F | Lola | DRATINI L35 / DRAGONAIR L37 | 对象(BLACKTHORN_GYM) |  |
+| 217 | 112 | `TRAINER_ACE_TRAINER_M_CODY` | ACE_TRAINER_M | Cody | HORSEA L35 / SEADRA L37 | 对象(BLACKTHORN_GYM) |  |
+| 218 | 119 | `TRAINER_ACE_TRAINER_F_FRAN` | ACE_TRAINER_F | Fran | SEADRA L38 | 对象(BLACKTHORN_GYM) |  |
+| 219 | 111 | `TRAINER_ACE_TRAINER_M_MIKE` | ACE_TRAINER_M | Mike | DRAGONAIR L38 | 对象(BLACKTHORN_GYM) |  |
+| 220 | 35 | `TRAINER_LEADER_CLAIR_CLAIR` | LEADER_CLAIR | Clair | GYARADOS L38 / DRAGONAIR L38 / DRAGONAIR L38 / KINGDRA L41@SITRUS_BERRY | 脚本 scr_seq_0943_T30GYM0101.s:94 |  |
+|  | 734 | `TRAINER_LEADER_CLAIR_CLAIR_3` | LEADER_CLAIR | Clair | DRAGONAIR L52 / KINGDRA L56 / DRAGONITE L60 | 电话重战变体（联系人 CLAIR） |  |
+
+## 龙穴
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 221 | 500 | `TRAINER_ACE_TRAINER_M_KOBE` | ACE_TRAINER_M | Kobe | DRAGONAIR L37 | 对象(DRAGONS_DEN) |  |
+| 222 | 501 | `TRAINER_ACE_TRAINER_F_PIPER` | ACE_TRAINER_F | Piper | HORSEA L33 / HORSEA L33 / SEADRA L35 | 对象(DRAGONS_DEN) |  |
+| 223 | 502 | `TRAINER_TWINS_CLEA_AND_GIL` | TWINS | Clea & Gil | 【双打】DRATINI L35 / DRATINI L35 | 对象(DRAGONS_DEN) |  |
+
+## 45号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 224 | 143 | `TRAINER_HIKER_ERIK` | HIKER | Erik | MACHOP L24 / GRAVELER L27 / MACHOP L27 | 对象(ROUTE_45) |  |
+| 225 | 108 | `TRAINER_ACE_TRAINER_M_RYAN` | ACE_TRAINER_M | Ryan | PIDGEOT L25 / ELECTABUZZ L27 | 对象(ROUTE_45) |  |
+| 226 | 145 | `TRAINER_HIKER_PARRY` | HIKER | Parry | ONIX L30 | 对象(ROUTE_45) |  |
+|  | 451 | `TRAINER_HIKER_PARRY_2` | HIKER | Parry | ONIX L38 / GRAVELER L35 | 电话重战变体（联系人 PARRY） |  |
+|  | 452 | `TRAINER_HIKER_PARRY_3` | HIKER | Parry | STEELIX L41 / GRAVELER L37 | 电话重战变体（联系人 PARRY） |  |
+|  | 606 | `TRAINER_HIKER_PARRY_4` | HIKER | Parry | STEELIX L56 / GOLEM L52 | 电话重战变体（联系人 PARRY） |  |
+| 227 | 121 | `TRAINER_ACE_TRAINER_F_KELLY` | ACE_TRAINER_F | Kelly | MARILL L27 / WARTORTLE L24 / WARTORTLE L24 | 对象(ROUTE_45) |  |
+| 228 | 17 | `TRAINER_BLACK_BELT_KENJI` | BLACK_BELT | Kenji | MACHOKE L28 | 对象(ROUTE_45) |  |
+|  | 250 | `TRAINER_BLACK_BELT_KENJI_2` | BLACK_BELT | Kenji | ONIX L27 / HITMONLEE L32 / ONIX L27 / MACHOKE L32 | 电话重战变体（联系人 KENJI） |  |
+|  | 278 | `TRAINER_BLACK_BELT_KENJI_3` | BLACK_BELT | Kenji | ONIX L30 / MACHAMP L37 / ONIX L33 / HITMONLEE L41 | 电话重战变体（联系人 KENJI） |  |
+|  | 605 | `TRAINER_BLACK_BELT_KENJI_4` | BLACK_BELT | Kenji | ONIX L41 / MACHAMP L53 / ONIX L49 / HITMONLEE L53 | 电话重战变体（联系人 KENJI） |  |
+| 229 | 146 | `TRAINER_HIKER_TIMOTHY` | HIKER | Timothy | DIGLETT L27 / DUGTRIO L27 | 对象(ROUTE_45) |  |
+| 230 | 144 | `TRAINER_HIKER_MICHAEL` | HIKER | Michael | GEODUDE L25 / GRAVELER L25 / GOLEM L25 | 对象(ROUTE_45) |  |
+
+## 46号道路（可选）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 231 | 154 | `TRAINER_HIKER_BAILEY` | HIKER | Bailey | GEODUDE L13 / GEODUDE L13 / GEODUDE L13 / GEODUDE L13 / GEODUDE L13 | 对象(ROUTE_46) |  |
+| 232 | 147 | `TRAINER_CAMPER_TED` | CAMPER | Ted | MANKEY L17 | 对象(ROUTE_46) |  |
+| 233 | 151 | `TRAINER_PICNICKER_ERIN` | PICNICKER | Erin | PONYTA L17 / ODDISH L14 | 对象(ROUTE_46) |  |
+|  | 335 | `TRAINER_PICNICKER_ERIN_2` | PICNICKER | Erin | GLOOM L32 / RAPIDASH L41 | 电话重战变体（联系人 ERIN） |  |
+|  | 453 | `TRAINER_PICNICKER_ERIN_3` | PICNICKER | Erin | BELLOSSOM L46 / SUNFLORA L39 / RAPIDASH L48 | 电话重战变体（联系人 ERIN） |  |
+|  | 603 | `TRAINER_PICNICKER_ERIN_4` | PICNICKER | Erin | CHERRIM L42 / SUNFLORA L46 / BELLOSSOM L49 / RAPIDASH L53 | 电话重战变体（联系人 ERIN） |  |
+
+## 47/48号道路·崖边通道·狩猎区（可选）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 234 | 730 | `TRAINER_DOUBLE_TEAM_THOM_AND_KAE` | DOUBLE_TEAM | Thom & Kae | 【双打】ELECTABUZZ L25 / MAGMAR L25 | 对象(ROUTE_47) |  |
+| 235 | 732 | `TRAINER_CAMPER_GRANT` | CAMPER | Grant | SKIPLOOM L21 / MARILL L21 | 对象(ROUTE_47) |  |
+| 236 | 729 | `TRAINER_YOUNG_COUPLE_DUFF_AND_EDA` | YOUNG_COUPLE | Duff & Eda | 【双打】ONIX L22 / CLOYSTER L22 | 对象(ROUTE_47) |  |
+| 237 | 731 | `TRAINER_HIKER_DEVIN` | HIKER | Devin | DUNSPARCE L19 / DUNSPARCE L19 / DUNSPARCE L19 | 对象(ROUTE_47) |  |
+
+## 27号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 238 | 115 | `TRAINER_ACE_TRAINER_F_MEGAN` | ACE_TRAINER_F | Megan | BULBASAUR L32 / IVYSAUR L32 / VENUSAUR L32 | 对象(ROUTE_27) |  |
+| 239 | 103 | `TRAINER_ACE_TRAINER_M_BLAKE` | ACE_TRAINER_M | Blake | MAGNETON L33 / QUAGSIRE L31 / EXEGGCUTE L31 | 对象(ROUTE_27) |  |
+| 240 | 414 | `TRAINER_BIRD_KEEPER_GS_JOSE_2` | BIRD_KEEPER_GS | Jose | FARFETCHD L40 | 对象(ROUTE_27) |  |
+| 241 | 104 | `TRAINER_ACE_TRAINER_M_BRIAN` | ACE_TRAINER_M | Brian | MAREEP L35 | 对象(ROUTE_27) |  |
+| 242 | 412 | `TRAINER_PSYCHIC_M_ELI` | PSYCHIC_M | Eli | STARMIE L30 / EXEGGCUTE L30 / GIRAFARIG L34 | 对象(ROUTE_27) |  |
+| 243 | 114 | `TRAINER_ACE_TRAINER_F_REENA` | ACE_TRAINER_F | Reena | GROWLITHE L36 / NIDORINA L33 / STARYU L36 | 对象(ROUTE_27) |  |
+|  | 444 | `TRAINER_ACE_TRAINER_F_REENA_2` | ACE_TRAINER_F | Reena | GROWLITHE L38 / NIDORINA L36 / STARYU L38 | 电话重战变体（联系人 REENA） |  |
+|  | 445 | `TRAINER_ACE_TRAINER_F_REENA_3` | ACE_TRAINER_F | Reena | ARCANINE L47 / NIDOQUEEN L43 / STARMIE L47 | 电话重战变体（联系人 REENA） |  |
+|  | 607 | `TRAINER_ACE_TRAINER_F_REENA_4` | ACE_TRAINER_F | Reena | ARCANINE L54 / NIDOQUEEN L53 / STARMIE L56 | 电话重战变体（联系人 REENA） |  |
+
+## 26号道路（含正辉家）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 244 | 413 | `TRAINER_FISHERMAN_SCOTT` | FISHERMAN | Scott | QWILFISH L30 / QWILFISH L30 / SEAKING L34 | 对象(ROUTE_26) |  |
+| 245 | 411 | `TRAINER_PSYCHIC_M_VERNON` | PSYCHIC_M | Vernon | ESPEON L36 | 对象(ROUTE_26) |  |
+| 246 | 36 | `TRAINER_ACE_TRAINER_F_JOYCE` | ACE_TRAINER_F | Joyce | PIKACHU L36 / BLASTOISE L36 | 对象(ROUTE_26) |  |
+| 247 | 102 | `TRAINER_ACE_TRAINER_M_GAVEN` | ACE_TRAINER_M | Gaven | VICTREEBEL L32 / KINGLER L32 / FLAREON L32 | 对象(ROUTE_26) |  |
+|  | 456 | `TRAINER_ACE_TRAINER_M_GAVEN_2` | ACE_TRAINER_M | Gaven | VICTREEBEL L34 / KINGLER L34 / FLAREON L34 | 电话重战变体（联系人 GAVEN） |  |
+|  | 457 | `TRAINER_ACE_TRAINER_M_GAVEN_3` | ACE_TRAINER_M | Gaven | VICTREEBEL L38 / KINGLER L39 / FLAREON L38 | 电话重战变体（联系人 GAVEN） |  |
+|  | 604 | `TRAINER_ACE_TRAINER_M_GAVEN_4` | ACE_TRAINER_M | Gaven | VICTREEBEL L52 / KINGLER L49 / FLAREON L50 | 电话重战变体（联系人 GAVEN） |  |
+| 248 | 28 | `TRAINER_ACE_TRAINER_M_JAKE` | ACE_TRAINER_M | Jake | PARASECT L33 / GOLDUCK L35 / VAPOREON L33 | 对象(ROUTE_26) |  |
+| 249 | 113 | `TRAINER_ACE_TRAINER_F_JAMIE` | ACE_TRAINER_F | Jamie | RAPIDASH L36 / FLAAFFY L31 | 对象(ROUTE_26) |  |
+|  | 458 | `TRAINER_ACE_TRAINER_F_JAMIE_2` | ACE_TRAINER_F | Jamie | RAPIDASH L38 / AMPHAROS L37 | 电话重战变体（联系人 JAMIE） |  |
+|  | 459 | `TRAINER_ACE_TRAINER_F_JAMIE_3` | ACE_TRAINER_F | Jamie | RAPIDASH L42 / AMPHAROS L40 | 电话重战变体（联系人 JAMIE） |  |
+|  | 609 | `TRAINER_ACE_TRAINER_F_JAMIE_4` | ACE_TRAINER_F | Jamie | RAPIDASH L56 / AMPHAROS L59 | 电话重战变体（联系人 JAMIE） |  |
+
+## 东城瀑布
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 250 | 700 | `TRAINER_ROCKET_BOSS_GIOVANNI` | ROCKET_BOSS | Giovanni | NIDOKING L42 / KANGASKHAN L40 / HONCHKROW L43 / NIDOQUEEN L46 | 脚本 scr_seq_0114_D45R0102.s:90 | 奇拉比配信事件限定 |
+
+## 冠军之路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 251 | 268 | `TRAINER_RIVAL_SILVER_9` | RIVAL | Silver | SNEASEL L36 / GOLBAT L38 / MAGNETON L37 / HAUNTER L37 / KADABRA L37 / TYPHLOSION L40 | 脚本 scr_seq_0110_D43R0103.s:53 |  |
+| 252 | 272 | `TRAINER_RIVAL_SILVER_13` | RIVAL | Silver | SNEASEL L36 / GOLBAT L38 / MAGNETON L37 / HAUNTER L37 / KADABRA L37 / FERALIGATR L40 | 脚本 scr_seq_0110_D43R0103.s:59 |  |
+| 253 | 264 | `TRAINER_RIVAL_SILVER_5` | RIVAL | Silver | SNEASEL L36 / GOLBAT L38 / MAGNETON L37 / HAUNTER L37 / KADABRA L37 / MEGANIUM L40 | 脚本 scr_seq_0110_D43R0103.s:63 |  |
+
+## 石英高原·联盟（四天王 / 冠军）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 254 | 490 | `TRAINER_RIVAL_SILVER_20` | RIVAL | Silver | SNEASEL L55 / CROBAT L58 / MAGNETON L55 / GENGAR L56 / ALAKAZAM L56 / TYPHLOSION L60 | 脚本 scr_seq_0819_T10R0101.s:100 | 通关后重打联盟时再战 |
+| 255 | 491 | `TRAINER_RIVAL_SILVER_21` | RIVAL | Silver | SNEASEL L55 / CROBAT L58 / MAGNETON L55 / GENGAR L56 / ALAKAZAM L56 / FERALIGATR L60 | 脚本 scr_seq_0819_T10R0101.s:106 | 通关后重打联盟时再战 |
+| 256 | 489 | `TRAINER_RIVAL_SILVER_19` | RIVAL | Silver | SNEASEL L55 / CROBAT L58 / MAGNETON L55 / GENGAR L56 / ALAKAZAM L56 / MEGANIUM L60 | 脚本 scr_seq_0819_T10R0101.s:110 | 通关后重打联盟时再战 |
+| 257 | 702 | `TRAINER_ELITE_FOUR_WILL_WILL_2` | ELITE_FOUR_WILL | Will | BRONZONG L58 / JYNX L60 / GRUMPIG L59 / SLOWBRO L60 / GARDEVOIR L61 / XATU L62@SITRUS_BERRY | 脚本 scr_seq_0820_T10R0201.s:53 | 通关后重打联盟时的强化阵容 |
+| 258 | 245 | `TRAINER_ELITE_FOUR_WILL_WILL` | ELITE_FOUR_WILL | Will | XATU L40 / JYNX L41 / EXEGGUTOR L41 / SLOWBRO L41 / XATU L42@SITRUS_BERRY | 脚本 scr_seq_0820_T10R0201.s:57 |  |
+| 259 | 703 | `TRAINER_ELITE_FOUR_KOGA_KOGA_2` | ELITE_FOUR_KOGA | Koga | SKUNTANK L61 / VENOMOTH L63 / TOXICROAK L60 / MUK L62@BLACK_SLUDGE / CROBAT L64 / SWALOT L62@LEFTOVERS | 脚本 scr_seq_0821_T10R0301.s:53 | 通关后重打联盟时的强化阵容 |
+| 260 | 247 | `TRAINER_ELITE_FOUR_KOGA_KOGA` | ELITE_FOUR_KOGA | Koga | ARIADOS L40 / VENOMOTH L41 / FORRETRESS L43 / MUK L42@BLACK_SLUDGE / CROBAT L44@SITRUS_BERRY | 脚本 scr_seq_0821_T10R0301.s:57 |  |
+| 261 | 704 | `TRAINER_ELITE_FOUR_BRUNO_BRUNO_2` | ELITE_FOUR_BRUNO | Bruno | HITMONTOP L62 / HITMONLEE L61 / HITMONCHAN L61 / HARIYAMA L62@SITRUS_BERRY / MACHAMP L64 / LUCARIO L64 | 脚本 scr_seq_0822_T10R0401.s:54 | 通关后重打联盟时的强化阵容 |
+| 262 | 418 | `TRAINER_ELITE_FOUR_BRUNO_BRUNO` | ELITE_FOUR_BRUNO | Bruno | HITMONTOP L42 / HITMONLEE L42 / HITMONCHAN L42 / ONIX L43 / MACHAMP L46@SITRUS_BERRY | 脚本 scr_seq_0822_T10R0401.s:58 |  |
+| 263 | 705 | `TRAINER_ELITE_FOUR_KAREN_KAREN_2` | ELITE_FOUR_KAREN | Karen | WEAVILE L62 / SPIRITOMB L62 / ABSOL L62 / HONCHKROW L64 / HOUNDOOM L63 / UMBREON L64@SITRUS_BERRY | 脚本 scr_seq_0823_T10R0501.s:54 | 通关后重打联盟时的强化阵容 |
+| 264 | 246 | `TRAINER_ELITE_FOUR_KAREN_KAREN` | ELITE_FOUR_KAREN | Karen | UMBREON L42 / VILEPLUME L42 / GENGAR L45 / MURKROW L44 / HOUNDOOM L47@SITRUS_BERRY | 脚本 scr_seq_0823_T10R0501.s:58 |  |
+| 265 | 701 | `TRAINER_CHAMPION_LANCE_2` | CHAMPION | Lance | SALAMENCE L72@LUM_BERRY / GYARADOS L68 / GARCHOMP L72 / ALTARIA L73 / CHARIZARD L68 / DRAGONITE L75@SITRUS_BERRY | 脚本 scr_seq_0824_T10R0601.s:72 | 通关后重打联盟时的强化阵容 |
+| 266 | 244 | `TRAINER_CHAMPION_LANCE` | CHAMPION | Lance | GYARADOS L46 / DRAGONITE L49 / DRAGONITE L49 / AERODACTYL L48 / CHARIZARD L48 / DRAGONITE L50@SITRUS_BERRY | 脚本 scr_seq_0824_T10R0601.s:76 |  |
+|  | 733 | `TRAINER_CHAMPION_LANCE_3` | CHAMPION | Lance | GYARADOS L68 / CHARIZARD L68 / DRAGONITE L75 | 未引用变体（预留/残留，用途待确认） |  |
+
+## 水手号 S.S. Aqua（浅葱→枯叶）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 267 | 231 | `TRAINER_GENTLEMAN_EDWARD` | GENTLEMAN | Edward | PERSIAN L41 | 对象(SS_AQUA_1F_SOUTHEAST_ROOMS) |  |
+| 268 | 284 | `TRAINER_BURGLAR_COREY` | BURGLAR | Corey | KOFFING L33 / MAGMAR L36 / KOFFING L33 / KOFFING L38 | 对象(SS_AQUA_1F_SOUTHEAST_ROOMS) |  |
+| 269 | 235 | `TRAINER_HIKER_NOLAND` | HIKER | Noland | BRONZOR L39 / GOLEM L42 | 对象(SS_AQUA_1F_SOUTHWEST_ROOMS) |  |
+| 270 | 236 | `TRAINER_ACE_TRAINER_M_SHAYE` | ACE_TRAINER_M | Shaye | JOLTEON L43 / TANGELA L43 / TAUROS L43 | 对象(SS_AQUA_1F_SOUTHWEST_ROOMS) |  |
+| 271 | 237 | `TRAINER_ACE_TRAINER_F_CAROL` | ACE_TRAINER_F | Carol | ELECTRODE L43 / STARMIE L43 / NINETALES L43 | 对象(SS_AQUA_1F_SOUTHWEST_ROOMS) |  |
+| 272 | 133 | `TRAINER_POKE_MANIAC_MORGAN` | POKE_MANIAC | Morgan | RHYHORN L39 / RHYDON L39 | 对象(SS_AQUA_1F_SOUTHWEST_ROOMS) |  |
+| 273 | 399 | `TRAINER_FIREBREATHER_LYLE` | FIREBREATHER | Lyle | KOFFING L36 / FLAREON L39 / KOFFING L36 | 对象(SS_AQUA_1F_NORTHEAST_ROOMS) |  |
+| 274 | 209 | `TRAINER_BEAUTY_CASSIE` | BEAUTY | Cassie | VILEPLUME L36 / BUTTERFREE L42 | 对象(SS_AQUA_1F_NORTHEAST_ROOMS) |  |
+| 275 | 41 | `TRAINER_GUITARIST_CLYDE` | GUITARIST | Clyde | ELECTABUZZ L42 | 对象(SS_AQUA_1F_NORTHEAST_ROOMS) |  |
+| 276 | 79 | `TRAINER_BUG_CATCHER_KEN` | BUG_CATCHER | Ken | ARIADOS L39 / PINSIR L40 | 对象(SS_AQUA_1F_NORTHEAST_ROOMS) |  |
+| 277 | 424 | `TRAINER_POKEFAN_M_COLIN` | POKEFAN_M | Colin | DELIBIRD L40 | 对象(SS_AQUA_1F_NORTHWEST_ROOMS) |  |
+| 278 | 425 | `TRAINER_TWINS_MEG_AND_PEG` | TWINS | Meg & Peg | 【双打】TEDDIURSA L39 / PHANPY L39 | 对象(SS_AQUA_1F_NORTHWEST_ROOMS) |  |
+|  | 426 | `TRAINER_TWINS_MEG_AND_PEG_2` | TWINS | Meg & Peg | 【双打】PHANPY L39 / TEDDIURSA L39 | 未引用变体（预留/残留，用途待确认） |  |
+| 279 | 367 | `TRAINER_SUPER_NERD_SHAWN` | SUPER_NERD | Shawn | MAGNEMITE L39 / MUK L41@NUGGET / MAGNEMITE L39 | 对象(SS_AQUA_1F_NORTHWEST_ROOMS) |  |
+| 280 | 422 | `TRAINER_PSYCHIC_M_RODNEY` | PSYCHIC_M | Rodney | CHINGLING L37 / HYPNO L41 | 对象(SS_AQUA_1F_NORTHWEST_ROOMS) |  |
+| 281 | 352 | `TRAINER_POKEFAN_GEORGIA` | POKEFAN | Georgia | SENTRET L31 / SENTRET L31 / SENTRET L31 / FURRET L36 / SENTRET L31 | 对象(SS_AQUA_1F_NORTHWEST_ROOMS) |  |
+| 282 | 423 | `TRAINER_POKEFAN_M_JEREMY` | POKEFAN_M | Jeremy | MEOWTH L36 / MEOWTH L36 / MEOWTH L36 | 对象(SS_AQUA_1F_NORTHWEST_ROOMS) |  |
+| 283 | 139 | `TRAINER_PICNICKER_DEBRA` | PICNICKER | Debra | SEAKING L41 | 对象(SS_AQUA_B1F) |  |
+| 284 | 239 | `TRAINER_SAILOR_JEFF` | SAILOR | Jeff | MAKUHITA L40 / RATICATE L40 | 对象(SS_AQUA_B1F) |  |
+| 285 | 242 | `TRAINER_JUGGLER_FRITZ` | JUGGLER | Fritz | MR_MIME L37 / MAGMAR L37 / MACHOKE L37 | 对象(SS_AQUA_B1F) |  |
+| 286 | 128 | `TRAINER_FISHERMAN_JONAH` | FISHERMAN | Jonah | SHELLDER L33 / OCTILLERY L37 / REMORAID L33 / CLOYSTER L37 | 对象(SS_AQUA_B1F) |  |
+| 287 | 240 | `TRAINER_SAILOR_GARRETT` | SAILOR | Garrett | KINGLER L42 | 对象(SS_AQUA_B1F) |  |
+| 288 | 339 | `TRAINER_BLACK_BELT_WAI` | BLACK_BELT | Wai | MACHOKE L38 / MACHOKE L40 / MEDITITE L42 | 对象(SS_AQUA_B1F) |  |
+| 289 | 241 | `TRAINER_SAILOR_KENNETH` | SAILOR | Kenneth | MACHOP L36 / MACHOP L36 / POLIWRATH L36 / MACHOP L36 | 对象(SS_AQUA_B1F) |  |
+| 290 | 428 | `TRAINER_SCHOOL_KID_M_NATE` | SCHOOL_KID_M | Nate | LEDIAN L40 / EXEGGUTOR L40 | 对象(SS_AQUA_B1F) |  |
+| 291 | 429 | `TRAINER_SCHOOL_KID_M_RICKY` | SCHOOL_KID_M | Ricky | AIPOM L40@HARD_STONE / DITTO L40 | 对象(SS_AQUA_B1F) |  |
+| 292 | 427 | `TRAINER_TEACHER_SHIRLEY` | TEACHER | Shirley | CHATOT L43 / JIGGLYPUFF L43 | 对象(SS_AQUA_B1F) |  |
+| 293 | 238 | `TRAINER_SAILOR_STANLY` | SAILOR | Stanly | MACHOP L39 / MACHOKE L41 / PSYDUCK L34 | 脚本 scr_seq_0158_P01R0303.s:32 等2处 |  |
+
+## 枯叶市·道馆（马志士）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 294 | 232 | `TRAINER_GUITARIST_VINCENT` | GUITARIST | Vincent | JOLTEON L45 / VOLTORB L43 / MAGNEMITE L42 | 对象(VERMILION_GYM) |  |
+| 295 | 396 | `TRAINER_JUGGLER_HORTON` | JUGGLER | Horton | ELECTRODE L43 / ELECTRODE L43 / ELECTRODE L43 | 对象(VERMILION_GYM) |  |
+| 296 | 337 | `TRAINER_GENTLEMAN_GREGORY` | GENTLEMAN | Gregory | PIKACHU L46 / FLAAFFY L43 / ELECTRIKE L42 | 对象(VERMILION_GYM) |  |
+| 297 | 255 | `TRAINER_LEADER_LT_SURGE_LT__SURGE` | LEADER_LT_SURGE | Lt. Surge | RAICHU L51 / ELECTRODE L47 / MAGNETON L47 / ELECTRODE L47 / ELECTABUZZ L53@SITRUS_BERRY | 脚本 scr_seq_0778_T06GYM0101.s:286 |  |
+
+## 6号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 298 | 599 | `TRAINER_CAMPER_VIRGIL` | CAMPER | Virgil | SLAKOTH L43 | 对象(ROUTE_6) |  |
+| 299 | 600 | `TRAINER_PICNICKER_SELINA` | PICNICKER | Selina | CHERUBI L42 | 对象(ROUTE_6) |  |
+| 300 | 598 | `TRAINER_TWINS_DAY_AND_DANI` | TWINS | Day & Dani | 【双打】PLUSLE L41 / MINUN L41 | 对象(ROUTE_6) |  |
+
+## 11号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 301 | 317 | `TRAINER_PSYCHIC_M_FIDEL` | PSYCHIC_M | Fidel | XATU L43 | 对象(ROUTE_11) |  |
+| 302 | 316 | `TRAINER_PSYCHIC_M_HERMAN` | PSYCHIC_M | Herman | EXEGGCUTE L39 / EXEGGCUTE L39 / EXEGGUTOR L39 | 对象(ROUTE_11) |  |
+| 303 | 380 | `TRAINER_YOUNGSTER_OWEN` | YOUNGSTER | Owen | GROWLITHE L44 | 对象(ROUTE_11) |  |
+| 304 | 381 | `TRAINER_YOUNGSTER_JASON` | YOUNGSTER | Jason | SANDSLASH L42 / CROBAT L42 | 对象(ROUTE_11) |  |
+
+## 金黄市·道馆（娜姿）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 305 | 369 | `TRAINER_MEDIUM_DARCY` | MEDIUM | Darcy | SLOWPOKE L44 / SLOWBRO L46 | 对象(SAFFRON_GYM) |  |
+| 306 | 415 | `TRAINER_PSYCHIC_M_JARED` | PSYCHIC_M | Jared | MR_MIME L42 / EXEGGCUTE L42 / EXEGGCUTE L45 | 对象(SAFFRON_GYM) |  |
+| 307 | 368 | `TRAINER_MEDIUM_REBECCA` | MEDIUM | Rebecca | BRONZOR L45 / HYPNO L45 | 对象(SAFFRON_GYM) |  |
+| 308 | 230 | `TRAINER_PSYCHIC_M_FRANKLIN` | PSYCHIC_M | Franklin | KADABRA L44 / GIRAFARIG L47 | 对象(SAFFRON_GYM) |  |
+| 309 | 258 | `TRAINER_LEADER_SABRINA_SABRINA` | LEADER_SABRINA | Sabrina | ESPEON L53 / MR_MIME L53 / ALAKAZAM L55@SITRUS_BERRY | 脚本 scr_seq_0829_T11GYM0101.s:57 |  |
+
+## 8号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 310 | 309 | `TRAINER_BIKER_DWAYNE` | BIKER | Dwayne | KOFFING L38 / KOFFING L39 / KOFFING L40 / KOFFING L41 | 对象(ROUTE_8) |  |
+| 311 | 310 | `TRAINER_BIKER_HARRIS` | BIKER | Harris | FLAREON L45 | 对象(ROUTE_8) |  |
+| 312 | 311 | `TRAINER_BIKER_ZEKE` | BIKER | Zeke | KOFFING L43 / KOFFING L43 | 对象(ROUTE_8) |  |
+| 313 | 364 | `TRAINER_SUPER_NERD_SAM` | SUPER_NERD | Sam | GRIMER L44 / MUK L44@TOXIC_ORB | 对象(ROUTE_8) |  |
+| 314 | 365 | `TRAINER_SUPER_NERD_TYRONE` | SUPER_NERD | Tyrone | MAGNEMITE L40 / MAGNEMITE L40 / MAGNEMITE L40 | 对象(ROUTE_8) |  |
+| 315 | 553 | `TRAINER_YOUNG_COUPLE_MOE_AND_LULU` | YOUNG_COUPLE | Moe & Lulu | 【双打】LOTAD L43 / SEEDOT L43 | 对象(ROUTE_8) |  |
+| 316 | 554 | `TRAINER_GENTLEMAN_MILTON` | GENTLEMAN | Milton | GROWLITHE L45 | 对象(ROUTE_8) |  |
+
+## 玉虹市·道馆（莉佳）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 317 | 326 | `TRAINER_TWINS_JO_AND_ZOE` | TWINS | Jo & Zoe | 【双打】VICTREEBEL L47 / VILEPLUME L47 | 对象(CELADON_GYM) |  |
+|  | 416 | `TRAINER_TWINS_JO_AND_ZOE_2` | TWINS | Jo & Zoe | 【双打】VILEPLUME L37 / VICTREEBEL L37 | 未引用变体（预留/残留，用途待确认） |  |
+| 318 | 356 | `TRAINER_LASS_MICHELLE` | LASS | Michelle | SKIPLOOM L44 / HOPPIP L45 / JUMPLUFF L46 | 对象(CELADON_GYM) |  |
+| 319 | 336 | `TRAINER_PICNICKER_TANYA` | PICNICKER | Tanya | EXEGGUTOR L49 | 对象(CELADON_GYM) |  |
+| 320 | 346 | `TRAINER_BEAUTY_JULIA` | BEAUTY | Julia | PARAS L44 / CARNIVINE L44 / PARASECT L47 | 对象(CELADON_GYM) |  |
+| 321 | 256 | `TRAINER_LEADER_ERIKA_ERIKA` | LEADER_ERIKA | Erika | JUMPLUFF L51 / TANGELA L52 / VICTREEBEL L56 / BELLOSSOM L56@SITRUS_BERRY | 脚本 scr_seq_0786_T07GYM0101.s:103 |  |
+
+## 16/17/18号道路（自行车道）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 322 | 313 | `TRAINER_BIKER_REESE` | BIKER | Reese | WEEZING L45 | 对象(ROUTE_17) |  |
+|  | 628 | `TRAINER_BIKER_REESE_2` | BIKER | Reese | ARBOK L42 / WEEZING L48 | 电话重战变体（联系人 REESE） |  |
+|  | 629 | `TRAINER_BIKER_REESE_3` | BIKER | Reese | ARBOK L48 / WEEZING L50 | 电话重战变体（联系人 REESE） |  |
+|  | 630 | `TRAINER_BIKER_REESE_4` | BIKER | Reese | ARBOK L56 / WEEZING L55 | 电话重战变体（联系人 REESE） |  |
+| 323 | 314 | `TRAINER_BIKER_JOEL` | BIKER | Joel | MAGMAR L43 / MAGMAR L43 | 对象(ROUTE_17) |  |
+| 324 | 577 | `TRAINER_BIKER_MARKEY` | BIKER | Markey | SKORUPI L47 | 对象(ROUTE_17) |  |
+| 325 | 572 | `TRAINER_BIKER_DALE` | BIKER | Dale | GULPIN L47@BLACK_SLUDGE | 对象(ROUTE_17) |  |
+| 326 | 573 | `TRAINER_BIKER_JACOB` | BIKER | Jacob | MAGMAR L43 / TENTACRUEL L43 | 对象(ROUTE_17) |  |
+| 327 | 574 | `TRAINER_BIKER_AIDEN` | BIKER | Aiden | TENTACRUEL L45 | 对象(ROUTE_17) |  |
+|  | 631 | `TRAINER_BIKER_AIDEN_2` | BIKER | Aiden | HYPNO L50 / TENTACRUEL L49 | 电话重战变体（联系人 AIDEN） |  |
+|  | 632 | `TRAINER_BIKER_AIDEN_3` | BIKER | Aiden | HYPNO L55 / TENTACRUEL L55 | 电话重战变体（联系人 AIDEN） |  |
+|  | 633 | `TRAINER_BIKER_AIDEN_4` | BIKER | Aiden | TENTACRUEL L55 / HYPNO L58 / TENTACRUEL L58 | 电话重战变体（联系人 AIDEN） |  |
+| 328 | 575 | `TRAINER_BIKER_DAN` | BIKER | Dan | GULPIN L39 / WEEZING L37 / WEEZING L37 | 对象(ROUTE_17) |  |
+| 329 | 576 | `TRAINER_BIKER_THERON` | BIKER | Theron | CROAGUNK L45 | 对象(ROUTE_17) |  |
+| 330 | 315 | `TRAINER_BIKER_GLENN` | BIKER | Glenn | KOFFING L39 / MAGMAR L41 / WEEZING L43 | 对象(ROUTE_17) |  |
+| 331 | 578 | `TRAINER_BIKER_TEDDY` | BIKER | Teddy | SEVIPER L46 | 对象(ROUTE_17) |  |
+| 332 | 579 | `TRAINER_BIKER_ERNEST` | BIKER | Ernest | TEDDIURSA L45 / MARILL L44 | 对象(ROUTE_17) |  |
+|  | 634 | `TRAINER_BIKER_ERNEST_2` | BIKER | Ernest | TEDDIURSA L46 / AZUMARILL L47 | 电话重战变体（联系人 ERNEST） |  |
+|  | 635 | `TRAINER_BIKER_ERNEST_3` | BIKER | Ernest | TEDDIURSA L48 / AZUMARILL L49 | 电话重战变体（联系人 ERNEST） |  |
+|  | 636 | `TRAINER_BIKER_ERNEST_4` | BIKER | Ernest | URSARING L58 / AZUMARILL L54 | 电话重战变体（联系人 ERNEST） |  |
+| 333 | 302 | `TRAINER_BIRD_KEEPER_GS_BOB` | BIRD_KEEPER_GS | Bob | NOCTOWL L48 | 对象(ROUTE_18) |  |
+| 334 | 301 | `TRAINER_BIRD_KEEPER_GS_BORIS` | BIRD_KEEPER_GS | Boris | DODUO L39 / DODUO L37 / DODRIO L41 | 对象(ROUTE_18) |  |
+| 335 | 312 | `TRAINER_BIKER_CHARLES` | BIKER | Charles | KOFFING L41 / CHARMELEON L41 / WEEZING L42 | 对象(ROUTE_18) |  |
+
+## 浅红市·道馆（阿杏）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 336 | 136 | `TRAINER_LASS_LINDA` | LASS | Linda | BULBASAUR L41 / IVYSAUR L43 / VENUSAUR L45 | 脚本 scr_seq_0809_T08GYM0101.s:178 |  |
+| 337 | 84 | `TRAINER_CAMPER_BARRY` | CAMPER | Barry | NIDOKING L48 | 脚本 scr_seq_0809_T08GYM0101.s:251 |  |
+| 338 | 183 | `TRAINER_LASS_ALICE` | LASS | Alice | GLOOM L41 / ARBOK L45 / VILEPLUME L41 | 脚本 scr_seq_0809_T08GYM0101.s:326 |  |
+| 339 | 83 | `TRAINER_PICNICKER_CINDY` | PICNICKER | Cindy | NIDOQUEEN L48 | 脚本 scr_seq_0809_T08GYM0101.s:401 |  |
+| 340 | 257 | `TRAINER_LEADER_JANINE_JANINE` | LEADER_JANINE | Janine | CROBAT L47 / WEEZING L44 / ARIADOS L47 / ARIADOS L47 / VENOMOTH L50@SITRUS_BERRY | 脚本 scr_seq_0809_T08GYM0101.s:514 |  |
+
+## 12/13/14/15号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 341 | 59 | `TRAINER_FISHERMAN_KYLE` | FISHERMAN | Kyle | GOLDEEN L39 / QWILFISH L35 / GOLDEEN L39 | 对象(ROUTE_12) |  |
+|  | 661 | `TRAINER_FISHERMAN_KYLE_2` | FISHERMAN | Kyle | SEAKING L40 / QWILFISH L38 / SEAKING L43 | 电话重战变体（联系人 KYLE） |  |
+|  | 662 | `TRAINER_FISHERMAN_KYLE_3` | FISHERMAN | Kyle | SEAKING L43 / QWILFISH L41 / SEAKING L47 / KRABBY L39 | 电话重战变体（联系人 KYLE） |  |
+|  | 663 | `TRAINER_FISHERMAN_KYLE_4` | FISHERMAN | Kyle | SEAKING L48 / QWILFISH L49 / SEAKING L52 / KINGLER L51 | 电话重战变体（联系人 KYLE） |  |
+| 342 | 320 | `TRAINER_FISHERMAN_MARTIN` | FISHERMAN | Martin | REMORAID L36 / OCTILLERY L42 | 对象(ROUTE_12) |  |
+| 343 | 555 | `TRAINER_BIRD_KEEPER_GS_JUSTIN` | BIRD_KEEPER_GS | Justin | XATU L44 / NOCTOWL L39 | 对象(ROUTE_12) |  |
+| 344 | 557 | `TRAINER_YOUNG_COUPLE_VIC_AND_TARA` | YOUNG_COUPLE | Vic & Tara | 【双打】MAGMAR L44 / SUNFLORA L43 | 对象(ROUTE_12) |  |
+| 345 | 321 | `TRAINER_FISHERMAN_STEPHEN` | FISHERMAN | Stephen | QUAGSIRE L43 / QWILFISH L38 / TENTACRUEL L38 | 对象(ROUTE_12) |  |
+| 346 | 322 | `TRAINER_FISHERMAN_BARNEY` | FISHERMAN | Barney | GYARADOS L40 / GYARADOS L37 / GYARADOS L37 | 对象(ROUTE_12) |  |
+| 347 | 556 | `TRAINER_BIRD_KEEPER_GS_GAIL` | BIRD_KEEPER_GS | Gail | FEAROW L42 / SPEAROW L39 | 对象(ROUTE_12) |  |
+| 348 | 558 | `TRAINER_FISHERMAN_KYLER` | FISHERMAN | Kyler | MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 | 对象(ROUTE_12) |  |
+|  | 664 | `TRAINER_FISHERMAN_KYLER_2` | FISHERMAN | Kyler | MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 | 电话重战变体（联系人 KYLER） |  |
+|  | 665 | `TRAINER_FISHERMAN_KYLER_3` | FISHERMAN | Kyler | MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 | 电话重战变体（联系人 KYLER） |  |
+|  | 666 | `TRAINER_FISHERMAN_KYLER_4` | FISHERMAN | Kyler | MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 / MAGIKARP L18 | 电话重战变体（联系人 KYLER） |  |
+| 349 | 358 | `TRAINER_HIKER_KENNY` | HIKER | Kenny | SANDSLASH L27 / GRAVELER L29 / GOLEM L33 | 对象(ROUTE_13) |  |
+|  | 655 | `TRAINER_HIKER_KENNY_2` | HIKER | Kenny | ONIX L16 / GRAVELER L33 / GOLEM L37 / SANDSLASH L32 | 电话重战变体（联系人 KENNY） |  |
+|  | 656 | `TRAINER_HIKER_KENNY_3` | HIKER | Kenny | SANDSLASH L42 / GRAVELER L37 / GOLEM L44 / ONIX L46 | 电话重战变体（联系人 KENNY） |  |
+|  | 657 | `TRAINER_HIKER_KENNY_4` | HIKER | Kenny | SANDSLASH L46 / GRAVELER L44 / GOLEM L49 / STEELIX L54 | 电话重战变体（联系人 KENNY） |  |
+| 350 | 559 | `TRAINER_YOUNG_COUPLE_TIM_AND_SUE` | YOUNG_COUPLE | Tim & Sue | 【双打】KADABRA L41 / PSYDUCK L46 | 对象(ROUTE_13) |  |
+|  | 652 | `TRAINER_YOUNG_COUPLE_TIM_AND_SUE_2` | YOUNG_COUPLE | Tim & Sue | 【双打】KADABRA L45 / GOLDUCK L50 | 电话重战变体（联系人 TIM_AND_SUE） |  |
+|  | 653 | `TRAINER_YOUNG_COUPLE_TIM_AND_SUE_3` | YOUNG_COUPLE | Tim & Sue | 【双打】KADABRA L48 / GOLDUCK L52 | 电话重战变体（联系人 TIM_AND_SUE） |  |
+|  | 654 | `TRAINER_YOUNG_COUPLE_TIM_AND_SUE_4` | YOUNG_COUPLE | Tim & Sue | 【双打】ALAKAZAM L54 / GOLDUCK L56 | 电话重战变体（联系人 TIM_AND_SUE） |  |
+| 351 | 349 | `TRAINER_POKEFAN_M_JOSHUA` | POKEFAN_M | Joshua | PIKACHU L32 / PIKACHU L32 / PIKACHU L32 / PIKACHU L32 / PIKACHU L32 / PIKACHU L32 | 对象(ROUTE_13) |  |
+| 352 | 492 | `TRAINER_POKEFAN_M_ALEX` | POKEFAN_M | Alex | NIDOKING L29 / SLOWKING L29 / MAGIKARP L65 | 对象(ROUTE_13) |  |
+| 353 | 560 | `TRAINER_CAMPER_CLARK` | CAMPER | Clark | BUIZEL L40 | 对象(ROUTE_13) |  |
+| 354 | 561 | `TRAINER_CAMPER_TANNER` | CAMPER | Tanner | SUDOWOODO L38 | 对象(ROUTE_13) |  |
+|  | 658 | `TRAINER_CAMPER_TANNER_2` | CAMPER | Tanner | SUDOWOODO L41 / CHINCHOU L41 | 电话重战变体（联系人 TANNER） |  |
+|  | 659 | `TRAINER_CAMPER_TANNER_3` | CAMPER | Tanner | SUDOWOODO L48 / LANTURN L47 / SKIPLOOM L44 | 电话重战变体（联系人 TANNER） |  |
+|  | 660 | `TRAINER_CAMPER_TANNER_4` | CAMPER | Tanner | SUDOWOODO L52 / JUMPLUFF L52 / LANTURN L52 | 电话重战变体（联系人 TANNER） |  |
+| 355 | 562 | `TRAINER_PICNICKER_PIPER` | PICNICKER | Piper | SPOINK L40 | 对象(ROUTE_13) |  |
+| 356 | 563 | `TRAINER_PICNICKER_GINGER` | PICNICKER | Ginger | WHISMUR L41 | 对象(ROUTE_13) |  |
+| 357 | 421 | `TRAINER_BIRD_KEEPER_GS_BRET` | BIRD_KEEPER_GS | Bret | TAILLOW L41 / FEAROW L41 | 对象(ROUTE_13) |  |
+| 358 | 420 | `TRAINER_BIRD_KEEPER_GS_PERRY` | BIRD_KEEPER_GS | Perry | FARFETCHD L42 | 对象(ROUTE_13) |  |
+| 359 | 351 | `TRAINER_POKEFAN_M_TREVOR` | POKEFAN_M | Trevor | PSYDUCK L42 | 对象(ROUTE_14) |  |
+| 360 | 564 | `TRAINER_TEACHER_CLARICE` | TEACHER | Clarice | ZIGZAGOON L41@SITRUS_BERRY / ROSELIA L43 | 对象(ROUTE_14) |  |
+| 361 | 300 | `TRAINER_BIRD_KEEPER_GS_ROY` | BIRD_KEEPER_GS | Roy | FEAROW L38 / FEAROW L44 | 对象(ROUTE_14) |  |
+| 362 | 350 | `TRAINER_POKEFAN_M_CARTER` | POKEFAN_M | Carter | BULBASAUR L38 / CHARMANDER L38 / SQUIRTLE L38 | 对象(ROUTE_14) |  |
+| 363 | 565 | `TRAINER_BIRD_KEEPER_GS_JOSH` | BIRD_KEEPER_GS | Josh | FEAROW L37 | 对象(ROUTE_14) |  |
+|  | 646 | `TRAINER_BIRD_KEEPER_GS_JOSH_2` | BIRD_KEEPER_GS | Josh | FEAROW L47 / SKARMORY L44 | 电话重战变体（联系人 JOSH） |  |
+|  | 647 | `TRAINER_BIRD_KEEPER_GS_JOSH_3` | BIRD_KEEPER_GS | Josh | SKARMORY L48 / FEAROW L51 | 电话重战变体（联系人 JOSH） |  |
+|  | 648 | `TRAINER_BIRD_KEEPER_GS_JOSH_4` | BIRD_KEEPER_GS | Josh | SKARMORY L55 / FEAROW L55 | 电话重战变体（联系人 JOSH） |  |
+| 364 | 567 | `TRAINER_SCHOOL_KID_M_TORIN` | SCHOOL_KID_M | Torin | SANDSLASH L41 / GOLBAT L39 | 对象(ROUTE_14) |  |
+|  | 649 | `TRAINER_SCHOOL_KID_M_TORIN_2` | SCHOOL_KID_M | Torin | SANDSLASH L46 / GOLBAT L45 / VULPIX L41 | 电话重战变体（联系人 TORIN） |  |
+|  | 650 | `TRAINER_SCHOOL_KID_M_TORIN_3` | SCHOOL_KID_M | Torin | SANDSLASH L48 / GOLBAT L51 / VULPIX L48 | 电话重战变体（联系人 TORIN） |  |
+|  | 651 | `TRAINER_SCHOOL_KID_M_TORIN_4` | SCHOOL_KID_M | Torin | SANDSLASH L52 / GOLBAT L53 / VULPIX L52 | 电话重战变体（联系人 TORIN） |  |
+| 365 | 566 | `TRAINER_SCHOOL_KID_M_CONNOR` | SCHOOL_KID_M | Connor | ZIGZAGOON L42@CHESTO_BERRY | 对象(ROUTE_14) |  |
+| 366 | 568 | `TRAINER_SCHOOL_KID_M_TRAVIS` | SCHOOL_KID_M | Travis | BUDEW L42 | 对象(ROUTE_14) |  |
+| 367 | 179 | `TRAINER_SCHOOL_KID_M_KIPP` | SCHOOL_KID_M | Kipp | VOLTORB L36 / MAGNEMITE L36 / VOLTORB L40 / MAGNETON L40 | 对象(ROUTE_15) |  |
+| 368 | 328 | `TRAINER_SCHOOL_KID_M_TOMMY` | SCHOOL_KID_M | Tommy | XATU L41 / ALAKAZAM L43 | 对象(ROUTE_15) |  |
+| 369 | 382 | `TRAINER_TEACHER_HILLARY` | TEACHER | Hillary | SUNKERN L41 / AIPOM L31 | 对象(ROUTE_15) |  |
+|  | 637 | `TRAINER_TEACHER_HILLARY_2` | TEACHER | Hillary | AMBIPOM L43 / SUNFLORA L43 | 电话重战变体（联系人 HILLARY） |  |
+|  | 638 | `TRAINER_TEACHER_HILLARY_3` | TEACHER | Hillary | AMBIPOM L49 / SUNFLORA L49 | 电话重战变体（联系人 HILLARY） |  |
+|  | 639 | `TRAINER_TEACHER_HILLARY_4` | TEACHER | Hillary | AMBIPOM L55 / SUNFLORA L55 | 电话重战变体（联系人 HILLARY） |  |
+| 370 | 569 | `TRAINER_TWINS_KAY_AND_TIA` | TWINS | Kay & Tia | 【双打】QUAGSIRE L41 / QUAGSIRE L41 | 对象(ROUTE_15) |  |
+|  | 643 | `TRAINER_TWINS_KAY_AND_TIA_2` | TWINS | Kay & Tia | 【双打】QUAGSIRE L48 / QUAGSIRE L48 | 电话重战变体（联系人 KAY_AND_TIA） |  |
+|  | 644 | `TRAINER_TWINS_KAY_AND_TIA_3` | TWINS | Kay & Tia | 【双打】QUAGSIRE L53 / QUAGSIRE L53 | 电话重战变体（联系人 KAY_AND_TIA） |  |
+|  | 645 | `TRAINER_TWINS_KAY_AND_TIA_4` | TWINS | Kay & Tia | 【双打】QUAGSIRE L55 / QUAGSIRE L55 | 电话重战变体（联系人 KAY_AND_TIA） |  |
+| 371 | 571 | `TRAINER_POKEFAN_ELEANOR` | POKEFAN | Eleanor | SPINDA L43 / ILLUMISE L41 | 对象(ROUTE_15) |  |
+| 372 | 570 | `TRAINER_POKEFAN_M_BOONE` | POKEFAN_M | Boone | SPINDA L43 / VOLBEAT L41 | 对象(ROUTE_15) |  |
+| 373 | 38 | `TRAINER_TEACHER_COLETTE` | TEACHER | Colette | CLEFAIRY L45 | 对象(ROUTE_15) |  |
+| 374 | 135 | `TRAINER_SCHOOL_KID_M_JOHNNY` | SCHOOL_KID_M | Johnny | BELLSPROUT L39 / WEEPINBELL L40 / VICTREEBEL L42 | 对象(ROUTE_15) |  |
+| 375 | 331 | `TRAINER_SCHOOL_KID_M_BILLY` | SCHOOL_KID_M | Billy | PARASECT L39 / POLIWHIRL L37 / DITTO L35 | 对象(ROUTE_15) |  |
+|  | 640 | `TRAINER_SCHOOL_KID_M_BILLY_2` | SCHOOL_KID_M | Billy | PARASECT L42 / POLIWHIRL L43 / DITTO L40 | 电话重战变体（联系人 BILLY） |  |
+|  | 641 | `TRAINER_SCHOOL_KID_M_BILLY_3` | SCHOOL_KID_M | Billy | PARASECT L46 / POLIWHIRL L47 / DITTO L46 | 电话重战变体（联系人 BILLY） |  |
+|  | 642 | `TRAINER_SCHOOL_KID_M_BILLY_4` | SCHOOL_KID_M | Billy | MR_MIME L50 / PARASECT L55 / POLIWRATH L53 / DITTO L51 | 电话重战变体（联系人 BILLY） |  |
+
+## 9/10号道路·岩山隧道
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 376 | 150 | `TRAINER_CAMPER_SID` | CAMPER | Sid | DUGTRIO L43 / PRIMEAPE L40 / POLIWRATH L40 | 对象(ROUTE_9) |  |
+| 377 | 333 | `TRAINER_PICNICKER_EDNA` | PICNICKER | Edna | NIDORINA L41 / RAICHU L45 | 对象(ROUTE_9) |  |
+| 378 | 149 | `TRAINER_CAMPER_DEAN` | CAMPER | Dean | GOLDUCK L44 / SANDSLASH L42 | 对象(ROUTE_9) |  |
+| 379 | 357 | `TRAINER_HIKER_CLARKE` | HIKER | Clarke | ONIX L43 / DUGTRIO L45 | 对象(ROUTE_9) |  |
+| 380 | 234 | `TRAINER_HIKER_EOIN` | HIKER | Eoin | GRAVELER L42 / GRAVELER L42 / GRAVELER L42 | 对象(ROUTE_9) |  |
+| 381 | 332 | `TRAINER_PICNICKER_HEIDI` | PICNICKER | Heidi | SKIPLOOM L43 / SKIPLOOM L43 | 对象(ROUTE_9) |  |
+| 382 | 359 | `TRAINER_HIKER_JIM` | HIKER | Jim | MACHAMP L45 | 对象(ROUTE_10_SOUTH) |  |
+| 383 | 348 | `TRAINER_POKEFAN_M_ROBERT` | POKEFAN_M | Robert | QUAGSIRE L43 | 对象(ROUTE_10_SOUTH) |  |
+
+## 华蓝市·道馆（小霞）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 384 | 297 | `TRAINER_SWIMMER_F_DIANA` | SWIMMER_F | Diana | GOLDUCK L48 | 对象(CERULEAN_GYM) |  |
+| 385 | 678 | `TRAINER_SWIMMER_F_JOY` | SWIMMER_F | Joy | CLOYSTER L48 | 对象(CERULEAN_GYM) |  |
+| 386 | 298 | `TRAINER_SWIMMER_F_BRIANA` | SWIMMER_F | Briana | SEAKING L46 / SEAKING L46 | 对象(CERULEAN_GYM) |  |
+| 387 | 677 | `TRAINER_SAILOR_EDDIE` | SAILOR | Eddie | AZUMARILL L48 | 对象(CERULEAN_GYM) |  |
+| 388 | 676 | `TRAINER_SAILOR_PARKER` | SAILOR | Parker | HORSEA L43 / SEADRA L43 | 对象(CERULEAN_GYM) |  |
+| 389 | 254 | `TRAINER_LEADER_MISTY_MISTY` | LEADER_MISTY | Misty | GOLDUCK L49 / QUAGSIRE L49 / LAPRAS L52 / STARMIE L54@SITRUS_BERRY | 脚本 scr_seq_0760_T04GYM0101.s:212 |  |
+
+## 24/25号道路（海角）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 390 | 329 | `TRAINER_SCHOOL_KID_M_DUDLEY` | SCHOOL_KID_M | Dudley | ODDISH L45@SITRUS_BERRY | 对象(ROUTE_25) |  |
+| 391 | 419 | `TRAINER_LASS_ELLEN` | LASS | Ellen | WIGGLYTUFF L40 / GRANBULL L44 | 对象(ROUTE_25) |  |
+| 392 | 330 | `TRAINER_SCHOOL_KID_M_JOE` | SCHOOL_KID_M | Joe | TANGELA L44@SITRUS_BERRY / VAPOREON L42 | 对象(ROUTE_25) |  |
+| 393 | 354 | `TRAINER_LASS_LAURA` | LASS | Laura | GLOOM L38@SITRUS_BERRY / PIDGEOTTO L41 / BELLOSSOM L41 | 对象(ROUTE_25) |  |
+| 394 | 355 | `TRAINER_LASS_SHANNON` | LASS | Shannon | PARAS L38 / PARAS L38 / PARASECT L42 | 对象(ROUTE_25) |  |
+| 395 | 148 | `TRAINER_CAMPER_LLOYD` | CAMPER | Lloyd | NIDOKING L46 | 对象(ROUTE_25) |  |
+| 396 | 366 | `TRAINER_SUPER_NERD_PAT` | SUPER_NERD | Pat | PORYGON L47 | 对象(ROUTE_25) |  |
+| 397 | 353 | `TRAINER_TEAM_ROCKET_GRUNT_24` | TEAM_ROCKET | Grunt | GOLBAT L39 | 脚本 scr_seq_0215_R24.s:78 |  |
+| 398 | 361 | `TRAINER_ACE_TRAINER_M_KEVIN` | ACE_TRAINER_M | Kevin | RHYHORN L48 / CHARMELEON L46 / WARTORTLE L46 | 脚本 scr_seq_0216_R25.s:403 |  |
+
+## 3/4号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 399 | 378 | `TRAINER_YOUNGSTER_WARREN` | YOUNGSTER | Warren | FEAROW L38 / RATICATE L42 | 对象(ROUTE_3) |  |
+| 400 | 15 | `TRAINER_FIREBREATHER_OTIS` | FIREBREATHER | Otis | MAGMAR L43 / WEEZING L40 / CAMERUPT L47 | 对象(ROUTE_3) |  |
+| 401 | 379 | `TRAINER_YOUNGSTER_JIMMY` | YOUNGSTER | Jimmy | RATICATE L42 / ARBOK L42 / PARASECT L42 | 对象(ROUTE_3) |  |
+| 402 | 549 | `TRAINER_DOUBLE_TEAM_ZAC_AND_JEN` | DOUBLE_TEAM | Zac & Jen | 【双打】ELECTABUZZ L47 / DUGTRIO L47 | 对象(ROUTE_3) |  |
+| 403 | 318 | `TRAINER_FIREBREATHER_BURT` | FIREBREATHER | Burt | WEEZING L42 / MAGCARGO L45 | 对象(ROUTE_3) |  |
+| 404 | 547 | `TRAINER_HIKER_BRUCE` | HIKER | Bruce | GRAVELER L39 / RHYDON L44 / CLEFAIRY L45 | 对象(ROUTE_3) |  |
+| 405 | 548 | `TRAINER_BLACK_BELT_MANFORD` | BLACK_BELT | Manford | POLIWRATH L47 | 对象(ROUTE_3) |  |
+| 406 | 550 | `TRAINER_BLACK_BELT_ANDER` | BLACK_BELT | Ander | PRIMEAPE L43 / GRAVELER L39 / MACHOKE L44 | 对象(ROUTE_3) |  |
+| 407 | 551 | `TRAINER_HIKER_DWIGHT` | HIKER | Dwight | MAGNETON L44 / STEELIX L44 | 对象(ROUTE_3) |  |
+| 408 | 552 | `TRAINER_YOUNGSTER_REGIS` | YOUNGSTER | Regis | GOLBAT L40 / ELECTRODE L40 | 对象(ROUTE_3) |  |
+| 409 | 152 | `TRAINER_PICNICKER_HOPE` | PICNICKER | Hope | FLAAFFY L44 | 对象(ROUTE_4) |  |
+| 410 | 153 | `TRAINER_PICNICKER_SHARON` | PICNICKER | Sharon | FURRET L41 / RAPIDASH L43 | 对象(ROUTE_4) |  |
+| 411 | 299 | `TRAINER_BIRD_KEEPER_GS_HANK` | BIRD_KEEPER_GS | Hank | PIDGEY L13 / PIDGEOT L44 | 对象(ROUTE_4) |  |
+
+## 尼比市·道馆（小刚）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 412 | 308 | `TRAINER_CAMPER_JERRY` | CAMPER | Jerry | RHYDON L50 | 对象(PEWTER_GYM) |  |
+| 413 | 685 | `TRAINER_HIKER_EDWIN` | HIKER | Edwin | GOLEM L50 | 对象(PEWTER_GYM) |  |
+| 414 | 253 | `TRAINER_LEADER_BROCK_BROCK` | LEADER_BROCK | Brock | GRAVELER L51 / RHYHORN L51 / OMASTAR L53 / ONIX L54@SITRUS_BERRY / KABUTOPS L52 | 脚本 scr_seq_0752_T03GYM0101.s:93 |  |
+
+## 常磐森林
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 415 | 695 | `TRAINER_BUG_CATCHER_DANE` | BUG_CATCHER | Dane | BEEDRILL L44 / BUTTERFREE L48 | 对象(VIRIDIAN_FOREST) |  |
+| 416 | 696 | `TRAINER_BUG_CATCHER_DION` | BUG_CATCHER | Dion | ARIADOS L50 | 对象(VIRIDIAN_FOREST) |  |
+| 417 | 697 | `TRAINER_BUG_CATCHER_STACEY` | BUG_CATCHER | Stacey | METAPOD L52 / METAPOD L56 / METAPOD L60 | 对象(VIRIDIAN_FOREST) |  |
+| 418 | 698 | `TRAINER_BUG_CATCHER_ELLIS` | BUG_CATCHER | Ellis | WEEDLE L28 / KAKUNA L38 / BEEDRILL L46 | 对象(VIRIDIAN_FOREST) |  |
+| 419 | 699 | `TRAINER_BUG_CATCHER_ABNER` | BUG_CATCHER | Abner | BUTTERFREE L44 / BEEDRILL L44 / PIKACHU L44 | 对象(VIRIDIAN_FOREST) |  |
+
+## 2号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 420 | 48 | `TRAINER_BUG_CATCHER_ROB` | BUG_CATCHER | Rob | BEEDRILL L40 / BUTTERFREE L39 | 对象(ROUTE_2) |  |
+|  | 625 | `TRAINER_BUG_CATCHER_ROB_2` | BUG_CATCHER | Rob | BEEDRILL L45 / BUTTERFREE L42 | 电话重战变体（联系人 ROB） |  |
+|  | 626 | `TRAINER_BUG_CATCHER_ROB_3` | BUG_CATCHER | Rob | BEEDRILL L52 / BUTTERFREE L48 | 电话重战变体（联系人 ROB） |  |
+|  | 627 | `TRAINER_BUG_CATCHER_ROB_4` | BUG_CATCHER | Rob | BEEDRILL L56 / BUTTERFREE L56 | 电话重战变体（联系人 ROB） |  |
+| 421 | 140 | `TRAINER_BUG_CATCHER_DOUG` | BUG_CATCHER | Doug | BUTTERFREE L39 / ARIADOS L37 | 对象(ROUTE_2) |  |
+|  | 622 | `TRAINER_BUG_CATCHER_DOUG_2` | BUG_CATCHER | Doug | BUTTERFREE L40 / ARIADOS L40 | 电话重战变体（联系人 DOUG） |  |
+|  | 623 | `TRAINER_BUG_CATCHER_DOUG_3` | BUG_CATCHER | Doug | BUTTERFREE L47 / ARIADOS L46 | 电话重战变体（联系人 DOUG） |  |
+|  | 624 | `TRAINER_BUG_CATCHER_DOUG_4` | BUG_CATCHER | Doug | BUTTERFREE L52 / ARIADOS L50 | 电话重战变体（联系人 DOUG） |  |
+| 422 | 248 | `TRAINER_BUG_CATCHER_ED` | BUG_CATCHER | Ed | BURMY L43 / BUTTERFREE L43 / BEEDRILL L43 | 对象(ROUTE_2_EAST) |  |
+
+## 常磐市·道馆（青绿）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 423 | 681 | `TRAINER_ACE_TRAINER_M_ARABELLA` | ACE_TRAINER_M | Arabella | STANTLER L53 / TAUROS L52 | 对象(VIRIDIAN_GYM) |  |
+| 424 | 682 | `TRAINER_ACE_TRAINER_M_BONITA` | ACE_TRAINER_M | Bonita | SPINDA L50 / SUDOWOODO L52 | 对象(VIRIDIAN_GYM) |  |
+| 425 | 683 | `TRAINER_ACE_TRAINER_F_SALMA` | ACE_TRAINER_F | Salma | SLOWKING L50@ORAN_BERRY / LICKILICKY L53 | 对象(VIRIDIAN_GYM) |  |
+| 426 | 684 | `TRAINER_DOUBLE_TEAM_ELAN_AND_IDA` | DOUBLE_TEAM | Elan & Ida | 【双打】PORYGON2 L52 / AZUMARILL L50 | 对象(VIRIDIAN_GYM) |  |
+| 427 | 261 | `TRAINER_LEADER_BLUE_BLUE` | LEADER_BLUE | Blue | EXEGGUTOR L55 / ARCANINE L58 / RHYDON L58 / GYARADOS L52 / MACHAMP L56 / PIDGEOT L60@SITRUS_BERRY | 脚本 scr_seq_0743_T02GYM0101.s:50 |  |
+
+## 1号道路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 428 | 362 | `TRAINER_ACE_TRAINER_F_QUINN` | ACE_TRAINER_F | Quinn | IVYSAUR L47 / STARMIE L47 | 对象(ROUTE_1) |  |
+| 429 | 545 | `TRAINER_ACE_TRAINER_M_FRENCH` | ACE_TRAINER_M | French | ABSOL L47 / ALAKAZAM L47 | 对象(ROUTE_1) |  |
+| 430 | 327 | `TRAINER_SCHOOL_KID_M_DANNY` | SCHOOL_KID_M | Danny | JYNX L43 / ELECTABUZZ L43 / MAGMAR L43 | 对象(ROUTE_1) |  |
+| 431 | 546 | `TRAINER_SCHOOL_KID_M_SHERMAN` | SCHOOL_KID_M | Sherman | FURRET L43 / PIDGEOT L43 | 对象(ROUTE_1) |  |
+
+## 21号水路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 432 | 58 | `TRAINER_FISHERMAN_ARNOLD` | FISHERMAN | Arnold | SHELLDER L44 | 对象(ROUTE_21) |  |
+| 433 | 589 | `TRAINER_FISHERMAN_MURPHY` | FISHERMAN | Murphy | CORSOLA L32 / CORSOLA L34 / CORSOLA L36 / CORSOLA L38 | 对象(ROUTE_21) |  |
+| 434 | 590 | `TRAINER_FISHERMAN_LIAM` | FISHERMAN | Liam | SEADRA L42 | 对象(ROUTE_21) |  |
+| 435 | 591 | `TRAINER_FISHERMAN_GIDEON` | FISHERMAN | Gideon | LANTURN L44 / MANTINE L40 | 对象(ROUTE_21) |  |
+| 436 | 296 | `TRAINER_SWIMMER_F_NIKKI` | SWIMMER_F | Nikki | SEEL L37 / DEWGONG L42 | 对象(ROUTE_21) |  |
+| 437 | 592 | `TRAINER_SWIMMER_F_CHELAN` | SWIMMER_F | Chelan | AZUMARILL L40 | 对象(ROUTE_21) |  |
+| 438 | 593 | `TRAINER_SWIMMER_F_KENDRA` | SWIMMER_F | Kendra | SLOWKING L43 | 对象(ROUTE_21) |  |
+| 439 | 374 | `TRAINER_SWIMMER_M_TYSON` | SWIMMER_M | Tyson | QUAGSIRE L42 / OCTILLERY L42 | 对象(ROUTE_21) |  |
+| 440 | 594 | `TRAINER_SWIMMER_M_ESTEBAN` | SWIMMER_M | Esteban | GOLDUCK L38 / POLIWHIRL L38 | 对象(ROUTE_21) |  |
+| 441 | 595 | `TRAINER_SWIMMER_M_DUANE` | SWIMMER_M | Duane | SEAKING L40 / KABUTOPS L40 | 对象(ROUTE_21) |  |
+| 442 | 597 | `TRAINER_BIRD_KEEPER_GS_EASTON` | BIRD_KEEPER_GS | Easton | DODUO L35 / DODUO L35 / DODRIO L35 / DODRIO L36 | 对象(ROUTE_21) |  |
+| 443 | 596 | `TRAINER_BIRD_KEEPER_GS_KINSLEY` | BIRD_KEEPER_GS | Kinsley | FARFETCHD L36 / FEAROW L36 / PIDGEOTTO L37 | 对象(ROUTE_21) |  |
+
+## 20号水路·双子岛（红莲道馆·夏伯）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 444 | 373 | `TRAINER_SWIMMER_M_FRANKIE` | SWIMMER_M | Frankie | AZUMARILL L44 | 对象(ROUTE_20) |  |
+| 445 | 580 | `TRAINER_CAMPER_PEDRO` | CAMPER | Pedro | LINOONE L45@SITRUS_BERRY | 对象(ROUTE_20) |  |
+| 446 | 581 | `TRAINER_PICNICKER_ADRIAN` | PICNICKER | Adrian | SHROOMISH L45 | 对象(ROUTE_20) |  |
+| 447 | 582 | `TRAINER_PICNICKER_CHEYENNE` | PICNICKER | Cheyenne | SHINX L45 | 对象(ROUTE_20) |  |
+| 448 | 583 | `TRAINER_BIRD_KEEPER_GS_BERT` | BIRD_KEEPER_GS | Bert | WINGULL L46 / FEAROW L43 | 对象(ROUTE_20) |  |
+| 449 | 584 | `TRAINER_BIRD_KEEPER_GS_ERNIE` | BIRD_KEEPER_GS | Ernie | STARLY L48 | 对象(ROUTE_20) |  |
+| 450 | 293 | `TRAINER_SWIMMER_F_NICOLE` | SWIMMER_F | Nicole | MARILL L39 / MARILL L39 / LAPRAS L42 | 对象(ROUTE_20) |  |
+| 451 | 294 | `TRAINER_SWIMMER_F_LORI` | SWIMMER_F | Lori | STARMIE L42 / STARMIE L42 / STARMIE L42 | 对象(ROUTE_20) |  |
+| 452 | 585 | `TRAINER_SWIMMER_M_ELMO` | SWIMMER_M | Elmo | POLIWHIRL L46 / TENTACRUEL L42 | 对象(ROUTE_20) |  |
+| 453 | 586 | `TRAINER_SWIMMER_M_LUIS` | SWIMMER_M | Luis | SEADRA L46 / QUAGSIRE L42 | 对象(ROUTE_20) |  |
+| 454 | 587 | `TRAINER_SWIMMER_F_LEONA` | SWIMMER_F | Leona | BIDOOF L44 | 对象(ROUTE_20) |  |
+| 455 | 588 | `TRAINER_SWIMMER_F_MINA` | SWIMMER_F | Mina | LUVDISC L38 / LUVDISC L39 / LUVDISC L41 | 对象(ROUTE_20) |  |
+| 456 | 686 | `TRAINER_BOARDER_BRYCE` | BOARDER | Bryce | DEWGONG L55 / LAPRAS L50 | 对象(SEAFOAM_ISLANDS_B2F) |  |
+| 457 | 687 | `TRAINER_BOARDER_SHAUN` | BOARDER | Shaun | CLOYSTER L55 / DEWGONG L50 | 对象(SEAFOAM_ISLANDS_B2F) |  |
+| 458 | 688 | `TRAINER_SKIER_CADY` | SKIER | Cady | DELIBIRD L53 | 对象(SEAFOAM_ISLANDS_B2F) |  |
+| 459 | 259 | `TRAINER_LEADER_BLAINE_BLAINE` | LEADER_BLAINE | Blaine | MAGCARGO L54@WHITE_HERB / MAGMAR L54@WHITE_HERB / RAPIDASH L59@WHITE_HERB | 脚本 scr_seq_0015_D11R0106.s:87 |  |
+| 460 | 689 | `TRAINER_SUPER_NERD_CARY` | SUPER_NERD | Cary | TORKOAL L53 | 脚本 scr_seq_0015_D11R0106.s:145 |  |
+| 461 | 690 | `TRAINER_SUPER_NERD_WALDO` | SUPER_NERD | Waldo | NUMEL L53 | 脚本 scr_seq_0015_D11R0106.s:171 |  |
+| 462 | 691 | `TRAINER_SUPER_NERD_MERLE` | SUPER_NERD | Merle | MAGCARGO L53 | 脚本 scr_seq_0015_D11R0106.s:205 |  |
+| 463 | 692 | `TRAINER_SCIENTIST_GS_LOWELL` | SCIENTIST_GS | Lowell | ARCANINE L50 | 脚本 scr_seq_0015_D11R0106.s:231 |  |
+| 464 | 693 | `TRAINER_SCIENTIST_GS_LINDEN` | SCIENTIST_GS | Linden | MAGMAR L50 | 脚本 scr_seq_0015_D11R0106.s:257 |  |
+| 465 | 694 | `TRAINER_SCIENTIST_GS_DANIEL` | SCIENTIST_GS | Daniel | NINETALES L50 | 脚本 scr_seq_0015_D11R0106.s:291 |  |
+
+## 19号水路
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 466 | 370 | `TRAINER_SWIMMER_M_JEROME` | SWIMMER_M | Jerome | SEADRA L36 / TENTACOOL L38 / TENTACRUEL L40 / GOLDEEN L38 | 对象(ROUTE_19) |  |
+| 467 | 252 | `TRAINER_SWIMMER_M_HAROLD` | SWIMMER_M | Harold | REMORAID L42 / SEADRA L40 | 对象(ROUTE_19) |  |
+| 468 | 371 | `TRAINER_SWIMMER_M_TUCKER` | SWIMMER_M | Tucker | SHELLDER L40 / CLOYSTER L44 | 对象(ROUTE_19) |  |
+| 469 | 291 | `TRAINER_SWIMMER_F_DEBBIE` | SWIMMER_F | Debbie | CLAMPERL L46 | 对象(ROUTE_19) |  |
+
+## 【通关后】金黄市·格斗道场（16 馆主重战）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 470 | 714 | `TRAINER_LEADER_WHITNEY_2` | LEADER_WHITNEY | Whitney | GIRAFARIG L52 / LICKILICKY L50 / BIBAREL L54 / DELCATTY L54 / CLEFABLE L52 / MILTANK L58@LUM_BERRY | 脚本 scr_seq_0832_T11R0101.s:182 | 16 枚徽章后在格斗道场重战 |
+| 471 | 724 | `TRAINER_LEADER_JANINE_JANINE_2` | LEADER_JANINE | Janine | CROBAT L52 / WEEZING L56 / TOXICROAK L52 / ARIADOS L58 / VENOMOTH L59@SITRUS_BERRY / DRAPION L55 | 脚本 scr_seq_0832_T11R0101.s:212 | 16 枚徽章后在格斗道场重战 |
+| 472 | 719 | `TRAINER_LEADER_CLAIR_CLAIR_2` | LEADER_CLAIR | Clair | GYARADOS L56@WACAN_BERRY / DRAGONAIR L52 / AERODACTYL L52 / KINGDRA L56 / CHARIZARD L52 / DRAGONITE L60@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:242 | 16 枚徽章后在格斗道场重战 |
+| 473 | 723 | `TRAINER_LEADER_ERIKA_ERIKA_2` | LEADER_ERIKA | Erika | SHIFTRY L54 / JUMPLUFF L53 / VICTREEBEL L56@KELPSY_BERRY / BELLOSSOM L56 / TANGROWTH L60 / ROSERADE L55 | 脚本 scr_seq_0832_T11R0101.s:272 | 16 枚徽章后在格斗道场重战 |
+| 474 | 721 | `TRAINER_LEADER_MISTY_MISTY_2` | LEADER_MISTY | Misty | STARMIE L60@COLBUR_BERRY / QUAGSIRE L56 / LAPRAS L56 / LANTURN L54 / FLOATZEL L54 / MILOTIC L60 | 脚本 scr_seq_0832_T11R0101.s:302 | 16 枚徽章后在格斗道场重战 |
+| 475 | 726 | `TRAINER_LEADER_BLAINE_BLAINE_2` | LEADER_BLAINE | Blaine | TORKOAL L54 / CAMERUPT L57 / RAPIDASH L60 / MAGCARGO L58 / HOUNDOOM L54 / MAGMORTAR L62 | 脚本 scr_seq_0832_T11R0101.s:332 | 16 枚徽章后在格斗道场重战 |
+| 476 | 727 | `TRAINER_LEADER_BLUE_BLUE_2` | LEADER_BLUE | Blue | EXEGGUTOR L67 / MACHAMP L69@IRON_BALL / RHYPERIOR L70 / ARCANINE L68 / TYRANITAR L70 / PIDGEOT L72@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:362 | 16 枚徽章后在格斗道场重战 |
+| 477 | 718 | `TRAINER_LEADER_CHUCK_CHUCK_2` | LEADER_CHUCK | Chuck | MEDICHAM L54@SITRUS_BERRY / HITMONCHAN L52 / HITMONLEE L55 / BRELOOM L54@TOXIC_ORB / PRIMEAPE L56 / POLIWRATH L60@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:392 | 16 枚徽章后在格斗道场重战 |
+| 478 | 720 | `TRAINER_LEADER_BROCK_BROCK_2` | LEADER_BROCK | Brock | GOLEM L55 / RELICANTH L54@LUM_BERRY / OMASTAR L56 / ONIX L61@SITRUS_BERRY / KABUTOPS L55 / RAMPARDOS L57 | 脚本 scr_seq_0832_T11R0101.s:422 | 16 枚徽章后在格斗道场重战 |
+| 479 | 713 | `TRAINER_LEADER_BUGSY_BUGSY_2` | LEADER_BUGSY | Bugsy | SCIZOR L56@SITRUS_BERRY / SHEDINJA L48 / YANMEGA L52 / PINSIR L55 / HERACROSS L54 / VESPIQUEN L52@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:452 | 16 枚徽章后在格斗道场重战 |
+| 480 | 725 | `TRAINER_LEADER_SABRINA_SABRINA_2` | LEADER_SABRINA | Sabrina | ALAKAZAM L60 / ESPEON L58 / MR_MIME L56 / JYNX L54 / WOBBUFFET L53 / GALLADE L53@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:482 | 16 枚徽章后在格斗道场重战 |
+| 481 | 712 | `TRAINER_LEADER_FALKNER_FALKNER_2` | LEADER_FALKNER | Falkner | STARAPTOR L50 / NOCTOWL L52 / SWELLOW L52@FLAME_ORB / HONCHKROW L54 / PELIPPER L48 / PIDGEOT L56 | 脚本 scr_seq_0832_T11R0101.s:512 | 16 枚徽章后在格斗道场重战 |
+| 482 | 722 | `TRAINER_LEADER_LT_SURGE_LT__SURGE_2` | LEADER_LT_SURGE | Lt. Surge | RAICHU L60 / MANECTRIC L52@PINAP_BERRY / MAGNEZONE L52 / ELECTRODE L52 / PACHIRISU L58 / ELECTIVIRE L56@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:542 | 16 枚徽章后在格斗道场重战 |
+| 483 | 715 | `TRAINER_LEADER_MORTY_MORTY_2` | LEADER_MORTY | Morty | DRIFBLIM L52@SITRUS_BERRY / DUSKNOIR L52 / SABLEYE L52 / MISMAGIUS L54 / GENGAR L57 / GENGAR L57 | 脚本 scr_seq_0832_T11R0101.s:572 | 16 枚徽章后在格斗道场重战 |
+| 484 | 717 | `TRAINER_LEADER_JASMINE_JASMINE_2` | LEADER_JASMINE | Jasmine | METAGROSS L52 / MAGNEZONE L56 / SKARMORY L52 / BRONZONG L50 / EMPOLEON L52 / STEELIX L62 | 脚本 scr_seq_0832_T11R0101.s:602 | 16 枚徽章后在格斗道场重战 |
+| 485 | 716 | `TRAINER_LEADER_PRYCE_PRYCE_2` | LEADER_PRYCE | Pryce | ABOMASNOW L56 / DEWGONG L58@LUM_BERRY / GLALIE L52 / FROSLASS L52 / WALREIN L54 / MAMOSWINE L60@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:632 | 16 枚徽章后在格斗道场重战 |
+
+## 【通关后】月见山（劲敌·后期战）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 486 | 286 | `TRAINER_RIVAL_SILVER_15` | RIVAL | Silver | SNEASEL L46 / GOLBAT L47 / MAGNETON L46 / GENGAR L48 / ALAKAZAM L48 / TYPHLOSION L50 | 脚本 scr_seq_0007_D02R0101.s:28 | 通关后月见山后期战 |
+| 487 | 287 | `TRAINER_RIVAL_SILVER_16` | RIVAL | Silver | SNEASEL L46 / GOLBAT L47 / MAGNETON L46 / GENGAR L48 / ALAKAZAM L48 / FERALIGATR L50 | 脚本 scr_seq_0007_D02R0101.s:34 | 通关后月见山后期战 |
+| 488 | 285 | `TRAINER_RIVAL_SILVER_14` | RIVAL | Silver | SNEASEL L46 / GOLBAT L47 / MAGNETON L46 / GENGAR L48 / ALAKAZAM L48 / MEGANIUM L50 | 脚本 scr_seq_0007_D02R0101.s:38 | 通关后月见山后期战 |
+
+## 白银山（红）
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+| 489 | 260 | `TRAINER_PKMN_TRAINER_RED_RED` | PKMN_TRAINER_RED | Red | PIKACHU L88@LIGHT_BALL / LAPRAS L80 / SNORLAX L82 / VENUSAUR L84 / CHARIZARD L84 / BLASTOISE L84 | 脚本 scr_seq_0107_D41R0108.s:16 | 白银山山顶（16 枚徽章后） |
+
+## 附录 A · 道馆馆主 / 四天王 / 冠军 / 劲敌 / 干部
+
+| # | ID | 常量 | 职业 | 姓名 | 队伍 | 触发来源 | 备注 |
+|---|----|------|------|------|------|----------|------|
+|  | 1 | `TRAINER_RIVAL_SILVER` | RIVAL | Silver | GASTLY L14 / ZUBAT L16 / BAYLEEF L18 | 脚本 scr_seq_0866_T23.s:116 |  |
+|  | 2 | `TRAINER_RIVAL_SILVER_2` | RIVAL | Silver | CYNDAQUIL L5 |  |  |
+|  | 3 | `TRAINER_RIVAL_SILVER_3` | RIVAL | Silver | TOTODILE L5 |  |  |
+|  | 20 | `TRAINER_LEADER_FALKNER_FALKNER` | LEADER_FALKNER | Falkner | PIDGEY L9 / PIDGEOTTO L13 | 脚本 scr_seq_0859_T22GYM0101.s:71 |  |
+|  | 21 | `TRAINER_LEADER_BUGSY_BUGSY` | LEADER_BUGSY | Bugsy | SCYTHER L17@SITRUS_BERRY / KAKUNA L15 / METAPOD L15 | 脚本 scr_seq_0869_T23GYM0102.s:73 |  |
+|  | 30 | `TRAINER_LEADER_WHITNEY` | LEADER_WHITNEY | Whitney | CLEFAIRY L17 / MILTANK L19@LUM_BERRY | 脚本 scr_seq_0886_T25GYM0101.s:97 |  |
+|  | 31 | `TRAINER_LEADER_MORTY_MORTY` | LEADER_MORTY | Morty | GASTLY L21 / HAUNTER L21 / GENGAR L25@SITRUS_BERRY / HAUNTER L23 | 脚本 scr_seq_0922_T27GYM0101.s:110 |  |
+|  | 32 | `TRAINER_LEADER_PRYCE_PRYCE` | LEADER_PRYCE | Pryce | SEEL L30 / DEWGONG L32 / PILOSWINE L34@SITRUS_BERRY | 脚本 scr_seq_0932_T28GYM0101.s:77 |  |
+|  | 33 | `TRAINER_LEADER_JASMINE_JASMINE` | LEADER_JASMINE | Jasmine | MAGNEMITE L30 / MAGNEMITE L30 / STEELIX L35@SITRUS_BERRY | 脚本 scr_seq_0913_T26GYM0101.s:125 |  |
+|  | 34 | `TRAINER_LEADER_CHUCK_CHUCK` | LEADER_CHUCK | Chuck | PRIMEAPE L29 / POLIWRATH L31@SITRUS_BERRY | 脚本 scr_seq_0877_T24GYM0101.s:29 |  |
+|  | 35 | `TRAINER_LEADER_CLAIR_CLAIR` | LEADER_CLAIR | Clair | GYARADOS L38 / DRAGONAIR L38 / DRAGONAIR L38 / KINGDRA L41@SITRUS_BERRY | 脚本 scr_seq_0943_T30GYM0101.s:94 |  |
+|  | 244 | `TRAINER_CHAMPION_LANCE` | CHAMPION | Lance | GYARADOS L46 / DRAGONITE L49 / DRAGONITE L49 / AERODACTYL L48 / CHARIZARD L48 / DRAGONITE L50@SITRUS_BERRY | 脚本 scr_seq_0824_T10R0601.s:76 |  |
+|  | 245 | `TRAINER_ELITE_FOUR_WILL_WILL` | ELITE_FOUR_WILL | Will | XATU L40 / JYNX L41 / EXEGGUTOR L41 / SLOWBRO L41 / XATU L42@SITRUS_BERRY | 脚本 scr_seq_0820_T10R0201.s:57 |  |
+|  | 246 | `TRAINER_ELITE_FOUR_KAREN_KAREN` | ELITE_FOUR_KAREN | Karen | UMBREON L42 / VILEPLUME L42 / GENGAR L45 / MURKROW L44 / HOUNDOOM L47@SITRUS_BERRY | 脚本 scr_seq_0823_T10R0501.s:58 |  |
+|  | 247 | `TRAINER_ELITE_FOUR_KOGA_KOGA` | ELITE_FOUR_KOGA | Koga | ARIADOS L40 / VENOMOTH L41 / FORRETRESS L43 / MUK L42@BLACK_SLUDGE / CROBAT L44@SITRUS_BERRY | 脚本 scr_seq_0821_T10R0301.s:57 |  |
+|  | 253 | `TRAINER_LEADER_BROCK_BROCK` | LEADER_BROCK | Brock | GRAVELER L51 / RHYHORN L51 / OMASTAR L53 / ONIX L54@SITRUS_BERRY / KABUTOPS L52 | 脚本 scr_seq_0752_T03GYM0101.s:93 |  |
+|  | 254 | `TRAINER_LEADER_MISTY_MISTY` | LEADER_MISTY | Misty | GOLDUCK L49 / QUAGSIRE L49 / LAPRAS L52 / STARMIE L54@SITRUS_BERRY | 脚本 scr_seq_0760_T04GYM0101.s:212 |  |
+|  | 255 | `TRAINER_LEADER_LT_SURGE_LT__SURGE` | LEADER_LT_SURGE | Lt. Surge | RAICHU L51 / ELECTRODE L47 / MAGNETON L47 / ELECTRODE L47 / ELECTABUZZ L53@SITRUS_BERRY | 脚本 scr_seq_0778_T06GYM0101.s:286 |  |
+|  | 256 | `TRAINER_LEADER_ERIKA_ERIKA` | LEADER_ERIKA | Erika | JUMPLUFF L51 / TANGELA L52 / VICTREEBEL L56 / BELLOSSOM L56@SITRUS_BERRY | 脚本 scr_seq_0786_T07GYM0101.s:103 |  |
+|  | 257 | `TRAINER_LEADER_JANINE_JANINE` | LEADER_JANINE | Janine | CROBAT L47 / WEEZING L44 / ARIADOS L47 / ARIADOS L47 / VENOMOTH L50@SITRUS_BERRY | 脚本 scr_seq_0809_T08GYM0101.s:514 |  |
+|  | 258 | `TRAINER_LEADER_SABRINA_SABRINA` | LEADER_SABRINA | Sabrina | ESPEON L53 / MR_MIME L53 / ALAKAZAM L55@SITRUS_BERRY | 脚本 scr_seq_0829_T11GYM0101.s:57 |  |
+|  | 259 | `TRAINER_LEADER_BLAINE_BLAINE` | LEADER_BLAINE | Blaine | MAGCARGO L54@WHITE_HERB / MAGMAR L54@WHITE_HERB / RAPIDASH L59@WHITE_HERB | 脚本 scr_seq_0015_D11R0106.s:87 |  |
+|  | 261 | `TRAINER_LEADER_BLUE_BLUE` | LEADER_BLUE | Blue | EXEGGUTOR L55 / ARCANINE L58 / RHYDON L58 / GYARADOS L52 / MACHAMP L56 / PIDGEOT L60@SITRUS_BERRY | 脚本 scr_seq_0743_T02GYM0101.s:50 |  |
+|  | 263 | `TRAINER_RIVAL_SILVER_4` | RIVAL | Silver | GASTLY L20 / MAGNEMITE L18 / ZUBAT L20 / BAYLEEF L22 | 脚本 scr_seq_0023_D18R0101.s:35 |  |
+|  | 264 | `TRAINER_RIVAL_SILVER_5` | RIVAL | Silver | SNEASEL L36 / GOLBAT L38 / MAGNETON L37 / HAUNTER L37 / KADABRA L37 / MEGANIUM L40 | 脚本 scr_seq_0110_D43R0103.s:63 |  |
+|  | 265 | `TRAINER_RIVAL_SILVER_6` | RIVAL | Silver | CHIKORITA L5 |  |  |
+|  | 266 | `TRAINER_RIVAL_SILVER_7` | RIVAL | Silver | GASTLY L14 / ZUBAT L16 / QUILAVA L18 | 脚本 scr_seq_0866_T23.s:106 |  |
+|  | 267 | `TRAINER_RIVAL_SILVER_8` | RIVAL | Silver | GASTLY L20 / MAGNEMITE L18 / ZUBAT L20 / QUILAVA L22 | 脚本 scr_seq_0023_D18R0101.s:25 |  |
+|  | 268 | `TRAINER_RIVAL_SILVER_9` | RIVAL | Silver | SNEASEL L36 / GOLBAT L38 / MAGNETON L37 / HAUNTER L37 / KADABRA L37 / TYPHLOSION L40 | 脚本 scr_seq_0110_D43R0103.s:53 |  |
+|  | 269 | `TRAINER_RIVAL_SILVER_10` | RIVAL | Silver | GASTLY L14 / ZUBAT L16 / CROCONAW L18 | 脚本 scr_seq_0866_T23.s:112 |  |
+|  | 270 | `TRAINER_RIVAL_SILVER_11` | RIVAL | Silver | GASTLY L20 / MAGNEMITE L18 / ZUBAT L20 / CROCONAW L22 | 脚本 scr_seq_0023_D18R0101.s:31 |  |
+|  | 271 | `TRAINER_RIVAL_SILVER_12` | RIVAL | Silver | GOLBAT L30 / MAGNEMITE L28 / HAUNTER L30 / SNEASEL L32 / FERALIGATR L32 | 脚本 scr_seq_0096_D37R0104.s:431 |  |
+|  | 272 | `TRAINER_RIVAL_SILVER_13` | RIVAL | Silver | SNEASEL L36 / GOLBAT L38 / MAGNETON L37 / HAUNTER L37 / KADABRA L37 / FERALIGATR L40 | 脚本 scr_seq_0110_D43R0103.s:59 |  |
+|  | 285 | `TRAINER_RIVAL_SILVER_14` | RIVAL | Silver | SNEASEL L46 / GOLBAT L47 / MAGNETON L46 / GENGAR L48 / ALAKAZAM L48 / MEGANIUM L50 | 脚本 scr_seq_0007_D02R0101.s:38 | 通关后月见山后期战 |
+|  | 286 | `TRAINER_RIVAL_SILVER_15` | RIVAL | Silver | SNEASEL L46 / GOLBAT L47 / MAGNETON L46 / GENGAR L48 / ALAKAZAM L48 / TYPHLOSION L50 | 脚本 scr_seq_0007_D02R0101.s:28 | 通关后月见山后期战 |
+|  | 287 | `TRAINER_RIVAL_SILVER_16` | RIVAL | Silver | SNEASEL L46 / GOLBAT L47 / MAGNETON L46 / GENGAR L48 / ALAKAZAM L48 / FERALIGATR L50 | 脚本 scr_seq_0007_D02R0101.s:34 | 通关后月见山后期战 |
+|  | 288 | `TRAINER_RIVAL_SILVER_17` | RIVAL | Silver | GOLBAT L32 / MAGNEMITE L30 / HAUNTER L32 / SNEASEL L34 / MEGANIUM L34 | 脚本 scr_seq_0096_D37R0104.s:435 |  |
+|  | 289 | `TRAINER_RIVAL_SILVER_18` | RIVAL | Silver | GOLBAT L32 / MAGNEMITE L30 / HAUNTER L32 / SNEASEL L34 / QUILAVA L34 | 脚本 scr_seq_0096_D37R0104.s:425 |  |
+|  | 418 | `TRAINER_ELITE_FOUR_BRUNO_BRUNO` | ELITE_FOUR_BRUNO | Bruno | HITMONTOP L42 / HITMONLEE L42 / HITMONCHAN L42 / ONIX L43 / MACHAMP L46@SITRUS_BERRY | 脚本 scr_seq_0822_T10R0401.s:58 |  |
+|  | 478 | `TRAINER_EXECUTIVE_ARIANA_ARIANA` | EXECUTIVE_ARIANA | Ariana | ARBOK L32 / VILEPLUME L32 / MURKROW L32 | 对象(GOLDENROD_RADIO_TOWER_5F) |  |
+|  | 479 | `TRAINER_EXECUTIVE_ARIANA_ARIANA_2` | EXECUTIVE_ARIANA | Ariana | ARBOK L25 / GLOOM L25 / MURKROW L27 |  |  |
+|  | 485 | `TRAINER_EXECUTIVE_ARCHER_ARCHER` | EXECUTIVE_ARCHER | Archer | HOUNDOUR L35 / KOFFING L35 / HOUNDOOM L38 | 脚本 scr_seq_0034_D23R0106.s:28 |  |
+|  | 486 | `TRAINER_EXECUTIVE_PROTON_PROTON` | EXECUTIVE_PROTON | Proton | ZUBAT L8 / KOFFING L12 | 脚本 scr_seq_0060_D26R0102.s:45 |  |
+|  | 487 | `TRAINER_EXECUTIVE_PETREL_PETREL` | EXECUTIVE_PETREL | Petrel | KOFFING L30 / KOFFING L30 / KOFFING L30 / WEEZING L32 / KOFFING L30 / KOFFING L30 | 脚本 scr_seq_0033_D23R0105.s:123 |  |
+|  | 488 | `TRAINER_EXECUTIVE_PETREL_PETREL_2` | EXECUTIVE_PETREL | Petrel | ZUBAT L22 / RATICATE L24 / KOFFING L22 | 脚本 scr_seq_0091_D35R0104.s:285 |  |
+|  | 489 | `TRAINER_RIVAL_SILVER_19` | RIVAL | Silver | SNEASEL L55 / CROBAT L58 / MAGNETON L55 / GENGAR L56 / ALAKAZAM L56 / MEGANIUM L60 | 脚本 scr_seq_0819_T10R0101.s:110 | 通关后重打联盟时再战 |
+|  | 490 | `TRAINER_RIVAL_SILVER_20` | RIVAL | Silver | SNEASEL L55 / CROBAT L58 / MAGNETON L55 / GENGAR L56 / ALAKAZAM L56 / TYPHLOSION L60 | 脚本 scr_seq_0819_T10R0101.s:100 | 通关后重打联盟时再战 |
+|  | 491 | `TRAINER_RIVAL_SILVER_21` | RIVAL | Silver | SNEASEL L55 / CROBAT L58 / MAGNETON L55 / GENGAR L56 / ALAKAZAM L56 / FERALIGATR L60 | 脚本 scr_seq_0819_T10R0101.s:106 | 通关后重打联盟时再战 |
+|  | 495 | `TRAINER_PASSERBY_BOY` | PASSERBY | Boy | CHIKORITA L5 | 脚本 scr_seq_0850_T21.s:560 |  |
+|  | 496 | `TRAINER_PASSERBY_BOY_2` | PASSERBY | Boy | CYNDAQUIL L5 | 脚本 scr_seq_0850_T21.s:550 |  |
+|  | 497 | `TRAINER_PASSERBY_BOY_3` | PASSERBY | Boy | TOTODILE L5 | 脚本 scr_seq_0850_T21.s:556 |  |
+|  | 701 | `TRAINER_CHAMPION_LANCE_2` | CHAMPION | Lance | SALAMENCE L72@LUM_BERRY / GYARADOS L68 / GARCHOMP L72 / ALTARIA L73 / CHARIZARD L68 / DRAGONITE L75@SITRUS_BERRY | 脚本 scr_seq_0824_T10R0601.s:72 | 通关后重打联盟时的强化阵容 |
+|  | 702 | `TRAINER_ELITE_FOUR_WILL_WILL_2` | ELITE_FOUR_WILL | Will | BRONZONG L58 / JYNX L60 / GRUMPIG L59 / SLOWBRO L60 / GARDEVOIR L61 / XATU L62@SITRUS_BERRY | 脚本 scr_seq_0820_T10R0201.s:53 | 通关后重打联盟时的强化阵容 |
+|  | 703 | `TRAINER_ELITE_FOUR_KOGA_KOGA_2` | ELITE_FOUR_KOGA | Koga | SKUNTANK L61 / VENOMOTH L63 / TOXICROAK L60 / MUK L62@BLACK_SLUDGE / CROBAT L64 / SWALOT L62@LEFTOVERS | 脚本 scr_seq_0821_T10R0301.s:53 | 通关后重打联盟时的强化阵容 |
+|  | 704 | `TRAINER_ELITE_FOUR_BRUNO_BRUNO_2` | ELITE_FOUR_BRUNO | Bruno | HITMONTOP L62 / HITMONLEE L61 / HITMONCHAN L61 / HARIYAMA L62@SITRUS_BERRY / MACHAMP L64 / LUCARIO L64 | 脚本 scr_seq_0822_T10R0401.s:54 | 通关后重打联盟时的强化阵容 |
+|  | 705 | `TRAINER_ELITE_FOUR_KAREN_KAREN_2` | ELITE_FOUR_KAREN | Karen | WEAVILE L62 / SPIRITOMB L62 / ABSOL L62 / HONCHKROW L64 / HOUNDOOM L63 / UMBREON L64@SITRUS_BERRY | 脚本 scr_seq_0823_T10R0501.s:54 | 通关后重打联盟时的强化阵容 |
+|  | 706 | `TRAINER_EXECUTIVE_PROTON_PROTON_2` | EXECUTIVE_PROTON | Proton | GOLBAT L28 / WEEZING L33 | 对象(GOLDENROD_RADIO_TOWER_4F) |  |
+|  | 712 | `TRAINER_LEADER_FALKNER_FALKNER_2` | LEADER_FALKNER | Falkner | STARAPTOR L50 / NOCTOWL L52 / SWELLOW L52@FLAME_ORB / HONCHKROW L54 / PELIPPER L48 / PIDGEOT L56 | 脚本 scr_seq_0832_T11R0101.s:512 | 16 枚徽章后在格斗道场重战 |
+|  | 713 | `TRAINER_LEADER_BUGSY_BUGSY_2` | LEADER_BUGSY | Bugsy | SCIZOR L56@SITRUS_BERRY / SHEDINJA L48 / YANMEGA L52 / PINSIR L55 / HERACROSS L54 / VESPIQUEN L52@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:452 | 16 枚徽章后在格斗道场重战 |
+|  | 714 | `TRAINER_LEADER_WHITNEY_2` | LEADER_WHITNEY | Whitney | GIRAFARIG L52 / LICKILICKY L50 / BIBAREL L54 / DELCATTY L54 / CLEFABLE L52 / MILTANK L58@LUM_BERRY | 脚本 scr_seq_0832_T11R0101.s:182 | 16 枚徽章后在格斗道场重战 |
+|  | 715 | `TRAINER_LEADER_MORTY_MORTY_2` | LEADER_MORTY | Morty | DRIFBLIM L52@SITRUS_BERRY / DUSKNOIR L52 / SABLEYE L52 / MISMAGIUS L54 / GENGAR L57 / GENGAR L57 | 脚本 scr_seq_0832_T11R0101.s:572 | 16 枚徽章后在格斗道场重战 |
+|  | 716 | `TRAINER_LEADER_PRYCE_PRYCE_2` | LEADER_PRYCE | Pryce | ABOMASNOW L56 / DEWGONG L58@LUM_BERRY / GLALIE L52 / FROSLASS L52 / WALREIN L54 / MAMOSWINE L60@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:632 | 16 枚徽章后在格斗道场重战 |
+|  | 717 | `TRAINER_LEADER_JASMINE_JASMINE_2` | LEADER_JASMINE | Jasmine | METAGROSS L52 / MAGNEZONE L56 / SKARMORY L52 / BRONZONG L50 / EMPOLEON L52 / STEELIX L62 | 脚本 scr_seq_0832_T11R0101.s:602 | 16 枚徽章后在格斗道场重战 |
+|  | 718 | `TRAINER_LEADER_CHUCK_CHUCK_2` | LEADER_CHUCK | Chuck | MEDICHAM L54@SITRUS_BERRY / HITMONCHAN L52 / HITMONLEE L55 / BRELOOM L54@TOXIC_ORB / PRIMEAPE L56 / POLIWRATH L60@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:392 | 16 枚徽章后在格斗道场重战 |
+|  | 719 | `TRAINER_LEADER_CLAIR_CLAIR_2` | LEADER_CLAIR | Clair | GYARADOS L56@WACAN_BERRY / DRAGONAIR L52 / AERODACTYL L52 / KINGDRA L56 / CHARIZARD L52 / DRAGONITE L60@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:242 | 16 枚徽章后在格斗道场重战 |
+|  | 720 | `TRAINER_LEADER_BROCK_BROCK_2` | LEADER_BROCK | Brock | GOLEM L55 / RELICANTH L54@LUM_BERRY / OMASTAR L56 / ONIX L61@SITRUS_BERRY / KABUTOPS L55 / RAMPARDOS L57 | 脚本 scr_seq_0832_T11R0101.s:422 | 16 枚徽章后在格斗道场重战 |
+|  | 721 | `TRAINER_LEADER_MISTY_MISTY_2` | LEADER_MISTY | Misty | STARMIE L60@COLBUR_BERRY / QUAGSIRE L56 / LAPRAS L56 / LANTURN L54 / FLOATZEL L54 / MILOTIC L60 | 脚本 scr_seq_0832_T11R0101.s:302 | 16 枚徽章后在格斗道场重战 |
+|  | 722 | `TRAINER_LEADER_LT_SURGE_LT__SURGE_2` | LEADER_LT_SURGE | Lt. Surge | RAICHU L60 / MANECTRIC L52@PINAP_BERRY / MAGNEZONE L52 / ELECTRODE L52 / PACHIRISU L58 / ELECTIVIRE L56@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:542 | 16 枚徽章后在格斗道场重战 |
+|  | 723 | `TRAINER_LEADER_ERIKA_ERIKA_2` | LEADER_ERIKA | Erika | SHIFTRY L54 / JUMPLUFF L53 / VICTREEBEL L56@KELPSY_BERRY / BELLOSSOM L56 / TANGROWTH L60 / ROSERADE L55 | 脚本 scr_seq_0832_T11R0101.s:272 | 16 枚徽章后在格斗道场重战 |
+|  | 724 | `TRAINER_LEADER_JANINE_JANINE_2` | LEADER_JANINE | Janine | CROBAT L52 / WEEZING L56 / TOXICROAK L52 / ARIADOS L58 / VENOMOTH L59@SITRUS_BERRY / DRAPION L55 | 脚本 scr_seq_0832_T11R0101.s:212 | 16 枚徽章后在格斗道场重战 |
+|  | 725 | `TRAINER_LEADER_SABRINA_SABRINA_2` | LEADER_SABRINA | Sabrina | ALAKAZAM L60 / ESPEON L58 / MR_MIME L56 / JYNX L54 / WOBBUFFET L53 / GALLADE L53@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:482 | 16 枚徽章后在格斗道场重战 |
+|  | 726 | `TRAINER_LEADER_BLAINE_BLAINE_2` | LEADER_BLAINE | Blaine | TORKOAL L54 / CAMERUPT L57 / RAPIDASH L60 / MAGCARGO L58 / HOUNDOOM L54 / MAGMORTAR L62 | 脚本 scr_seq_0832_T11R0101.s:332 | 16 枚徽章后在格斗道场重战 |
+|  | 727 | `TRAINER_LEADER_BLUE_BLUE_2` | LEADER_BLUE | Blue | EXEGGUTOR L67 / MACHAMP L69@IRON_BALL / RHYPERIOR L70 / ARCANINE L68 / TYRANITAR L70 / PIDGEOT L72@SITRUS_BERRY | 脚本 scr_seq_0832_T11R0101.s:362 | 16 枚徽章后在格斗道场重战 |
+|  | 733 | `TRAINER_CHAMPION_LANCE_3` | CHAMPION | Lance | GYARADOS L68 / CHARIZARD L68 / DRAGONITE L75 |  |  |
+|  | 734 | `TRAINER_LEADER_CLAIR_CLAIR_3` | LEADER_CLAIR | Clair | DRAGONAIR L52 / KINGDRA L56 / DRAGONITE L60 |  |  |
+|  | 735 | `TRAINER_PARTNER_RIVAL_1` | RIVAL | Silver | MEGANIUM L60 / CROBAT L58 / GENGAR L56 |  |  |
+|  | 736 | `TRAINER_PARTNER_RIVAL_2` | RIVAL | Silver | TYPHLOSION L60 / CROBAT L58 / GENGAR L56 |  |  |
+|  | 737 | `TRAINER_PARTNER_RIVAL_3` | RIVAL | Silver | FERALIGATR L60 / CROBAT L58 / GENGAR L56 |  |  |
+
+## 附录 B · 完全未引用的条目（100 个）
+
+没有任何事件对象/脚本引用的条目。包含：对战塔/边疆首领与搭档训练师（游戏内由设施代码使用，如 #667-675、#707-711）、大量 Mickey 等占位残留、未直接引用的重战/变体（#735-737 为多人战搭档）。调整前请先确认用途。
+
+- #11 `TRAINER_KIMONO_GIRL_MICKEY`（Mickey）；#19 `TRAINER_BIKER_MICKEY`（Mickey）；#40 `TRAINER_SUPER_NERD_MICKEY`（Mickey）；#63 `TRAINER_TEAM_ROCKET_MICKEY`（Mickey）
+- #87 `TRAINER_SAGE_MICKEY`（Mickey）；#88 `TRAINER_SAGE_MICKEY_2`（Mickey）；#105 `TRAINER_ACE_TRAINER_M_MICKEY`（Mickey）；#106 `TRAINER_ACE_TRAINER_M_MICKEY_2`（Mickey）
+- #107 `TRAINER_ACE_TRAINER_M_MICKEY_3`（Mickey）；#138 `TRAINER_CAMPER_MICKEY`（Mickey）；#141 `TRAINER_CAMPER_MICKEY_2`（Mickey）；#165 `TRAINER_SWIMMER_F_MICKEY`（Mickey）
+- #166 `TRAINER_SWIMMER_F_MICKEY_2`（Mickey）；#167 `TRAINER_SWIMMER_F_MICKEY_3`（Mickey）；#168 `TRAINER_SWIMMER_M_MICKEY`（Mickey）；#169 `TRAINER_SWIMMER_M_MICKEY_2`（Mickey）
+- #170 `TRAINER_SWIMMER_M_MICKEY_3`（Mickey）；#171 `TRAINER_SWIMMER_M_MICKEY_4`（Mickey）；#174 `TRAINER_BIKER_MICKEY_2`（Mickey）；#175 `TRAINER_MEDIUM_BETHANY`（Bethany）
+- #176 `TRAINER_MEDIUM_MARGARET`（Margaret）；#177 `TRAINER_MEDIUM_ETHEL`（Ethel）；#180 `TRAINER_BEAUTY_MICKEY`（Mickey）；#194 `TRAINER_TEAM_ROCKET_MICKEY_2`（Mickey）
+- #207 `TRAINER_BEAUTY_MICKEY_2`（Mickey）；#208 `TRAINER_BEAUTY_MICKEY_3`（Mickey）；#210 `TRAINER_BEAUTY_CAROLINE`（Caroline）；#221 `TRAINER_TEAM_ROCKET_MICKEY_3`（Mickey）
+- #225 `TRAINER_TEAM_ROCKET_MICKEY_4`（Mickey）；#226 `TRAINER_TEAM_ROCKET_MICKEY_5`（Mickey）；#229 `TRAINER_TEAM_ROCKET_MICKEY_6`（Mickey）；#243 `TRAINER_SWIMMER_F_KATIE`（Katie）
+- #262 `TRAINER_TEAM_ROCKET_MICKEY_7`（Mickey）；#273 `TRAINER_SWIMMER_M_MICKEY_5`（Mickey）；#292 `TRAINER_SWIMMER_F_MICKEY_4`（Mickey）；#295 `TRAINER_SWIMMER_F_MICKEY_5`（Mickey）
+- #303 `TRAINER_BIRD_KEEPER_GS_JOSE`（Jose）；#304 `TRAINER_CAMPER_MICKEY_3`（Mickey）；#305 `TRAINER_CAMPER_MICKEY_4`（Mickey）；#306 `TRAINER_CAMPER_MICKEY_5`（Mickey）
+- #307 `TRAINER_CAMPER_MICKEY_6`（Mickey）；#338 `TRAINER_GENTLEMAN_MICKEY`（Mickey）；#340 `TRAINER_BEAUTY_MICKEY_4`（Mickey）；#341 `TRAINER_BEAUTY_MICKEY_5`（Mickey）
+- #342 `TRAINER_BEAUTY_MICKEY_6`（Mickey）；#343 `TRAINER_BEAUTY_MICKEY_7`（Mickey）；#344 `TRAINER_BEAUTY_MICKEY_8`（Mickey）；#345 `TRAINER_BEAUTY_MICKEY_9`（Mickey）
+- #347 `TRAINER_BEAUTY_MICKEY_10`（Mickey）；#372 `TRAINER_SWIMMER_M_MICKEY_6`（Mickey）；#375 `TRAINER_SWIMMER_M_MICKEY_7`（Mickey）；#376 `TRAINER_SWIMMER_M_MICKEY_8`（Mickey）
+- #377 `TRAINER_SWIMMER_M_PARKER`（Parker）；#385 `TRAINER_TWINS_DARA_AND_DIA`（Dara & Dia）；#394 `TRAINER_ACE_TRAINER_M_MICKEY_4`（Mickey）；#442 `TRAINER_LASS_MICKEY`（Mickey）
+- #443 `TRAINER_LASS_MICKEY_2`（Mickey）；#446 `TRAINER_BIRD_KEEPER_GS_JOSE_3`（Jose）；#473 `TRAINER_SUPER_NERD_MICKEY_2`（Mickey）；#474 `TRAINER_SUPER_NERD_MICKEY_3`（Mickey）
+- #475 `TRAINER_SUPER_NERD_MICKEY_4`（Mickey）；#476 `TRAINER_SUPER_NERD_MICKEY_5`（Mickey）；#477 `TRAINER_SUPER_NERD_MICKEY_6`（Mickey）；#504 `TRAINER_SCHOOL_KID_M_MICKEY`（Mickey）
+- #506 `TRAINER_SCHOOL_KID_M_MICKEY_2`（Mickey）；#508 `TRAINER_SCHOOL_KID_M_MICKEY_3`（Mickey）；#511 `TRAINER_YOUNGSTER_MICKEY`（Mickey）；#514 `TRAINER_BUG_CATCHER_MICKEY`（Mickey）
+- #516 `TRAINER_FISHERMAN_MICKEY`（Mickey）；#519 `TRAINER_PICNICKER_MICKEY`（Mickey）；#521 `TRAINER_PICNICKER_MICKEY_2`（Mickey）；#524 `TRAINER_HIKER_MICKEY`（Mickey）
+- #526 `TRAINER_CAMPER_MICKEY_7`（Mickey）；#529 `TRAINER_LASS_MICKEY_3`（Mickey）；#531 `TRAINER_TWINS_MICKEY`（Mickey）；#532 `TRAINER_BUG_CATCHER_MICKEY_2`（Mickey）
+- #533 `TRAINER_BUG_CATCHER_WAYNE`（Wayne）；#534 `TRAINER_BEAUTY_KIMBERLY`（Kimberly）；#535 `TRAINER_POKEFAN_MARIGOLD`（Marigold）；#536 `TRAINER_CAMPER_BERTRAND`（Bertrand）
+- #540 `TRAINER_POKEFAN_M_REX`（Rex）；#541 `TRAINER_POKEFAN_M_ANDY`（Andy）；#542 `TRAINER_SAGE_MICKEY_3`（Mickey）；#543 `TRAINER_SAGE_MICKEY_4`（Mickey）
+- #544 `TRAINER_SAGE_MICKEY_5`（Mickey）；#602 `TRAINER_BIRD_KEEPER_GS_JOSE_4`（Jose）；#667 `TRAINER_PKMN_TRAINER_CHERYL_CHERYL`（Cheryl）；#668 `TRAINER_PKMN_TRAINER_BUCK_MARLEY`（Marley）
+- #669 `TRAINER_PKMN_TRAINER_MARLEY_MIRA`（Mira）；#670 `TRAINER_PKMN_TRAINER_RILEY_RILEY`（Riley）；#671 `TRAINER_PKMN_TRAINER_MIRA_BUCK`（Buck）；#675 `TRAINER_PKMN_TRAINER_LANCE_LANCE`（Lance）
+- #707 `TRAINER_TOWER_TYCOON_PALMER`（Palmer）；#708 `TRAINER_HALL_MATRON_ARGENTA`（Argenta）；#709 `TRAINER_FACTORY_HEAD_THORTON`（Thorton）；#710 `TRAINER_ARCADE_STAR_DAHLIA`（Dahlia）
+- #711 `TRAINER_CASTLE_VALET_DARACH`（Darach）；#735 `TRAINER_PARTNER_RIVAL_1`（Silver）；#736 `TRAINER_PARTNER_RIVAL_2`（Silver）；#737 `TRAINER_PARTNER_RIVAL_3`（Silver）
