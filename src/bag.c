@@ -1,3 +1,4 @@
+#include "../include/ability_machine.h"
 #include "../include/bag.h"
 
 #include "../include/config.h"
@@ -9,6 +10,7 @@
 #include "../include/message.h"
 #include "../include/save.h"
 #include "../include/script.h"
+#include "../include/window.h"
 
 #ifdef DEBUG_BATTLE_SCENARIOS
 #include "../include/test_battle.h"
@@ -42,6 +44,7 @@ const u8 sPocketCountBytes[8] = {
 void SortPocket(ITEM_SLOT *slots, u32 count);
 void SortTMHMPocket(ITEM_SLOT *slots, u32 count);
 void PocketCompaction(ITEM_SLOT *slots, u32 count);
+u16 LONG_CALL ItemToMachineMove(u16 itemId);
 static u16 GetMachineMoveNumber(u16 itemId);
 void LONG_CALL Bag_PrintMachineMoveLabel(BagContext *context, void *window, ITEM_SLOT *slot, u32 baseY);
 void LONG_CALL PrintUIntOnWindowWithGlyph(void *msgPrinter, u8 glyphId, u32 num, u32 ndigits, u32 mode, void *window, u32 x, u32 y);
@@ -543,7 +546,19 @@ void LONG_CALL Bag_RenderMachineMoveSlot(BagContext *context, void *window, void
 {
     void *items = *(void **)lst;
     ITEM_SLOT *slot = (ITEM_SLOT *)items + index;
-    AddTextPrinterParameterizedWithColor(window, 0, msg, 0, 0, 0xFF, 0x00010200, NULL);
+
+    if (IS_ITEM_ABILITY_MACHINE(slot->id)) {
+        // the rom builds TM/HM row text from the move table (falls back to TM01 for
+        // unknown items); show the item's own name for ability machines instead
+        MsgData *nameMsgData = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, ARC_MSG_DATA, 222 /* item name bank */, 6);
+        void *nameStr = String_New(32, 6);
+        ReadMsgDataIntoString(nameMsgData, slot->id, nameStr);
+        DestroyMsgData(nameMsgData);
+        AddTextPrinterParameterizedWithColor(window, 0, nameStr, 0, 0, 0xFF, 0x00010200, NULL);
+        String_Delete(nameStr);
+    } else {
+        AddTextPrinterParameterizedWithColor(window, 0, msg, 0, 0, 0xFF, 0x00010200, NULL);
+    }
     Bag_PrintMachineMoveLabel(context, window, slot, 0x10);
 #ifdef REUSABLE_TMS
     BOOL showQuant = IS_ITEM_TR(slot->id);
@@ -561,6 +576,11 @@ void LONG_CALL Bag_RenderMachineMoveSlot(BagContext *context, void *window, void
 void LONG_CALL Bag_PrintMachineMoveLabel(BagContext *context, void *window, ITEM_SLOT *slot, u32 baseY)
 {
     u16 itemId = slot->id;
+
+    if (IS_ITEM_ABILITY_MACHINE(itemId)) {
+        return; // ability machines show just their name (the granted ability); no number/icon
+    }
+
     u16 machineMoveNumber = GetMachineMoveNumber(itemId);
     void *msgPrinter = context->msgPrinter;
 
@@ -586,6 +606,44 @@ void LONG_CALL Bag_PrintMachineMoveLabel(BagContext *context, void *window, ITEM
         ov15_021FE8C4(context, ((u32)slot->quantity << 16) | (baseY & 0xFFFF)); // honestly idk what this is even doing
     }
 #endif // UPDATE_MACHINE_MOVE_LABELS
+}
+
+/**
+ * @brief replaces ov15_021F9D9C (0x021F9D9C) in overlay 15. The bag loads the move description
+ * of each TM/HM slot from the move description bank. Ability machines have no move, so use
+ * their own item description instead (bank 221, offset itemId - ITEM_ABILITY_MACHINE_FIRST)
+ */
+void LONG_CALL Bag_ReadTMHMMoveDesc(void *msgData, void *dest, u16 itemId)
+{
+    if (IS_ITEM_ABILITY_MACHINE(itemId)) {
+        MsgData *descMsgData = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, ARC_MSG_DATA, MSG_DATA_ITEM_DESCRIPTION_CUSTOM, 6);
+        ReadMsgDataIntoString(descMsgData, itemId - ABILITY_MACHINE_ITEM_FIRST, dest);
+        DestroyMsgData(descMsgData);
+    } else {
+        ReadMsgDataIntoString(msgData, ItemToMachineMove(itemId), dest);
+    }
+}
+
+/**
+ * @brief draws the granted ability's effect text into the bag's TM pocket info strip.
+ * Replaces ov15_021FE620 for ability machines (see asm/general_hooks.s): the rom builds
+ * that strip from the machine's move, which falls back to TM01 for our custom items
+ */
+void LONG_CALL Bag_DrawAbilityMachineCard(BagContext *context, u16 itemId)
+{
+    u16 ability = sAbilityMachineAbilities[itemId - ABILITY_MACHINE_ITEM_FIRST];
+    void *window = (u8 *)context + 0x14; // the 256x32 info strip window (two text lines)
+
+    MsgData *msgData = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, ARC_MSG_DATA, 722 /* ability descriptions */, 6);
+    void *str = String_New(256, 6);
+    ReadMsgDataIntoString(msgData, ability, str);
+    DestroyMsgData(msgData);
+    AddTextPrinterParameterizedWithColor(window, 0, str, 0, 0, 0xFF, 0x000F0E00, NULL);
+    String_Delete(str);
+
+    // the original ov15_021FE620 flushes the strip window itself; without this the drawn
+    // text never reaches vram and the strip stays empty
+    ScheduleWindowCopyToVram(window);
 }
 
 // move these here so gFieldSysPtr works

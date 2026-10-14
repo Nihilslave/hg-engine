@@ -138,3 +138,45 @@ ldr r2, =0x021FF662 | 1
 bx  r2
 
 .pool
+
+// Ability machines have no move, so the rom's TM pocket info strip (ov15_021FE620) would
+// show TM01's move stats for them. Draw the granted ability's effect text instead.
+.global Bag_MachineMoveInfo_hook
+Bag_MachineMoveInfo_hook:
+ldr r3, =0xA7D // ABILITY_MACHINE_ITEM_FIRST (2685)
+sub r3, r1, r3
+cmp r3, #0x1C // number of ability machines
+bhs Bag_MachineMoveInfo_hook_normal
+push {r3, lr}
+bl Bag_DrawAbilityMachineCard
+pop {r3, pc}
+
+Bag_MachineMoveInfo_hook_normal:
+// replay the prologue we overwrote, then carry on in the original function
+push {r4, r5, r6, r7, lr}
+sub sp, #0x14
+add r5, r0, #0
+add r4, r5, #0
+ldr r3, =0x021FE628 | 1
+bx r3
+
+// Same for the type/category icons (ov15_021FF97C): ability machines have no move type,
+// so force the suppress flag instead of drawing TM01's icons.
+.global Bag_MachineMoveInfoIcons_hook
+Bag_MachineMoveInfoIcons_hook:
+ldr r3, =0xA7D // ABILITY_MACHINE_ITEM_FIRST (2685)
+sub r3, r1, r3
+cmp r3, #0x1C
+bhs Bag_MachineMoveInfoIcons_hook_normal
+mov r2, #0
+
+Bag_MachineMoveInfoIcons_hook_normal:
+// replay the prologue we overwrote, then carry on in the original function
+push {r3, r4, r5, r6, r7, lr}
+sub sp, #8
+add r5, r0, #0
+mov r0, #0x9b
+ldr r3, =0x021FF984 | 1
+bx r3
+
+.pool

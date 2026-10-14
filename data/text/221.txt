@@ -1,1 +1,28 @@
-Custom item description
+A machine that changes the\nPokémon’s ability to Speed Boost.
+A machine that changes the\nPokémon’s ability to Drought.
+A machine that changes the\nPokémon’s ability to Drizzle.
+A machine that changes the\nPokémon’s ability to Sand Stream.
+A machine that changes the\nPokémon’s ability to Snow Warning.
+A machine that changes the\nPokémon’s ability to Intimidate.
+A machine that changes the\nPokémon’s ability to Levitate.
+A machine that changes the\nPokémon’s ability to Technician.
+A machine that changes the\nPokémon’s ability to Adaptability.
+A machine that changes the\nPokémon’s ability to Multiscale.
+A machine that changes the\nPokémon’s ability to Regenerator.
+A machine that changes the\nPokémon’s ability to Magic Guard.
+A machine that changes the\nPokémon’s ability to Magic Bounce.
+A machine that changes the\nPokémon’s ability to Mold Breaker.
+A machine that changes the\nPokémon’s ability to Gale Wings.
+A machine that changes the\nPokémon’s ability to Prankster.
+A machine that changes the\nPokémon’s ability to Unaware.
+A machine that changes the\nPokémon’s ability to Sturdy.
+A machine that changes the\nPokémon’s ability to Huge Power.
+A machine that changes the\nPokémon’s ability to Pure Power.
+A machine that changes the\nPokémon’s ability to Protean.
+A machine that changes the\nPokémon’s ability to Serene Grace.
+A machine that changes the\nPokémon’s ability to Reckless.
+A machine that changes the\nPokémon’s ability to Iron Fist.
+A machine that changes the\nPokémon’s ability to Thick Fat.
+A machine that changes the\nPokémon’s ability to Water Absorb.
+A machine that changes the\nPokémon’s ability to Volt Absorb.
+A machine that changes the\nPokémon’s ability to Flash Fire.

@@ -26856,25 +26856,305 @@ ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/canari_bread.png
 ITEMGFX_OBJS += $(ITEMGFX_DIR)/2686-00.NCGR
 ITEMGFX_PALS += $(ITEMGFX_DIR)/2686-01.NCLR
 
-$(ITEMGFX_DIR)/2687-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/dummy.png
+$(ITEMGFX_DIR)/2687-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_speed_boost.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
-$(ITEMGFX_DIR)/2687-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/dummy.png
+$(ITEMGFX_DIR)/2687-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_speed_boost.png
 	$(GFX) $< $@ -ir -bitdepth 4
 
-ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/dummy.png
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_speed_boost.png
 ITEMGFX_OBJS += $(ITEMGFX_DIR)/2687-00.NCGR
 ITEMGFX_PALS += $(ITEMGFX_DIR)/2687-01.NCLR
 
-$(ITEMGFX_DIR)/2688-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/return.png
+$(ITEMGFX_DIR)/2688-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_drought.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
-$(ITEMGFX_DIR)/2688-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/return.png
+$(ITEMGFX_DIR)/2688-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_drought.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_drought.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2688-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2688-01.NCLR
+
+$(ITEMGFX_DIR)/2689-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_drizzle.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2689-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_drizzle.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_drizzle.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2689-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2689-01.NCLR
+
+$(ITEMGFX_DIR)/2690-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_sand_stream.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2690-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_sand_stream.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_sand_stream.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2690-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2690-01.NCLR
+
+$(ITEMGFX_DIR)/2691-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_snow_warning.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2691-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_snow_warning.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_snow_warning.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2691-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2691-01.NCLR
+
+$(ITEMGFX_DIR)/2692-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_intimidate.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2692-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_intimidate.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_intimidate.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2692-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2692-01.NCLR
+
+$(ITEMGFX_DIR)/2693-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_levitate.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2693-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_levitate.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_levitate.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2693-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2693-01.NCLR
+
+$(ITEMGFX_DIR)/2694-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_technician.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2694-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_technician.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_technician.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2694-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2694-01.NCLR
+
+$(ITEMGFX_DIR)/2695-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_adaptability.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2695-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_adaptability.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_adaptability.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2695-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2695-01.NCLR
+
+$(ITEMGFX_DIR)/2696-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_multiscale.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2696-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_multiscale.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_multiscale.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2696-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2696-01.NCLR
+
+$(ITEMGFX_DIR)/2697-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_regenerator.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2697-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_regenerator.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_regenerator.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2697-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2697-01.NCLR
+
+$(ITEMGFX_DIR)/2698-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_magic_guard.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2698-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_magic_guard.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_magic_guard.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2698-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2698-01.NCLR
+
+$(ITEMGFX_DIR)/2699-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_magic_bounce.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2699-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_magic_bounce.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_magic_bounce.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2699-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2699-01.NCLR
+
+$(ITEMGFX_DIR)/2700-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_mold_breaker.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2700-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_mold_breaker.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_mold_breaker.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2700-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2700-01.NCLR
+
+$(ITEMGFX_DIR)/2701-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_gale_wings.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2701-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_gale_wings.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_gale_wings.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2701-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2701-01.NCLR
+
+$(ITEMGFX_DIR)/2702-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_prankster.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2702-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_prankster.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_prankster.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2702-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2702-01.NCLR
+
+$(ITEMGFX_DIR)/2703-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_unaware.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2703-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_unaware.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_unaware.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2703-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2703-01.NCLR
+
+$(ITEMGFX_DIR)/2704-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_sturdy.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2704-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_sturdy.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_sturdy.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2704-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2704-01.NCLR
+
+$(ITEMGFX_DIR)/2705-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_huge_power.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2705-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_huge_power.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_huge_power.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2705-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2705-01.NCLR
+
+$(ITEMGFX_DIR)/2706-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_pure_power.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2706-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_pure_power.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_pure_power.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2706-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2706-01.NCLR
+
+$(ITEMGFX_DIR)/2707-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_protean.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2707-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_protean.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_protean.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2707-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2707-01.NCLR
+
+$(ITEMGFX_DIR)/2708-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_serene_grace.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2708-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_serene_grace.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_serene_grace.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2708-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2708-01.NCLR
+
+$(ITEMGFX_DIR)/2709-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_reckless.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2709-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_reckless.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_reckless.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2709-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2709-01.NCLR
+
+$(ITEMGFX_DIR)/2710-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_iron_fist.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2710-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_iron_fist.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_iron_fist.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2710-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2710-01.NCLR
+
+$(ITEMGFX_DIR)/2711-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_thick_fat.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2711-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_thick_fat.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_thick_fat.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2711-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2711-01.NCLR
+
+$(ITEMGFX_DIR)/2712-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_water_absorb.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2712-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_water_absorb.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_water_absorb.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2712-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2712-01.NCLR
+
+$(ITEMGFX_DIR)/2713-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_volt_absorb.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2713-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_volt_absorb.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_volt_absorb.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2713-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2713-01.NCLR
+
+$(ITEMGFX_DIR)/2714-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/am_flash_fire.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2714-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/am_flash_fire.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/am_flash_fire.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2714-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2714-01.NCLR
+
+$(ITEMGFX_DIR)/2715-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/dummy.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2715-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/dummy.png
+	$(GFX) $< $@ -ir -bitdepth 4
+
+ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/dummy.png
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2715-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2715-01.NCLR
+
+$(ITEMGFX_DIR)/2716-00.NCGR:$(ITEMGFX_DEPENDENCIES_DIR)/return.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+$(ITEMGFX_DIR)/2716-01.NCLR:$(ITEMGFX_DEPENDENCIES_DIR)/return.png
 	$(GFX) $< $@ -ir -bitdepth 4
 
 ITEMGFX_SRCS += $(ITEMGFX_DEPENDENCIES_DIR)/return.png
-ITEMGFX_OBJS += $(ITEMGFX_DIR)/2688-00.NCGR
-ITEMGFX_PALS += $(ITEMGFX_DIR)/2688-01.NCLR
+ITEMGFX_OBJS += $(ITEMGFX_DIR)/2716-00.NCGR
+ITEMGFX_PALS += $(ITEMGFX_DIR)/2716-01.NCLR
 
 
 

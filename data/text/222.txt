@@ -2683,3 +2683,31 @@ Hyper Babiri Berry
 Hyper Chilan Berry
 Hyper Roseli Berry
 Canari Bread
+AM01 Speed Boost
+AM02 Drought
+AM03 Drizzle
+AM04 Sand Stream
+AM05 Snow Warning
+AM06 Intimidate
+AM07 Levitate
+AM08 Technician
+AM09 Adaptability
+AM10 Multiscale
+AM11 Regenerator
+AM12 Magic Guard
+AM13 Magic Bounce
+AM14 Mold Breaker
+AM15 Gale Wings
+AM16 Prankster
+AM17 Unaware
+AM18 Sturdy
+AM19 Huge Power
+AM20 Pure Power
+AM21 Protean
+AM22 Serene Grace
+AM23 Reckless
+AM24 Iron Fist
+AM25 Thick Fat
+AM26 Water Absorb
+AM27 Volt Absorb
+AM28 Flash Fire

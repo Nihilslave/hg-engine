@@ -13,6 +13,7 @@
 #include "constants/species.h"
 #include "constants/weather_numbers.h"
 
+#include "ability_machine.h"
 #include "bag.h"
 #include "battle.h"
 #include "mon_randomizer.h"
@@ -64,6 +65,11 @@ u16 NatureToMintItem[] = {
     [NATURE_NAIVE] = ITEM_NAIVE_MINT,
     [NATURE_SERIOUS] = ITEM_SERIOUS_MINT,
 };
+
+// Ability machines: the item (ABILITY_MACHINE_ITEM_FIRST + i) grants the ability at index i
+// of sAbilityMachineAbilities (include/ability_machine.h). The party menu message shown on
+// use is 300.txt index ABILITY_MACHINE_MESSAGE_FIRST + i.
+#define ABILITY_MACHINE_MESSAGE_FIRST 227
 
 int __attribute__((section(".init"))) PartyMenu_HandleUseItemOnMon_Internal(struct PartyMenu *partyMenu)
 {
@@ -249,6 +255,24 @@ u32 UseItemMonAttrChangeCheck(struct PartyMenu *wk, void *dat)
         TOGGLE_MON_HIDDEN_ABILITY_BIT(pp)
         ResetPartyPokemonAbility(pp);
         Bag_TakeItem(bag, wk->args->itemId, 1, 11);
+        return TRUE;
+    }
+
+    // handle ability machines
+
+    if (IS_ITEM_ABILITY_MACHINE(wk->args->itemId)) {
+        u16 ability;
+
+        if (GetMonData(pp, MON_DATA_IS_EGG, NULL)) {
+            return FALSE; // eggs cannot be given an ability yet
+        }
+        ability = sAbilityMachineAbilities[wk->args->itemId - ABILITY_MACHINE_ITEM_FIRST];
+        partyMenuSignal = ABILITY_MACHINE_MESSAGE_FIRST + (wk->args->itemId - ABILITY_MACHINE_ITEM_FIRST);
+        wk->args->species = GetMonData(pp, MON_DATA_FORM, NULL); // no form change
+        sys_FreeMemoryEz(dat);
+        PokeList_FormDemoOverlayLoad(wk);
+        SetMonData(pp, MON_DATA_ABILITY, &ability);
+        // reusable: no Bag_TakeItem here
         return TRUE;
     }
 

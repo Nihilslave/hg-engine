@@ -174536,4 +174536,229 @@ const ITEMDATA __data[] =
     },
 },
 
+[ITEM_AM_SPEED_BOOST] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_DROUGHT] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_DRIZZLE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_SAND_STREAM] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_SNOW_WARNING] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_INTIMIDATE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_LEVITATE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_TECHNICIAN] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_ADAPTABILITY] =
+{
+    // TEMP: free while testing the old save; restore to ITEM_PRICE(5000) afterwards
+    ITEM_PRICE(0),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_MULTISCALE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_REGENERATOR] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_MAGIC_GUARD] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_MAGIC_BOUNCE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_MOLD_BREAKER] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_GALE_WINGS] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_PRANKSTER] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_UNAWARE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_STURDY] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_HUGE_POWER] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_PURE_POWER] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_PROTEAN] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_SERENE_GRACE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_RECKLESS] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_IRON_FIST] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_THICK_FAT] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_WATER_ABSORB] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_VOLT_ABSORB] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
+[ITEM_AM_FLASH_FIRE] =
+{
+    ITEM_PRICE(5000),
+    .fieldPocket = POCKET_TMHMS,
+    .fieldUseFunc = 32,
+    .partyUse = 1,
+},
+
 };

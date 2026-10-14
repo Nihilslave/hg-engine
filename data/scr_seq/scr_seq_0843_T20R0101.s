@@ -669,6 +669,11 @@ _06D4:
 	setvar VAR_SPECIAL_x8004, 17
 	setvar VAR_SPECIAL_x8005, 5
 	callstd std_obtain_item_verbose
+	// testing: also hand out the Adaptability ability machine (reusable)
+	goto_if_no_item_space ITEM_AM_ADAPTABILITY, 1, _0805
+	setvar VAR_SPECIAL_x8004, ITEM_AM_ADAPTABILITY
+	setvar VAR_SPECIAL_x8005, 1
+	callstd std_obtain_item_verbose
 	closemsg
 	setvar VAR_SCENE_ELMS_LAB, 2
 	npc_msg 21

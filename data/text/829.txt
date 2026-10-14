@@ -1,1 +1,28 @@
-a {COLOR 255}Custom Item{COLOR 0}
+an {COLOR 255}AM01 Speed Boost{COLOR 0} machine
+an {COLOR 255}AM02 Drought{COLOR 0} machine
+an {COLOR 255}AM03 Drizzle{COLOR 0} machine
+an {COLOR 255}AM04 Sand Stream{COLOR 0} machine
+an {COLOR 255}AM05 Snow Warning{COLOR 0} machine
+an {COLOR 255}AM06 Intimidate{COLOR 0} machine
+an {COLOR 255}AM07 Levitate{COLOR 0} machine
+an {COLOR 255}AM08 Technician{COLOR 0} machine
+an {COLOR 255}AM09 Adaptability{COLOR 0} machine
+an {COLOR 255}AM10 Multiscale{COLOR 0} machine
+an {COLOR 255}AM11 Regenerator{COLOR 0} machine
+an {COLOR 255}AM12 Magic Guard{COLOR 0} machine
+an {COLOR 255}AM13 Magic Bounce{COLOR 0} machine
+an {COLOR 255}AM14 Mold Breaker{COLOR 0} machine
+an {COLOR 255}AM15 Gale Wings{COLOR 0} machine
+an {COLOR 255}AM16 Prankster{COLOR 0} machine
+an {COLOR 255}AM17 Unaware{COLOR 0} machine
+an {COLOR 255}AM18 Sturdy{COLOR 0} machine
+an {COLOR 255}AM19 Huge Power{COLOR 0} machine
+an {COLOR 255}AM20 Pure Power{COLOR 0} machine
+an {COLOR 255}AM21 Protean{COLOR 0} machine
+an {COLOR 255}AM22 Serene Grace{COLOR 0} machine
+an {COLOR 255}AM23 Reckless{COLOR 0} machine
+an {COLOR 255}AM24 Iron Fist{COLOR 0} machine
+an {COLOR 255}AM25 Thick Fat{COLOR 0} machine
+an {COLOR 255}AM26 Water Absorb{COLOR 0} machine
+an {COLOR 255}AM27 Volt Absorb{COLOR 0} machine
+an {COLOR 255}AM28 Flash Fire{COLOR 0} machine

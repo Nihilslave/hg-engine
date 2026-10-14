@@ -225,3 +225,31 @@ Lawn Mower
 Light Bulb
 Microwave Oven
 Washing Machine
+{STRVAR_1 0, 0, 0}’s ability changed to Speed Boost!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Drought!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Drizzle!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Sand Stream!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Snow Warning!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Intimidate!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Levitate!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Technician!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Adaptability!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Multiscale!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Regenerator!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Magic Guard!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Magic Bounce!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Mold Breaker!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Gale Wings!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Prankster!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Unaware!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Sturdy!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Huge Power!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Pure Power!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Protean!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Serene Grace!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Reckless!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Iron Fist!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Thick Fat!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Water Absorb!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Volt Absorb!\r
+{STRVAR_1 0, 0, 0}’s ability changed to Flash Fire!\r

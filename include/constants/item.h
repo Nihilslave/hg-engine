@@ -2694,7 +2694,41 @@
 // define your custom move effects below like this
 // #define ITEM_CUSTOM_1 (MAX_BASE_ITEM_NUM + 1)
 
-#define MAX_TOTAL_ITEM_NUM ITEM_CANARI_BREAD
+// ability machines: reusable items that permanently change a mon's ability
+#define ITEM_AM_SPEED_BOOST              2685
+#define ITEM_AM_DROUGHT                  2686
+#define ITEM_AM_DRIZZLE                  2687
+#define ITEM_AM_SAND_STREAM              2688
+#define ITEM_AM_SNOW_WARNING             2689
+#define ITEM_AM_INTIMIDATE               2690
+#define ITEM_AM_LEVITATE                 2691
+#define ITEM_AM_TECHNICIAN               2692
+#define ITEM_AM_ADAPTABILITY             2693
+#define ITEM_AM_MULTISCALE               2694
+#define ITEM_AM_REGENERATOR              2695
+#define ITEM_AM_MAGIC_GUARD              2696
+#define ITEM_AM_MAGIC_BOUNCE             2697
+#define ITEM_AM_MOLD_BREAKER             2698
+#define ITEM_AM_GALE_WINGS               2699
+#define ITEM_AM_PRANKSTER                2700
+#define ITEM_AM_UNAWARE                  2701
+#define ITEM_AM_STURDY                   2702
+#define ITEM_AM_HUGE_POWER               2703
+#define ITEM_AM_PURE_POWER               2704
+#define ITEM_AM_PROTEAN                  2705
+#define ITEM_AM_SERENE_GRACE             2706
+#define ITEM_AM_RECKLESS                 2707
+#define ITEM_AM_IRON_FIST                2708
+#define ITEM_AM_THICK_FAT                2709
+#define ITEM_AM_WATER_ABSORB             2710
+#define ITEM_AM_VOLT_ABSORB              2711
+#define ITEM_AM_FLASH_FIRE               2712
+
+#define ABILITY_MACHINE_ITEM_FIRST ITEM_AM_SPEED_BOOST
+#define ABILITY_MACHINE_ITEM_LAST  ITEM_AM_FLASH_FIRE
+#define IS_ITEM_ABILITY_MACHINE(item) ((item) >= ABILITY_MACHINE_ITEM_FIRST && (item) <= ABILITY_MACHINE_ITEM_LAST)
+
+#define MAX_TOTAL_ITEM_NUM ABILITY_MACHINE_ITEM_LAST
 
 #define NUM_MEGA_STONES (48) // includes the pixie plate, doesn't include plza megas due to overflowing bag
 #define NUM_HMS         (ITEM_HM08 - ITEM_HM01 + 1) // intentionally do not include HM07_ORAS (Dive)
