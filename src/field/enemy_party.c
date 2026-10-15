@@ -288,7 +288,10 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
         if (bp->trainer_data[num].data_type & TRAINER_DATA_TYPE_IV_EV_SET) {
             for (j = 0; j < 6; j++) {
                 ivnums[j] = buf[offset];
-                if (ivnums[j] > 31) {
+                if (ivnums[j] == TRAINER_IV_EV_UNSET) {
+                    // stat not written in .setIvs: keep the maxed-out default
+                    ivnums[j] = TRAINER_DEFAULT_MAX_IV;
+                } else if (ivnums[j] > 31) {
                     ivnums[j] = 31;
                 }
                 offset++;
@@ -296,6 +299,10 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 
             for (j = 0; j < 6; j++) {
                 evnums[j] = buf[offset];
+                if (evnums[j] == TRAINER_IV_EV_UNSET) {
+                    // stat not written in .setEvs: keep the maxed-out default
+                    evnums[j] = TRAINER_DEFAULT_MAX_EV;
+                }
                 offset++;
             }
         }
@@ -444,9 +451,9 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
         }
 #ifdef TRAINER_MAX_IV_EVS_BY_DEFAULT
         else {
-            // Default for trainers without explicit IV/EV data: max out everything (31 IVs / 252 EVs in all stats).
-            u8 maxiv = 31;
-            u8 maxev = 252;
+            // Default for trainers without explicit IV/EV data: max out everything.
+            u8 maxiv = TRAINER_DEFAULT_MAX_IV;
+            u8 maxev = TRAINER_DEFAULT_MAX_EV;
 
             for (j = 0; j < 6; j++) {
                 SetMonData(mons[i], MON_DATA_HP_IV + j, &maxiv);

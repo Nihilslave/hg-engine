@@ -30,18 +30,29 @@ typedef uint32_t u32;
 #define TRAINER_DATA_TYPE_ITEMS            0x02
 #define TRAINER_DATA_TYPE_ABILITY          0x04
 #define TRAINER_DATA_TYPE_BALL             0x08
-#define TRAINER_DATA_TYPE_IV_EV_SET        0x10
+#define TRAINER_DATA_TYPE_IV_EV_SET        0x10 // per-mon IV/EV bytes; enabled automatically when .setIvs/.setEvs is used
 #define TRAINER_DATA_TYPE_NATURE_SET       0x20
 #define TRAINER_DATA_TYPE_SHINY_LOCK       0x40
 #define TRAINER_DATA_TYPE_ADDITIONAL_FLAGS 0x80 // whether or not to read extra flags in trpoke entry
 
 // Convenience combo for editing trainers: specify moves / held items / ability for every mon.
-// Do NOT add TRAINER_DATA_TYPE_IV_EV_SET here: IVs/EVs already default to maxed-out (31 IVs /
-// 252 EVs in all stats) unless the entry explicitly sets TRAINER_DATA_TYPE_IV_EV_SET with its own
-// setIvs/setEvs values. See TRAINER_MAX_IVS / TRAINER_MAX_EVS below for explicit overrides.
+// Do NOT add TRAINER_DATA_TYPE_IV_EV_SET here: it is enabled automatically by trainerdatagen
+// for any trainer whose party uses .setIvs / .setEvs.
+//
+// IV/EV defaults (only stats that differ from the maxed-out default need to be typed):
+//   - No .setIvs / .setEvs at all  -> 31 IVs / 252 EVs in every stat.
+//   - A stat not written in one of them -> keeps the maxed-out default (31 IVs / 252 EVs).
+//   - A stat that is written -> used as-is, INCLUDING an explicit 0.
+// Example: .setEvs = { .attack = 252, .speed = 0 }  => attack 252, speed 0, all other stats 252.
 #define TRAINER_EDIT_FLAGS (TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY)
 
-// Explicit maxed-out IVs/EVs (use together with TRAINER_DATA_TYPE_IV_EV_SET)
+// Sentinel byte written by trainerdatagen for stats that are not present in .setIvs / .setEvs.
+// The game substitutes TRAINER_DEFAULT_MAX_IV / TRAINER_DEFAULT_MAX_EV for them. Do not write by hand.
+#define TRAINER_IV_EV_UNSET     0xFF
+#define TRAINER_DEFAULT_MAX_IV  31
+#define TRAINER_DEFAULT_MAX_EV  252
+
+// Optional: explicitly max out every stat (identical to leaving the stats out entirely)
 #define TRAINER_MAX_IVS { .hp = 31, .attack = 31, .defense = 31, .speed = 31, .spAttack = 31, .spDefense = 31 }
 #define TRAINER_MAX_EVS { .hp = 252, .attack = 252, .defense = 252, .speed = 252, .spAttack = 252, .spDefense = 252 }
 

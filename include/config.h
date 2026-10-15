@@ -216,6 +216,7 @@
 
 // TRAINER_MAX_IV_EVS_BY_DEFAULT gives every trainer Pokemon max IVs (31) and max EVs (252 in all
 // stats) when its trainer entry does not explicitly specify IVs/EVs (TRAINER_DATA_TYPE_IV_EV_SET).
+// This also works per stat: a stat left out of .setIvs / .setEvs keeps the maxed-out default.
 // Comment this out to restore vanilla behavior.
 #define TRAINER_MAX_IV_EVS_BY_DEFAULT
 

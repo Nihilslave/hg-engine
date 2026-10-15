@@ -1,6 +1,16 @@
 #include "../include/constants/pokemon_nickname.h"
 #include "../include/trainer_data.h"
 
+/*
+ * IV/EV authoring for trainer Pokemon (see include/trainer_data.h for the complete rules):
+ *   - By default every trainer Pokemon is maxed out: 31 IVs / 252 EVs in all stats.
+ *   - .setIvs / .setEvs only override the stats that are written; everything else keeps the default.
+ *       .setIvs = { .speed = 0 },                 // speed 0, other IVs stay 31
+ *       .setEvs = { .attack = 252, .speed = 0 },  // attack 252, speed 0, other EVs stay 252
+ *   - Writing 0 is a real 0 (not "use default"); leave a stat out to get the default.
+ *   - trainerdatagen enables TRAINER_DATA_TYPE_IV_EV_SET automatically for these entries.
+ */
+
 const TrainerData sTrainerData[] = {
     [0] = {
         .name = "-",
@@ -904,8 +914,8 @@ const TrainerData sTrainerData[] = {
                 .moves = { MOVE_SPIKES, MOVE_GIGATON_HAMMER, MOVE_U_TURN, MOVE_ROOST },
                 .ability = ABILITY_WELL_BAKED_BODY,
                 .nature = NATURE_BRAVE,
-                .setIvs = { .hp = 31, .attack = 31, .defense = 31, .spAttack = 31, .spDefense = 31, .speed = 0 },
-                .setEvs = { .hp = 252, .attack = 252, .defense = 252, .spDefense = 252 },
+                .setIvs = { .speed = 0 },
+                .setEvs = { .speed = 0 },
                 .ballSeal = 0,
             },
             {
@@ -917,8 +927,8 @@ const TrainerData sTrainerData[] = {
                 .moves = { MOVE_ENDEAVOR, MOVE_EXTREME_SPEED, MOVE_U_TURN, MOVE_BANEFUL_BUNKER },
                 .ability = ABILITY_STURDY,
                 .nature = NATURE_BRAVE,
-                .setIvs = { .hp = 31, .attack = 31, .defense = 0, .spAttack = 31, .spDefense = 0, .speed = 0 },
-                .setEvs = { .attack = 252 },
+                .setIvs = { .defense = 0, .spDefense = 0, .speed = 0 },
+                .setEvs = { .defense = 0, .spDefense = 0, .speed = 0 },
                 .ballSeal = 0,
             },
         },
@@ -1276,8 +1286,8 @@ const TrainerData sTrainerData[] = {
                 .moves = { MOVE_SUBSTITUTE, MOVE_WISH, MOVE_BATON_PASS, MOVE_RUINATION },
                 .ability = ABILITY_ICE_SCALES,
                 .nature = NATURE_SASSY,
-                .setIvs = { .hp = 31, .attack = 0, .defense = 31, .spAttack = 31, .spDefense = 31, .speed = 0 },
-                .setEvs = { .hp = 252, .defense = 252, .spDefense = 252 },
+                .setIvs = { .attack = 0, .speed = 0 },
+                .setEvs = { .attack = 0, .speed = 0 },
                 .ballSeal = 0,
             },
             {
@@ -1327,8 +1337,8 @@ const TrainerData sTrainerData[] = {
                 .moves = { MOVE_ASTRAL_BARRAGE, MOVE_MOONGEIST_BEAM, MOVE_VOLT_SWITCH, MOVE_SLUDGE_WAVE },
                 .ability = ABILITY_BEADS_OF_RUIN,
                 .nature = NATURE_TIMID,
-                .setIvs = { .hp = 31, .attack = 0, .defense = 31, .spAttack = 31, .spDefense = 31, .speed = 31 },
-                .setEvs = { .hp = 252, .defense = 252, .spAttack = 252, .spDefense = 252, .speed = 252 },
+                .setIvs = { .attack = 0 },
+                .setEvs = { .attack = 0 },
                 .ballSeal = 0,
             },
             {
@@ -1340,8 +1350,8 @@ const TrainerData sTrainerData[] = {
                 .moves = { MOVE_ENTRAINMENT, MOVE_QUIVER_DANCE, MOVE_JUDGMENT, MOVE_PSYSTRIKE },
                 .ability = ABILITY_NORMALIZE,
                 .nature = NATURE_TIMID,
-                .setIvs = { .hp = 31, .attack = 0, .defense = 31, .spAttack = 31, .spDefense = 31, .speed = 31 },
-                .setEvs = { .hp = 252, .defense = 252, .spAttack = 252, .spDefense = 252, .speed = 252 },
+                .setIvs = { .attack = 0 },
+                .setEvs = { .attack = 0 },
                 .ballSeal = 0,
             },
             {
@@ -1353,8 +1363,8 @@ const TrainerData sTrainerData[] = {
                 .moves = { MOVE_TAKE_HEART, MOVE_JUDGMENT, MOVE_SECRET_SWORD, MOVE_RECOVER },
                 .ability = ABILITY_FUR_COAT,
                 .nature = NATURE_TIMID,
-                .setIvs = { .hp = 31, .attack = 0, .defense = 31, .spAttack = 31, .spDefense = 31, .speed = 31 },
-                .setEvs = { .hp = 252, .defense = 252, .spAttack = 252, .spDefense = 252, .speed = 252 },
+                .setIvs = { .attack = 0 },
+                .setEvs = { .attack = 0 },
                 .ballSeal = 0,
             },
             {
