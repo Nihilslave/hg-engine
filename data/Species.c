@@ -61335,7 +61335,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_VENUSAUR] = {
         .textData = {
-            .name = "-----",
+            .name = "Venusaur",
             .pokedexEntry = "",
             .classification = "Seed Pokémon",
             .height = "???’??”",
@@ -61392,7 +61392,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CHARIZARD_X] = {
         .textData = {
-            .name = "-----",
+            .name = "Charizard",
             .pokedexEntry = "",
             .classification = "Flame Pokémon",
             .height = "???’??”",
@@ -61449,7 +61449,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CHARIZARD_Y] = {
         .textData = {
-            .name = "-----",
+            .name = "Charizard",
             .pokedexEntry = "",
             .classification = "Flame Pokémon",
             .height = "???’??”",
@@ -61506,7 +61506,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_BLASTOISE] = {
         .textData = {
-            .name = "-----",
+            .name = "Blastoise",
             .pokedexEntry = "",
             .classification = "Shellfish Pokémon",
             .height = "???’??”",
@@ -61563,7 +61563,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_BEEDRILL] = {
         .textData = {
-            .name = "-----",
+            .name = "Beedrill",
             .pokedexEntry = "",
             .classification = "Poison Bee Pokémon",
             .height = "???’??”",
@@ -61620,7 +61620,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_PIDGEOT] = {
         .textData = {
-            .name = "-----",
+            .name = "Pidgeot",
             .pokedexEntry = "",
             .classification = "Bird Pokémon",
             .height = "???’??”",
@@ -61677,7 +61677,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ALAKAZAM] = {
         .textData = {
-            .name = "-----",
+            .name = "Alakazam",
             .pokedexEntry = "",
             .classification = "Psi Pokémon",
             .height = "???’??”",
@@ -61734,7 +61734,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SLOWBRO] = {
         .textData = {
-            .name = "-----",
+            .name = "Slowbro",
             .pokedexEntry = "",
             .classification = "Hermit Crab Pokémon",
             .height = "???’??”",
@@ -61791,7 +61791,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GENGAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Gengar",
             .pokedexEntry = "",
             .classification = "Shadow Pokémon",
             .height = "???’??”",
@@ -61848,7 +61848,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_KANGASKHAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Kangaskhan",
             .pokedexEntry = "",
             .classification = "Parent Pokémon",
             .height = "???’??”",
@@ -61905,7 +61905,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_PINSIR] = {
         .textData = {
-            .name = "-----",
+            .name = "Pinsir",
             .pokedexEntry = "",
             .classification = "Stag Beetle Pokémon",
             .height = "???’??”",
@@ -61962,7 +61962,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GYARADOS] = {
         .textData = {
-            .name = "-----",
+            .name = "Gyarados",
             .pokedexEntry = "",
             .classification = "Atrocious Pokémon",
             .height = "???’??”",
@@ -62019,7 +62019,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_AERODACTYL] = {
         .textData = {
-            .name = "-----",
+            .name = "Aerodactyl",
             .pokedexEntry = "",
             .classification = "Fossil Pokémon",
             .height = "???’??”",
@@ -62076,7 +62076,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MEWTWO_X] = {
         .textData = {
-            .name = "-----",
+            .name = "Mewtwo",
             .pokedexEntry = "",
             .classification = "Genetic Pokémon",
             .height = "???’??”",
@@ -62133,7 +62133,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MEWTWO_Y] = {
         .textData = {
-            .name = "-----",
+            .name = "Mewtwo",
             .pokedexEntry = "",
             .classification = "Genetic Pokémon",
             .height = "???’??”",
@@ -62190,7 +62190,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_AMPHAROS] = {
         .textData = {
-            .name = "-----",
+            .name = "Ampharos",
             .pokedexEntry = "",
             .classification = "Light Pokémon",
             .height = "???’??”",
@@ -62247,7 +62247,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_STEELIX] = {
         .textData = {
-            .name = "-----",
+            .name = "Steelix",
             .pokedexEntry = "",
             .classification = "Iron Snake Pokémon",
             .height = "???’??”",
@@ -62304,7 +62304,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SCIZOR] = {
         .textData = {
-            .name = "-----",
+            .name = "Scizor",
             .pokedexEntry = "",
             .classification = "Pincer Pokémon",
             .height = "???’??”",
@@ -62361,7 +62361,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_HERACROSS] = {
         .textData = {
-            .name = "-----",
+            .name = "Heracross",
             .pokedexEntry = "",
             .classification = "Single Horn Pokémon",
             .height = "???’??”",
@@ -62418,7 +62418,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_HOUNDOOM] = {
         .textData = {
-            .name = "-----",
+            .name = "Houndoom",
             .pokedexEntry = "",
             .classification = "Dark Pokémon",
             .height = "???’??”",
@@ -62475,7 +62475,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_TYRANITAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Tyranitar",
             .pokedexEntry = "",
             .classification = "Armor Pokémon",
             .height = "???’??”",
@@ -62532,7 +62532,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SCEPTILE] = {
         .textData = {
-            .name = "-----",
+            .name = "Sceptile",
             .pokedexEntry = "",
             .classification = "Forest Pokémon",
             .height = "???’??”",
@@ -62589,7 +62589,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_BLAZIKEN] = {
         .textData = {
-            .name = "-----",
+            .name = "Blaziken",
             .pokedexEntry = "",
             .classification = "Blaze Pokémon",
             .height = "???’??”",
@@ -62646,7 +62646,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SWAMPERT] = {
         .textData = {
-            .name = "-----",
+            .name = "Swampert",
             .pokedexEntry = "",
             .classification = "Mud Fish Pokémon",
             .height = "???’??”",
@@ -62703,7 +62703,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GARDEVOIR] = {
         .textData = {
-            .name = "-----",
+            .name = "Gardevoir",
             .pokedexEntry = "",
             .classification = "Embrace Pokémon",
             .height = "???’??”",
@@ -62760,7 +62760,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SABLEYE] = {
         .textData = {
-            .name = "-----",
+            .name = "Sableye",
             .pokedexEntry = "",
             .classification = "Darkness Pokémon",
             .height = "???’??”",
@@ -62817,7 +62817,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MAWILE] = {
         .textData = {
-            .name = "-----",
+            .name = "Mawile",
             .pokedexEntry = "",
             .classification = "Deceiver Pokémon",
             .height = "???’??”",
@@ -62874,7 +62874,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_AGGRON] = {
         .textData = {
-            .name = "-----",
+            .name = "Aggron",
             .pokedexEntry = "",
             .classification = "Iron Armor Pokémon",
             .height = "???’??”",
@@ -62931,7 +62931,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MEDICHAM] = {
         .textData = {
-            .name = "-----",
+            .name = "Medicham",
             .pokedexEntry = "",
             .classification = "Meditate Pokémon",
             .height = "???’??”",
@@ -62988,7 +62988,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MANECTRIC] = {
         .textData = {
-            .name = "-----",
+            .name = "Manectric",
             .pokedexEntry = "",
             .classification = "Discharge Pokémon",
             .height = "???’??”",
@@ -63045,7 +63045,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SHARPEDO] = {
         .textData = {
-            .name = "-----",
+            .name = "Sharpedo",
             .pokedexEntry = "",
             .classification = "Brutal Pokémon",
             .height = "???’??”",
@@ -63102,7 +63102,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CAMERUPT] = {
         .textData = {
-            .name = "-----",
+            .name = "Camerupt",
             .pokedexEntry = "",
             .classification = "Eruption Pokémon",
             .height = "???’??”",
@@ -63159,7 +63159,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ALTARIA] = {
         .textData = {
-            .name = "-----",
+            .name = "Altaria",
             .pokedexEntry = "",
             .classification = "Humming Pokémon",
             .height = "???’??”",
@@ -63216,7 +63216,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_BANETTE] = {
         .textData = {
-            .name = "-----",
+            .name = "Banette",
             .pokedexEntry = "",
             .classification = "Marionette Pokémon",
             .height = "???’??”",
@@ -63273,7 +63273,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ABSOL] = {
         .textData = {
-            .name = "-----",
+            .name = "Absol",
             .pokedexEntry = "",
             .classification = "Disaster Pokémon",
             .height = "???’??”",
@@ -63330,7 +63330,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GLALIE] = {
         .textData = {
-            .name = "-----",
+            .name = "Glalie",
             .pokedexEntry = "",
             .classification = "Face Pokémon",
             .height = "???’??”",
@@ -63387,7 +63387,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SALAMENCE] = {
         .textData = {
-            .name = "-----",
+            .name = "Salamence",
             .pokedexEntry = "",
             .classification = "Dragon Pokémon",
             .height = "???’??”",
@@ -63444,7 +63444,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_METAGROSS] = {
         .textData = {
-            .name = "-----",
+            .name = "Metagross",
             .pokedexEntry = "",
             .classification = "Iron Leg Pokémon",
             .height = "???’??”",
@@ -63501,7 +63501,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_LATIAS] = {
         .textData = {
-            .name = "-----",
+            .name = "Latias",
             .pokedexEntry = "",
             .classification = "Eon Pokémon",
             .height = "???’??”",
@@ -63558,7 +63558,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_LATIOS] = {
         .textData = {
-            .name = "-----",
+            .name = "Latios",
             .pokedexEntry = "",
             .classification = "Eon Pokémon",
             .height = "???’??”",
@@ -63615,7 +63615,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_RAYQUAZA] = {
         .textData = {
-            .name = "-----",
+            .name = "Rayquaza",
             .pokedexEntry = "",
             .classification = "Sky High Pokémon",
             .height = "???’??”",
@@ -63672,7 +63672,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_LOPUNNY] = {
         .textData = {
-            .name = "-----",
+            .name = "Lopunny",
             .pokedexEntry = "",
             .classification = "Rabbit Pokémon",
             .height = "???’??”",
@@ -63729,7 +63729,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GARCHOMP] = {
         .textData = {
-            .name = "-----",
+            .name = "Garchomp",
             .pokedexEntry = "",
             .classification = "Mach Pokémon",
             .height = "???’??”",
@@ -63786,7 +63786,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_LUCARIO] = {
         .textData = {
-            .name = "-----",
+            .name = "Lucario",
             .pokedexEntry = "",
             .classification = "Aura Pokémon",
             .height = "???’??”",
@@ -63843,7 +63843,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ABOMASNOW] = {
         .textData = {
-            .name = "-----",
+            .name = "Abomasnow",
             .pokedexEntry = "",
             .classification = "Frost Tree Pokémon",
             .height = "???’??”",
@@ -63900,7 +63900,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GALLADE] = {
         .textData = {
-            .name = "-----",
+            .name = "Gallade",
             .pokedexEntry = "",
             .classification = "Blade Pokémon",
             .height = "???’??”",
@@ -63957,7 +63957,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_AUDINO] = {
         .textData = {
-            .name = "-----",
+            .name = "Audino",
             .pokedexEntry = "",
             .classification = "Hearing Pokémon",
             .height = "???’??”",
@@ -64014,7 +64014,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_DIANCIE] = {
         .textData = {
-            .name = "-----",
+            .name = "Diancie",
             .pokedexEntry = "",
             .classification = "Jewel Pokémon",
             .height = "???’??”",
@@ -64071,7 +64071,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KYOGRE_PRIMAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Kyogre",
             .pokedexEntry = "",
             .classification = "Sea Basin Pokémon",
             .height = "???’??”",
@@ -64128,7 +64128,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GROUDON_PRIMAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Groudon",
             .pokedexEntry = "",
             .classification = "Continent Pokémon",
             .height = "???’??”",
@@ -64185,7 +64185,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_RATTATA_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Rattata",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -64242,7 +64242,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_RATICATE_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Raticate",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -64299,7 +64299,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_RAICHU_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Raichu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -64356,7 +64356,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SANDSHREW_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Sandshrew",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -64413,7 +64413,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SANDSLASH_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Sandslash",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -64470,7 +64470,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VULPIX_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Vulpix",
             .pokedexEntry = "",
             .classification = "Fox Pokémon",
             .height = "???’??”",
@@ -64527,7 +64527,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_NINETALES_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Ninetales",
             .pokedexEntry = "",
             .classification = "Fox Pokémon",
             .height = "???’??”",
@@ -64584,7 +64584,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DIGLETT_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Diglett",
             .pokedexEntry = "",
             .classification = "Mole Pokémon",
             .height = "???’??”",
@@ -64641,7 +64641,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DUGTRIO_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Dugtrio",
             .pokedexEntry = "",
             .classification = "Mole Pokémon",
             .height = "???’??”",
@@ -64698,7 +64698,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEOWTH_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Meowth",
             .pokedexEntry = "",
             .classification = "Scratch Cat Pokémon",
             .height = "???’??”",
@@ -64755,7 +64755,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PERSIAN_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Persian",
             .pokedexEntry = "",
             .classification = "Classy Cat Pokémon",
             .height = "???’??”",
@@ -64812,7 +64812,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GEODUDE_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Geodude",
             .pokedexEntry = "",
             .classification = "Rock Pokémon",
             .height = "???’??”",
@@ -64869,7 +64869,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GRAVELER_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Graveler",
             .pokedexEntry = "",
             .classification = "Rock Pokémon",
             .height = "???’??”",
@@ -64926,7 +64926,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GOLEM_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Golem",
             .pokedexEntry = "",
             .classification = "Megaton Pokémon",
             .height = "???’??”",
@@ -64983,7 +64983,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GRIMER_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Grimer",
             .pokedexEntry = "",
             .classification = "Sludge Pokémon",
             .height = "???’??”",
@@ -65040,7 +65040,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MUK_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Muk",
             .pokedexEntry = "",
             .classification = "Sludge Pokémon",
             .height = "???’??”",
@@ -65097,7 +65097,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_EXEGGUTOR_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Exeggutor",
             .pokedexEntry = "",
             .classification = "Coconut Pokémon",
             .height = "???’??”",
@@ -65154,7 +65154,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MAROWAK_ALOLAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Marowak",
             .pokedexEntry = "",
             .classification = "Bone Keeper Pokémon",
             .height = "???’??”",
@@ -65211,7 +65211,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_RATICATE_ALOLAN_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Raticate",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -65268,7 +65268,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MAROWAK_ALOLAN_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Marowak",
             .pokedexEntry = "",
             .classification = "Bone Keeper Pokémon",
             .height = "???’??”",
@@ -65325,7 +65325,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GUMSHOOS_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Gumshoos",
             .pokedexEntry = "",
             .classification = "Stakeout Pokémon",
             .height = "???’??”",
@@ -65382,7 +65382,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIKAVOLT_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Vikavolt",
             .pokedexEntry = "",
             .classification = "Stag Beetle Pokémon",
             .height = "???’??”",
@@ -65439,7 +65439,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_RIBOMBEE_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Ribombee",
             .pokedexEntry = "",
             .classification = "Bee Fly Pokémon",
             .height = "???’??”",
@@ -65496,7 +65496,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ARAQUANID_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Araquanid",
             .pokedexEntry = "",
             .classification = "Water Bubble Pokémon",
             .height = "???’??”",
@@ -65553,7 +65553,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LURANTIS_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Lurantis",
             .pokedexEntry = "",
             .classification = "Bloom Sickle Pokémon",
             .height = "???’??”",
@@ -65610,7 +65610,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SALAZZLE_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Salazzle",
             .pokedexEntry = "",
             .classification = "Toxic Lizard Pokémon",
             .height = "???’??”",
@@ -65667,7 +65667,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TOGEDEMARU_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Togedemaru",
             .pokedexEntry = "",
             .classification = "Roly-Poly Pokémon",
             .height = "???’??”",
@@ -65724,7 +65724,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIMIKYU_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Mimikyu",
             .pokedexEntry = "",
             .classification = "Disguise Pokémon",
             .height = "???’??”",
@@ -65781,7 +65781,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIMIKYU_BUSTED_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Mimikyu",
             .pokedexEntry = "",
             .classification = "Disguise Pokémon",
             .height = "???’??”",
@@ -65838,7 +65838,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KOMMO_O_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Kommo-o",
             .pokedexEntry = "",
             .classification = "Scaly Pokémon",
             .height = "???’??”",
@@ -65895,7 +65895,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEOWTH_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Meowth",
             .pokedexEntry = "",
             .classification = "Scratch Cat Pokémon",
             .height = "???’??”",
@@ -65952,7 +65952,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PONYTA_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Ponyta",
             .pokedexEntry = "",
             .classification = "Unique Horn Pokémon",
             .height = "???’??”",
@@ -66009,7 +66009,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_RAPIDASH_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Rapidash",
             .pokedexEntry = "",
             .classification = "Unique Horn Pokémon",
             .height = "???’??”",
@@ -66066,7 +66066,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SLOWPOKE_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Slowpoke",
             .pokedexEntry = "",
             .classification = "Dopey Pokémon",
             .height = "???’??”",
@@ -66123,7 +66123,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SLOWBRO_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Slowbro",
             .pokedexEntry = "",
             .classification = "Hermit Crab Pokémon",
             .height = "???’??”",
@@ -66180,7 +66180,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FARFETCHD_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Farfetch’d",
             .pokedexEntry = "",
             .classification = "Wild Duck Pokémon",
             .height = "???’??”",
@@ -66237,7 +66237,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_WEEZING_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Weezing",
             .pokedexEntry = "",
             .classification = "Poison Gas Pokémon",
             .height = "???’??”",
@@ -66294,7 +66294,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MR_MIME_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Mr. Mime",
             .pokedexEntry = "",
             .classification = "Dancing Pokémon",
             .height = "???’??”",
@@ -66351,7 +66351,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ARTICUNO_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Articuno",
             .pokedexEntry = "",
             .classification = "Cruel Pokémon",
             .height = "???’??”",
@@ -66408,7 +66408,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZAPDOS_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Zapdos",
             .pokedexEntry = "",
             .classification = "Strong Legs Pokémon",
             .height = "???’??”",
@@ -66465,7 +66465,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MOLTRES_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Moltres",
             .pokedexEntry = "",
             .classification = "Malevolent Pokémon",
             .height = "???’??”",
@@ -66522,7 +66522,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SLOWKING_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Slowking",
             .pokedexEntry = "",
             .classification = "Hexpert Pokémon",
             .height = "???’??”",
@@ -66579,7 +66579,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CORSOLA_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Corsola",
             .pokedexEntry = "",
             .classification = "Coral Pokémon",
             .height = "???’??”",
@@ -66636,7 +66636,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZIGZAGOON_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Zigzagoon",
             .pokedexEntry = "",
             .classification = "TinyRaccoon Pokémon",
             .height = "???’??”",
@@ -66693,7 +66693,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LINOONE_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Linoone",
             .pokedexEntry = "",
             .classification = "Rushing Pokémon",
             .height = "???’??”",
@@ -66750,7 +66750,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DARUMAKA_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Darumaka",
             .pokedexEntry = "",
             .classification = "Zen Charm Pokémon",
             .height = "???’??”",
@@ -66807,7 +66807,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DARMANITAN_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Darmanitan",
             .pokedexEntry = "",
             .classification = "Zen Charm Pokémon",
             .height = "???’??”",
@@ -66864,7 +66864,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_YAMASK_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Yamask",
             .pokedexEntry = "",
             .classification = "Spirit Pokémon",
             .height = "???’??”",
@@ -66921,7 +66921,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_STUNFISK_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Stunfisk",
             .pokedexEntry = "",
             .classification = "Trap Pokémon",
             .height = "???’??”",
@@ -66978,7 +66978,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_COSPLAY] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67035,7 +67035,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_ROCK_STAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67092,7 +67092,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_BELLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67149,7 +67149,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_POP_STAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67206,7 +67206,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_PH_D] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67263,7 +67263,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_LIBRE] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67320,7 +67320,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_ORIGINAL_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67377,7 +67377,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_HOENN_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67434,7 +67434,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_SINNOH_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67491,7 +67491,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_UNOVA_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67548,7 +67548,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_KALOS_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67605,7 +67605,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_ALOLA_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67662,7 +67662,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_PARTNER_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67719,7 +67719,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_WORLD_CAP] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -67776,7 +67776,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CASTFORM_SUNNY] = {
         .textData = {
-            .name = "-----",
+            .name = "Castform",
             .pokedexEntry = "",
             .classification = "Weather Pokémon",
             .height = "???’??”",
@@ -67833,7 +67833,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CASTFORM_RAINY] = {
         .textData = {
-            .name = "-----",
+            .name = "Castform",
             .pokedexEntry = "",
             .classification = "Weather Pokémon",
             .height = "???’??”",
@@ -67890,7 +67890,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CASTFORM_SNOWY] = {
         .textData = {
-            .name = "-----",
+            .name = "Castform",
             .pokedexEntry = "",
             .classification = "Weather Pokémon",
             .height = "???’??”",
@@ -67947,7 +67947,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CHERRIM_SUNSHINE] = {
         .textData = {
-            .name = "-----",
+            .name = "Cherrim",
             .pokedexEntry = "",
             .classification = "Blossom Pokémon",
             .height = "???’??”",
@@ -68004,7 +68004,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SHELLOS_EAST_SEA] = {
         .textData = {
-            .name = "-----",
+            .name = "Shellos",
             .pokedexEntry = "",
             .classification = "Sea Slug Pokémon",
             .height = "???’??”",
@@ -68061,7 +68061,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GASTRODON_EAST_SEA] = {
         .textData = {
-            .name = "-----",
+            .name = "Gastrodon",
             .pokedexEntry = "",
             .classification = "Sea Slug Pokémon",
             .height = "???’??”",
@@ -68118,7 +68118,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DIALGA_ORIGIN] = {
         .textData = {
-            .name = "-----",
+            .name = "Dialga",
             .pokedexEntry = "",
             .classification = "Temporal Pokémon",
             .height = "???’??”",
@@ -68175,7 +68175,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PALKIA_ORIGIN] = {
         .textData = {
-            .name = "-----",
+            .name = "Palkia",
             .pokedexEntry = "",
             .classification = "Spatial Pokémon",
             .height = "???’??”",
@@ -68232,7 +68232,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_BASCULIN_BLUE_STRIPED] = {
         .textData = {
-            .name = "-----",
+            .name = "Basculin",
             .pokedexEntry = "",
             .classification = "Hostile Pokémon",
             .height = "???’??”",
@@ -68289,7 +68289,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_BASCULIN_WHITE_STRIPED] = {
         .textData = {
-            .name = "-----",
+            .name = "Basculin",
             .pokedexEntry = "",
             .classification = "Mellow Pokémon",
             .height = "???’??”",
@@ -68346,7 +68346,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DARMANITAN_ZEN_MODE] = {
         .textData = {
-            .name = "-----",
+            .name = "Darmanitan",
             .pokedexEntry = "",
             .classification = "Blazing Pokémon",
             .height = "???’??”",
@@ -68403,7 +68403,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Darmanitan",
             .pokedexEntry = "",
             .classification = "Zen Charm Pokémon",
             .height = "???’??”",
@@ -68460,7 +68460,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DEERLING_SUMMER] = {
         .textData = {
-            .name = "-----",
+            .name = "Deerling",
             .pokedexEntry = "",
             .classification = "Season Pokémon",
             .height = "???’??”",
@@ -68517,7 +68517,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DEERLING_AUTUMN] = {
         .textData = {
-            .name = "-----",
+            .name = "Deerling",
             .pokedexEntry = "",
             .classification = "Season Pokémon",
             .height = "???’??”",
@@ -68574,7 +68574,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DEERLING_WINTER] = {
         .textData = {
-            .name = "-----",
+            .name = "Deerling",
             .pokedexEntry = "",
             .classification = "Season Pokémon",
             .height = "???’??”",
@@ -68631,7 +68631,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SAWSBUCK_SUMMER] = {
         .textData = {
-            .name = "-----",
+            .name = "Sawsbuck",
             .pokedexEntry = "",
             .classification = "Season Pokémon",
             .height = "???’??”",
@@ -68688,7 +68688,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SAWSBUCK_AUTUMN] = {
         .textData = {
-            .name = "-----",
+            .name = "Sawsbuck",
             .pokedexEntry = "",
             .classification = "Season Pokémon",
             .height = "???’??”",
@@ -68745,7 +68745,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SAWSBUCK_WINTER] = {
         .textData = {
-            .name = "-----",
+            .name = "Sawsbuck",
             .pokedexEntry = "",
             .classification = "Season Pokémon",
             .height = "???’??”",
@@ -68802,7 +68802,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TORNADUS_THERIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Tornadus",
             .pokedexEntry = "",
             .classification = "Cyclone Pokémon",
             .height = "???’??”",
@@ -68859,7 +68859,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_THUNDURUS_THERIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Thundurus",
             .pokedexEntry = "",
             .classification = "Bolt Strike Pokémon",
             .height = "???’??”",
@@ -68916,7 +68916,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LANDORUS_THERIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Landorus",
             .pokedexEntry = "",
             .classification = "Abundance Pokémon",
             .height = "???’??”",
@@ -68973,7 +68973,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KYUREM_WHITE] = {
         .textData = {
-            .name = "-----",
+            .name = "Kyurem",
             .pokedexEntry = "",
             .classification = "Boundary Pokémon",
             .height = "???’??”",
@@ -69030,7 +69030,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KYUREM_BLACK] = {
         .textData = {
-            .name = "-----",
+            .name = "Kyurem",
             .pokedexEntry = "",
             .classification = "Boundary Pokémon",
             .height = "???’??”",
@@ -69087,7 +69087,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KELDEO_RESOLUTE] = {
         .textData = {
-            .name = "-----",
+            .name = "Keldeo",
             .pokedexEntry = "",
             .classification = "Colt Pokémon",
             .height = "???’??”",
@@ -69144,7 +69144,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MELOETTA_PIROUETTE] = {
         .textData = {
-            .name = "-----",
+            .name = "Meloetta",
             .pokedexEntry = "",
             .classification = "Melody Pokémon",
             .height = "???’??”",
@@ -69201,7 +69201,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GENESECT_DOUSE_DRIVE] = {
         .textData = {
-            .name = "-----",
+            .name = "Genesect",
             .pokedexEntry = "",
             .classification = "Paleozoic Pokémon",
             .height = "???’??”",
@@ -69258,7 +69258,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GENESECT_SHOCK_DRIVE] = {
         .textData = {
-            .name = "-----",
+            .name = "Genesect",
             .pokedexEntry = "",
             .classification = "Paleozoic Pokémon",
             .height = "???’??”",
@@ -69315,7 +69315,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GENESECT_BURN_DRIVE] = {
         .textData = {
-            .name = "-----",
+            .name = "Genesect",
             .pokedexEntry = "",
             .classification = "Paleozoic Pokémon",
             .height = "???’??”",
@@ -69372,7 +69372,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GENESECT_CHILL_DRIVE] = {
         .textData = {
-            .name = "-----",
+            .name = "Genesect",
             .pokedexEntry = "",
             .classification = "Paleozoic Pokémon",
             .height = "???’??”",
@@ -69429,7 +69429,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GRENINJA_BATTLE_BOND] = {
         .textData = {
-            .name = "-----",
+            .name = "Greninja",
             .pokedexEntry = "",
             .classification = "Ninja Pokémon",
             .height = "???’??”",
@@ -69486,7 +69486,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GRENINJA_ASH] = {
         .textData = {
-            .name = "-----",
+            .name = "Greninja",
             .pokedexEntry = "",
             .classification = "Ninja Pokémon",
             .height = "???’??”",
@@ -69543,7 +69543,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_POLAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69600,7 +69600,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_TUNDRA] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69657,7 +69657,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_CONTINENTAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69714,7 +69714,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_GARDEN] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69771,7 +69771,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_ELEGANT] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69828,7 +69828,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_MEADOW] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69885,7 +69885,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_MODERN] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69942,7 +69942,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_MARINE] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -69999,7 +69999,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_ARCHIPELAGO] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70056,7 +70056,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_HIGH_PLAINS] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70113,7 +70113,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_SANDSTORM] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70170,7 +70170,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_RIVER] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70227,7 +70227,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_MONSOON] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70284,7 +70284,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_SAVANNA] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70341,7 +70341,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_SUN] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70398,7 +70398,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_OCEAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70455,7 +70455,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_JUNGLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70512,7 +70512,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_FANCY] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70569,7 +70569,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VIVILLON_POKE_BALL] = {
         .textData = {
-            .name = "-----",
+            .name = "Vivillon",
             .pokedexEntry = "",
             .classification = "Scale Pokémon",
             .height = "???’??”",
@@ -70626,7 +70626,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLABEBE_YELLOW_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Flabébé",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -70683,7 +70683,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLABEBE_ORANGE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Flabébé",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -70740,7 +70740,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLABEBE_BLUE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Flabébé",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -70797,7 +70797,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLABEBE_WHITE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Flabébé",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -70854,7 +70854,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLOETTE_YELLOW_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Floette",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -70911,7 +70911,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLOETTE_ORANGE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Floette",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -70968,7 +70968,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLOETTE_BLUE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Floette",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -71025,7 +71025,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLOETTE_WHITE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Floette",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -71082,7 +71082,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLOETTE_ETERNAL_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Floette",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -71139,7 +71139,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLORGES_YELLOW_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Florges",
             .pokedexEntry = "",
             .classification = "Garden Pokémon",
             .height = "???’??”",
@@ -71196,7 +71196,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLORGES_ORANGE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Florges",
             .pokedexEntry = "",
             .classification = "Garden Pokémon",
             .height = "???’??”",
@@ -71253,7 +71253,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLORGES_BLUE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Florges",
             .pokedexEntry = "",
             .classification = "Garden Pokémon",
             .height = "???’??”",
@@ -71310,7 +71310,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FLORGES_WHITE_FLOWER] = {
         .textData = {
-            .name = "-----",
+            .name = "Florges",
             .pokedexEntry = "",
             .classification = "Garden Pokémon",
             .height = "???’??”",
@@ -71367,7 +71367,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_HEART] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71424,7 +71424,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_STAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71481,7 +71481,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_DIAMOND] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71538,7 +71538,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_DEBUTANTE] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71595,7 +71595,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_MATRON] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71652,7 +71652,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_DANDY] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71709,7 +71709,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_LA_REINE] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71766,7 +71766,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_KABUKI] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71823,7 +71823,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FURFROU_PHARAOH] = {
         .textData = {
-            .name = "-----",
+            .name = "Furfrou",
             .pokedexEntry = "",
             .classification = "Poodle Pokémon",
             .height = "???’??”",
@@ -71880,7 +71880,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_AEGISLASH_BLADE] = {
         .textData = {
-            .name = "-----",
+            .name = "Aegislash",
             .pokedexEntry = "",
             .classification = "Royal Sword Pokémon",
             .height = "???’??”",
@@ -71937,7 +71937,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PUMPKABOO_SMALL] = {
         .textData = {
-            .name = "-----",
+            .name = "Pumpkaboo",
             .pokedexEntry = "",
             .classification = "Pumpkin Pokémon",
             .height = "???’??”",
@@ -71994,7 +71994,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PUMPKABOO_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Pumpkaboo",
             .pokedexEntry = "",
             .classification = "Pumpkin Pokémon",
             .height = "???’??”",
@@ -72051,7 +72051,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PUMPKABOO_SUPER] = {
         .textData = {
-            .name = "-----",
+            .name = "Pumpkaboo",
             .pokedexEntry = "",
             .classification = "Pumpkin Pokémon",
             .height = "???’??”",
@@ -72108,7 +72108,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GOURGEIST_SMALL] = {
         .textData = {
-            .name = "-----",
+            .name = "Gourgeist",
             .pokedexEntry = "",
             .classification = "Pumpkin Pokémon",
             .height = "???’??”",
@@ -72165,7 +72165,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GOURGEIST_LARGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Gourgeist",
             .pokedexEntry = "",
             .classification = "Pumpkin Pokémon",
             .height = "???’??”",
@@ -72222,7 +72222,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GOURGEIST_SUPER] = {
         .textData = {
-            .name = "-----",
+            .name = "Gourgeist",
             .pokedexEntry = "",
             .classification = "Pumpkin Pokémon",
             .height = "???’??”",
@@ -72279,7 +72279,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_XERNEAS_ACTIVE] = {
         .textData = {
-            .name = "-----",
+            .name = "Xerneas",
             .pokedexEntry = "",
             .classification = "Life Pokémon",
             .height = "???’??”",
@@ -72336,7 +72336,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZYGARDE_10] = {
         .textData = {
-            .name = "-----",
+            .name = "Zygarde",
             .pokedexEntry = "",
             .classification = "Order Pokémon",
             .height = "???’??”",
@@ -72393,7 +72393,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZYGARDE_10_POWER_CONSTRUCT] = {
         .textData = {
-            .name = "-----",
+            .name = "Zygarde",
             .pokedexEntry = "",
             .classification = "Order Pokémon",
             .height = "???’??”",
@@ -72450,7 +72450,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZYGARDE_50_POWER_CONSTRUCT] = {
         .textData = {
-            .name = "-----",
+            .name = "Zygarde",
             .pokedexEntry = "",
             .classification = "Order Pokémon",
             .height = "???’??”",
@@ -72507,7 +72507,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZYGARDE_10_COMPLETE] = {
         .textData = {
-            .name = "-----",
+            .name = "Zygarde",
             .pokedexEntry = "",
             .classification = "Order Pokémon",
             .height = "???’??”",
@@ -72564,7 +72564,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZYGARDE_50_COMPLETE] = {
         .textData = {
-            .name = "-----",
+            .name = "Zygarde",
             .pokedexEntry = "",
             .classification = "Order Pokémon",
             .height = "???’??”",
@@ -72621,7 +72621,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_HOOPA_UNBOUND] = {
         .textData = {
-            .name = "-----",
+            .name = "Hoopa",
             .pokedexEntry = "",
             .classification = "Djinn Pokémon",
             .height = "21’04”",
@@ -72678,7 +72678,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ORICORIO_POM_POM] = {
         .textData = {
-            .name = "-----",
+            .name = "Oricorio",
             .pokedexEntry = "",
             .classification = "Dancing Pokémon",
             .height = "???’??”",
@@ -72735,7 +72735,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ORICORIO_PAU] = {
         .textData = {
-            .name = "-----",
+            .name = "Oricorio",
             .pokedexEntry = "",
             .classification = "Dancing Pokémon",
             .height = "???’??”",
@@ -72792,7 +72792,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ORICORIO_SENSU] = {
         .textData = {
-            .name = "-----",
+            .name = "Oricorio",
             .pokedexEntry = "",
             .classification = "Dancing Pokémon",
             .height = "???’??”",
@@ -72849,7 +72849,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ROCKRUFF_OWN_TEMPO] = {
         .textData = {
-            .name = "-----",
+            .name = "Rockruff",
             .pokedexEntry = "",
             .classification = "Puppy Pokémon",
             .height = "???’??”",
@@ -72906,7 +72906,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LYCANROC_MIDNIGHT] = {
         .textData = {
-            .name = "-----",
+            .name = "Lycanroc",
             .pokedexEntry = "",
             .classification = "Wolf Pokémon",
             .height = "???’??”",
@@ -72963,7 +72963,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LYCANROC_DUSK] = {
         .textData = {
-            .name = "-----",
+            .name = "Lycanroc",
             .pokedexEntry = "",
             .classification = "Wolf Pokémon",
             .height = "???’??”",
@@ -73020,7 +73020,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_WISHIWASHI_SCHOOL] = {
         .textData = {
-            .name = "-----",
+            .name = "Wishiwashi",
             .pokedexEntry = "",
             .classification = "Small Fry Pokémon",
             .height = "???’??”",
@@ -73077,7 +73077,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_METEOR_ORANGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73134,7 +73134,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_METEOR_YELLOW] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73191,7 +73191,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_METEOR_GREEN] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73248,7 +73248,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_METEOR_BLUE] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73305,7 +73305,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_METEOR_INDIGO] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73362,7 +73362,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_METEOR_VIOLET] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73419,7 +73419,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_RED] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73476,7 +73476,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_ORANGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73533,7 +73533,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_YELLOW] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73590,7 +73590,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_GREEN] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73647,7 +73647,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_BLUE] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73704,7 +73704,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_INDIGO] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73761,7 +73761,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MINIOR_CORE_VIOLET] = {
         .textData = {
-            .name = "-----",
+            .name = "Minior",
             .pokedexEntry = "",
             .classification = "Meteor Pokémon",
             .height = "???’??”",
@@ -73818,7 +73818,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIMIKYU_BUSTED] = {
         .textData = {
-            .name = "-----",
+            .name = "Mimikyu",
             .pokedexEntry = "",
             .classification = "Disguise Pokémon",
             .height = "???’??”",
@@ -73875,7 +73875,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_NECROZMA_DUSK_MANE] = {
         .textData = {
-            .name = "-----",
+            .name = "Necrozma",
             .pokedexEntry = "",
             .classification = "Prism Pokémon",
             .height = "???’??”",
@@ -73932,7 +73932,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_NECROZMA_DAWN_WINGS] = {
         .textData = {
-            .name = "-----",
+            .name = "Necrozma",
             .pokedexEntry = "",
             .classification = "Prism Pokémon",
             .height = "???’??”",
@@ -73989,7 +73989,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_NECROZMA_ULTRA_DUSK_MANE] = {
         .textData = {
-            .name = "-----",
+            .name = "Necrozma",
             .pokedexEntry = "",
             .classification = "Prism Pokémon",
             .height = "???’??”",
@@ -74046,7 +74046,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_NECROZMA_ULTRA_DAWN_WINGS] = {
         .textData = {
-            .name = "-----",
+            .name = "Necrozma",
             .pokedexEntry = "",
             .classification = "Prism Pokémon",
             .height = "???’??”",
@@ -74103,7 +74103,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MAGEARNA_ORIGINAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Magearna",
             .pokedexEntry = "",
             .classification = "Artificial Pokémon",
             .height = "???’??”",
@@ -74160,7 +74160,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PIKACHU_PARTNER] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -74217,7 +74217,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_EEVEE_PARTNER] = {
         .textData = {
-            .name = "-----",
+            .name = "Eevee",
             .pokedexEntry = "",
             .classification = "Evolution Pokémon",
             .height = "???’??”",
@@ -74274,7 +74274,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CRAMORANT_GULPING] = {
         .textData = {
-            .name = "-----",
+            .name = "Cramorant",
             .pokedexEntry = "",
             .classification = "Gulp Pokémon",
             .height = "???’??”",
@@ -74331,7 +74331,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CRAMORANT_GORGING] = {
         .textData = {
-            .name = "-----",
+            .name = "Cramorant",
             .pokedexEntry = "",
             .classification = "Gulp Pokémon",
             .height = "???’??”",
@@ -74388,7 +74388,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TOXTRICITY_LOW_KEY] = {
         .textData = {
-            .name = "-----",
+            .name = "Toxtricity",
             .pokedexEntry = "",
             .classification = "Punk Pokémon",
             .height = "???’??”",
@@ -74445,7 +74445,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SINISTEA_ANTIQUE] = {
         .textData = {
-            .name = "-----",
+            .name = "Sinistea",
             .pokedexEntry = "",
             .classification = "Black Tea Pokémon",
             .height = "???’??”",
@@ -74502,7 +74502,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_POLTEAGEIST_ANTIQUE] = {
         .textData = {
-            .name = "-----",
+            .name = "Poltegeist",
             .pokedexEntry = "",
             .classification = "Black Tea Pokémon",
             .height = "???’??”",
@@ -74559,7 +74559,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_BERRY_SWEET] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74616,7 +74616,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_LOVE_SWEET] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74673,7 +74673,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_STAR_SWEET] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74730,7 +74730,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_CLOVER_SWEET] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74787,7 +74787,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_FLOWER_SWEET] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74844,7 +74844,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_RIBBON_SWEET] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74901,7 +74901,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_FILLER_1] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -74958,7 +74958,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ALCREMIE_FILLER_2] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -75015,7 +75015,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_EISCUE_NOICE_FACE] = {
         .textData = {
-            .name = "-----",
+            .name = "Eiscue",
             .pokedexEntry = "",
             .classification = "Penguin Pokémon",
             .height = "???’??”",
@@ -75072,7 +75072,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MORPEKO_HANGRY] = {
         .textData = {
-            .name = "-----",
+            .name = "Morpeko",
             .pokedexEntry = "",
             .classification = "Two-Sided Pokémon",
             .height = "???’??”",
@@ -75129,7 +75129,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZACIAN_CROWNED] = {
         .textData = {
-            .name = "-----",
+            .name = "Zacian",
             .pokedexEntry = "",
             .classification = "Warrior Pokémon",
             .height = "???’??”",
@@ -75186,7 +75186,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZAMAZENTA_CROWNED] = {
         .textData = {
-            .name = "-----",
+            .name = "Zamazenta",
             .pokedexEntry = "",
             .classification = "Warrior Pokémon",
             .height = "???’??”",
@@ -75243,7 +75243,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ETERNATUS_ETERNAMAX] = {
         .textData = {
-            .name = "-----",
+            .name = "Eternatus",
             .pokedexEntry = "",
             .classification = "Gigantic Pokémon",
             .height = "???’??”",
@@ -75300,7 +75300,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_URSHIFU_RAPID_STRIKE] = {
         .textData = {
-            .name = "-----",
+            .name = "Urshifu",
             .pokedexEntry = "",
             .classification = "Wushu Pokémon",
             .height = "???’??”",
@@ -75357,7 +75357,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZARUDE_DADA] = {
         .textData = {
-            .name = "-----",
+            .name = "Zarude",
             .pokedexEntry = "",
             .classification = "Rogue Monkey Pokémon",
             .height = "???’??”",
@@ -75414,7 +75414,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CALYREX_ICE_RIDER] = {
         .textData = {
-            .name = "-----",
+            .name = "Calyrex",
             .pokedexEntry = "",
             .classification = "High King Pokémon",
             .height = "7’10”",
@@ -75471,7 +75471,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_CALYREX_SHADOW_RIDER] = {
         .textData = {
-            .name = "-----",
+            .name = "Calyrex",
             .pokedexEntry = "",
             .classification = "High King Pokémon",
             .height = "7’10”",
@@ -75528,7 +75528,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ENAMORUS_THERIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Enamorus",
             .pokedexEntry = "",
             .classification = "Love-Hate Pokémon",
             .height = "???’??”",
@@ -75585,7 +75585,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GROWLITHE_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Growlithe",
             .pokedexEntry = "",
             .classification = "Scout Pokémon",
             .height = "???’??”",
@@ -75642,7 +75642,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ARCANINE_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Arcanine",
             .pokedexEntry = "",
             .classification = "Legendary Pokémon",
             .height = "???’??”",
@@ -75699,7 +75699,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_VOLTORB_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Voltorb",
             .pokedexEntry = "",
             .classification = "Sphere Pokémon",
             .height = "???’??”",
@@ -75756,7 +75756,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ELECTRODE_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Electrode",
             .pokedexEntry = "",
             .classification = "Sphere Pokémon",
             .height = "???’??”",
@@ -75813,7 +75813,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TYPHLOSION_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Typhlosion",
             .pokedexEntry = "",
             .classification = "Ghost Flame Pokémon",
             .height = "???’??”",
@@ -75870,7 +75870,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_QWILFISH_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Qwilfish",
             .pokedexEntry = "",
             .classification = "Balloon Pokémon",
             .height = "???’??”",
@@ -75927,7 +75927,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SNEASEL_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Sneasel",
             .pokedexEntry = "",
             .classification = "Sharp Claw Pokémon",
             .height = "???’??”",
@@ -75984,7 +75984,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SAMUROTT_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Samurott",
             .pokedexEntry = "",
             .classification = "Formidable Pokémon",
             .height = "???’??”",
@@ -76041,7 +76041,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LILLIGANT_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Lilligant",
             .pokedexEntry = "",
             .classification = "Spinning Pokémon",
             .height = "???’??”",
@@ -76098,7 +76098,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZORUA_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Zorua",
             .pokedexEntry = "",
             .classification = "Spiteful Fox Pokémon",
             .height = "???’??”",
@@ -76155,7 +76155,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ZOROARK_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Zoroark",
             .pokedexEntry = "",
             .classification = "Baneful Fox Pokémon",
             .height = "???’??”",
@@ -76212,7 +76212,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_BRAVIARY_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Braviary",
             .pokedexEntry = "",
             .classification = "Battle Cry Pokémon",
             .height = "???’??”",
@@ -76269,7 +76269,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SLIGGOO_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Sliggoo",
             .pokedexEntry = "",
             .classification = "Snail Pokémon",
             .height = "???’??”",
@@ -76326,7 +76326,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GOODRA_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Goodra",
             .pokedexEntry = "",
             .classification = "Shell Bunker Pokémon",
             .height = "???’??”",
@@ -76383,7 +76383,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_AVALUGG_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Avalugg",
             .pokedexEntry = "",
             .classification = "Iceberg Pokémon",
             .height = "???’??”",
@@ -76440,7 +76440,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DECIDUEYE_HISUIAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Decidueye",
             .pokedexEntry = "",
             .classification = "Arrow Quill Pokémon",
             .height = "???’??”",
@@ -76497,7 +76497,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KLEAVOR_LORD] = {
         .textData = {
-            .name = "-----",
+            .name = "Kleavor",
             .pokedexEntry = "",
             .classification = "Axe Pokémon",
             .height = "???’??”",
@@ -76554,7 +76554,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_LILLIGANT_LADY] = {
         .textData = {
-            .name = "-----",
+            .name = "Lilligant",
             .pokedexEntry = "",
             .classification = "Flowering Pokémon",
             .height = "???’??”",
@@ -76611,7 +76611,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ARCANINE_LORD] = {
         .textData = {
-            .name = "-----",
+            .name = "Arcanine",
             .pokedexEntry = "",
             .classification = "Legendary Pokémon",
             .height = "???’??”",
@@ -76668,7 +76668,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_ELECTRODE_LORD] = {
         .textData = {
-            .name = "-----",
+            .name = "Electrode",
             .pokedexEntry = "",
             .classification = "Ball Pokémon",
             .height = "???’??”",
@@ -76725,7 +76725,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_AVALUGG_LORD] = {
         .textData = {
-            .name = "-----",
+            .name = "Avalugg",
             .pokedexEntry = "",
             .classification = "Iceberg Pokémon",
             .height = "???’??”",
@@ -76782,7 +76782,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_UNFEZANT_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Unfezant",
             .pokedexEntry = "",
             .classification = "Proud Pokémon",
             .height = "???’??”",
@@ -76839,7 +76839,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_FRILLISH_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Frillish",
             .pokedexEntry = "",
             .classification = "Floating Pokémon",
             .height = "???’??”",
@@ -76896,7 +76896,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_JELLICENT_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Jellicent",
             .pokedexEntry = "",
             .classification = "Floating Pokémon",
             .height = "???’??”",
@@ -76953,7 +76953,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PYROAR_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Pyroar",
             .pokedexEntry = "",
             .classification = "Royal Pokémon",
             .height = "???’??”",
@@ -77010,7 +77010,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEOWSTIC_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Meowstic",
             .pokedexEntry = "",
             .classification = "Constraint Pokémon",
             .height = "2’00”",
@@ -77067,7 +77067,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_INDEEDEE_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Indeedee",
             .pokedexEntry = "",
             .classification = "Emotion Pokémon",
             .height = "???’??”",
@@ -77124,7 +77124,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_BASCULEGION_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Basclegion",
             .pokedexEntry = "",
             .classification = "Big Fish Pokémon",
             .height = "???’??”",
@@ -77181,7 +77181,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MAUSHOLD_FAMILY_OF_THREE] = {
         .textData = {
-            .name = "-----",
+            .name = "Maushold",
             .pokedexEntry = "",
             .classification = "Family Pokémon",
             .height = "???’??”",
@@ -77238,7 +77238,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SQUAWKABILLY_BLUE_PLUMAGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Squawkbily",
             .pokedexEntry = "",
             .classification = "Parrot Pokémon",
             .height = "???’??”",
@@ -77295,7 +77295,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Squawkbily",
             .pokedexEntry = "",
             .classification = "Parrot Pokémon",
             .height = "???’??”",
@@ -77352,7 +77352,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SQUAWKABILLY_WHITE_PLUMAGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Squawkbily",
             .pokedexEntry = "",
             .classification = "Parrot Pokémon",
             .height = "???’??”",
@@ -77409,7 +77409,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_PALAFIN_HERO] = {
         .textData = {
-            .name = "-----",
+            .name = "Palafin",
             .pokedexEntry = "",
             .classification = "Hero Pokémon",
             .height = "5’11”",
@@ -77466,7 +77466,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TATSUGIRI_DROOPY] = {
         .textData = {
-            .name = "-----",
+            .name = "Tatsugiri",
             .pokedexEntry = "",
             .classification = "Mimicry Pokémon",
             .height = "???’??”",
@@ -77523,7 +77523,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TATSUGIRI_STRETCHY] = {
         .textData = {
-            .name = "-----",
+            .name = "Tatsugiri",
             .pokedexEntry = "",
             .classification = "Mimicry Pokémon",
             .height = "???’??”",
@@ -77580,7 +77580,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_DUDUNSPARCE_THREE_SEGMENT] = {
         .textData = {
-            .name = "-----",
+            .name = "Dudunspars",
             .pokedexEntry = "",
             .classification = "Land Snake Pokémon",
             .height = "???’??”",
@@ -77637,7 +77637,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIMMIGHOUL_ROAMING] = {
         .textData = {
-            .name = "-----",
+            .name = "Gimmighoul",
             .pokedexEntry = "",
             .classification = "Coin Hunter Pokémon",
             .height = "0’04”",
@@ -77694,7 +77694,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_WOOPER_PALDEAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Wooper",
             .pokedexEntry = "",
             .classification = "Poison Fish Pokémon",
             .height = "???’??”",
@@ -77751,7 +77751,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TAUROS_COMBAT] = {
         .textData = {
-            .name = "-----",
+            .name = "Tauros",
             .pokedexEntry = "",
             .classification = "Wild Bull Pokémon",
             .height = "???’??”",
@@ -77808,7 +77808,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TAUROS_BLAZE] = {
         .textData = {
-            .name = "-----",
+            .name = "Tauros",
             .pokedexEntry = "",
             .classification = "Wild Bull Pokémon",
             .height = "???’??”",
@@ -77865,7 +77865,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TAUROS_AQUA] = {
         .textData = {
-            .name = "-----",
+            .name = "Tauros",
             .pokedexEntry = "",
             .classification = "Wild Bull Pokémon",
             .height = "???’??”",
@@ -77922,7 +77922,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OINKOLOGNE_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Oinkologne",
             .pokedexEntry = "",
             .classification = "Hog Pokémon",
             .height = "???’??”",
@@ -77979,7 +77979,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_REVAVROOM_SEGIN] = {
         .textData = {
-            .name = "-----",
+            .name = "Revavroom",
             .pokedexEntry = "",
             .classification = "Multi-Cyl Pokémon",
             .height = "???’??”",
@@ -78036,7 +78036,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_REVAVROOM_SCHEDAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Revavroom",
             .pokedexEntry = "",
             .classification = "Multi-Cyl Pokémon",
             .height = "???’??”",
@@ -78093,7 +78093,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_REVAVROOM_NAVI] = {
         .textData = {
-            .name = "-----",
+            .name = "Revavroom",
             .pokedexEntry = "",
             .classification = "Multi-Cyl Pokémon",
             .height = "???’??”",
@@ -78150,7 +78150,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_REVAVROOM_RUCHBAH] = {
         .textData = {
-            .name = "-----",
+            .name = "Revavroom",
             .pokedexEntry = "",
             .classification = "Multi-Cyl Pokémon",
             .height = "???’??”",
@@ -78207,7 +78207,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_REVAVROOM_CAPH] = {
         .textData = {
-            .name = "-----",
+            .name = "Revavroom",
             .pokedexEntry = "",
             .classification = "Multi-Cyl Pokémon",
             .height = "???’??”",
@@ -78264,7 +78264,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KORAIDON_LIMITED_BUILD] = {
         .textData = {
-            .name = "-----",
+            .name = "Koraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78321,7 +78321,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KORAIDON_SPRINTING_BUILD] = {
         .textData = {
-            .name = "-----",
+            .name = "Koraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78378,7 +78378,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KORAIDON_SWIMMING_BUILD] = {
         .textData = {
-            .name = "-----",
+            .name = "Koraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78435,7 +78435,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_KORAIDON_GLIDING_BUILD] = {
         .textData = {
-            .name = "-----",
+            .name = "Koraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78492,7 +78492,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIRAIDON_LOW_POWER_MODE] = {
         .textData = {
-            .name = "-----",
+            .name = "Miraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78549,7 +78549,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIRAIDON_DRIVE_MODE] = {
         .textData = {
-            .name = "-----",
+            .name = "Miraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78606,7 +78606,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIRAIDON_AQUATIC_MODE] = {
         .textData = {
-            .name = "-----",
+            .name = "Miraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78663,7 +78663,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MIRAIDON_GLIDE_MODE] = {
         .textData = {
-            .name = "-----",
+            .name = "Miraidon",
             .pokedexEntry = "",
             .classification = "Paradox Pokémon",
             .height = "???’??”",
@@ -78720,7 +78720,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_POLTCHAGEIST_MASTERPIECE] = {
         .textData = {
-            .name = "-----",
+            .name = "Polchgeist",
             .pokedexEntry = "",
             .classification = "Matcha Pokémon",
             .height = "???’??”",
@@ -78777,7 +78777,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_SINISTCHA_MASTERPIECE] = {
         .textData = {
-            .name = "-----",
+            .name = "Sinistcha",
             .pokedexEntry = "",
             .classification = "Matcha Pokémon",
             .height = "???’??”",
@@ -78834,7 +78834,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_WELLSPRING_MASK] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -78891,7 +78891,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_HEARTHFLAME_MASK] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -78948,7 +78948,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_CORNERSTONE_MASK] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -79005,7 +79005,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_TEAL_MASK_TERASTAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -79062,7 +79062,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_WELLSPRING_MASK_TERASTAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -79119,7 +79119,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_HEARTHFLAME_MASK_TERASTAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -79176,7 +79176,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_OGERPON_CORNERSTONE_MASK_TERASTAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Ogerpon",
             .pokedexEntry = "",
             .classification = "Mask Pokémon",
             .height = "???’??”",
@@ -79233,7 +79233,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_URSALUNA_BLOODMOON] = {
         .textData = {
-            .name = "-----",
+            .name = "Ursaluna",
             .pokedexEntry = "",
             .classification = "Peat Pokémon",
             .height = "???’??”",
@@ -79290,7 +79290,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TERAPAGOS_TERASTAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Terapagos",
             .pokedexEntry = "",
             .classification = "Tera Pokémon",
             .height = "???’??”",
@@ -79347,7 +79347,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_TERAPAGOS_STELLAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Terapagos",
             .pokedexEntry = "",
             .classification = "Tera Pokémon",
             .height = "???’??”",
@@ -79404,7 +79404,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_VENUSAUR] = {
         .textData = {
-            .name = "-----",
+            .name = "Venusaur",
             .pokedexEntry = "",
             .classification = "Seed Pokémon",
             .height = "???’??”",
@@ -79461,7 +79461,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_CHARIZARD] = {
         .textData = {
-            .name = "-----",
+            .name = "Charizard",
             .pokedexEntry = "",
             .classification = "Flame Pokémon",
             .height = "???’??”",
@@ -79518,7 +79518,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_BLASTOISE] = {
         .textData = {
-            .name = "-----",
+            .name = "Blastoise",
             .pokedexEntry = "",
             .classification = "Shellfish Pokémon",
             .height = "???’??”",
@@ -79575,7 +79575,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_BUTTERFREE] = {
         .textData = {
-            .name = "-----",
+            .name = "Butterfree",
             .pokedexEntry = "",
             .classification = "Butterfly Pokémon",
             .height = "???’??”",
@@ -79632,7 +79632,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_PIKACHU] = {
         .textData = {
-            .name = "-----",
+            .name = "Pikachu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -79689,7 +79689,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_MEOWTH] = {
         .textData = {
-            .name = "-----",
+            .name = "Meowth",
             .pokedexEntry = "",
             .classification = "Scratch Cat Pokémon",
             .height = "???’??”",
@@ -79746,7 +79746,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_MACHAMP] = {
         .textData = {
-            .name = "-----",
+            .name = "Machamp",
             .pokedexEntry = "",
             .classification = "Superpower Pokémon",
             .height = "???’??”",
@@ -79803,7 +79803,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_GENGAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Gengar",
             .pokedexEntry = "",
             .classification = "Shadow Pokémon",
             .height = "???’??”",
@@ -79860,7 +79860,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_KINGLER] = {
         .textData = {
-            .name = "-----",
+            .name = "Kingler",
             .pokedexEntry = "",
             .classification = "Pincer Pokémon",
             .height = "???’??”",
@@ -79917,7 +79917,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_LAPRAS] = {
         .textData = {
-            .name = "-----",
+            .name = "Lapras",
             .pokedexEntry = "",
             .classification = "Transport Pokémon",
             .height = "???’??”",
@@ -79974,7 +79974,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_EEVEE] = {
         .textData = {
-            .name = "-----",
+            .name = "Eevee",
             .pokedexEntry = "",
             .classification = "Evolution Pokémon",
             .height = "???’??”",
@@ -80031,7 +80031,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_SNORLAX] = {
         .textData = {
-            .name = "-----",
+            .name = "Snorlax",
             .pokedexEntry = "",
             .classification = "Sleeping Pokémon",
             .height = "???’??”",
@@ -80088,7 +80088,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_GARBODOR] = {
         .textData = {
-            .name = "-----",
+            .name = "Garbodor",
             .pokedexEntry = "",
             .classification = "Trash Heap Pokémon",
             .height = "???’??”",
@@ -80145,7 +80145,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_MELMETAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Melmetal",
             .pokedexEntry = "",
             .classification = "Hex Nut Pokémon",
             .height = "???’??”",
@@ -80202,7 +80202,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_RILLABOOM] = {
         .textData = {
-            .name = "-----",
+            .name = "Rillaboom",
             .pokedexEntry = "",
             .classification = "Drummer Pokémon",
             .height = "???’??”",
@@ -80259,7 +80259,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_CINDERACE] = {
         .textData = {
-            .name = "-----",
+            .name = "Cinderace",
             .pokedexEntry = "",
             .classification = "Striker Pokémon",
             .height = "???’??”",
@@ -80316,7 +80316,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_INTELEON] = {
         .textData = {
-            .name = "-----",
+            .name = "Inteleon",
             .pokedexEntry = "",
             .classification = "Secret Agent Pokémon",
             .height = "???’??”",
@@ -80373,7 +80373,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_CORVIKNIGHT] = {
         .textData = {
-            .name = "-----",
+            .name = "Corviknite",
             .pokedexEntry = "",
             .classification = "Raven Pokémon",
             .height = "???’??”",
@@ -80430,7 +80430,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_ORBEETLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Orbeetle",
             .pokedexEntry = "",
             .classification = "Seven Spot Pokémon",
             .height = "???’??”",
@@ -80487,7 +80487,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_DREDNAW] = {
         .textData = {
-            .name = "-----",
+            .name = "Drednaw",
             .pokedexEntry = "",
             .classification = "Bite Pokémon",
             .height = "???’??”",
@@ -80544,7 +80544,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_COALOSSAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Coalossal",
             .pokedexEntry = "",
             .classification = "Coal Pokémon",
             .height = "???’??”",
@@ -80601,7 +80601,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_FLAPPLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Flapple",
             .pokedexEntry = "",
             .classification = "Apple Wing Pokémon",
             .height = "???’??”",
@@ -80658,7 +80658,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_APPLETUN] = {
         .textData = {
-            .name = "-----",
+            .name = "Appletun",
             .pokedexEntry = "",
             .classification = "Apple Nectar Pokémon",
             .height = "???’??”",
@@ -80715,7 +80715,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_SANDACONDA] = {
         .textData = {
-            .name = "-----",
+            .name = "Sandaconda",
             .pokedexEntry = "",
             .classification = "Sand Snake Pokémon",
             .height = "???’??”",
@@ -80772,7 +80772,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_TOXTRICITY] = {
         .textData = {
-            .name = "-----",
+            .name = "Toxtricity",
             .pokedexEntry = "",
             .classification = "Punk Pokémon",
             .height = "???’??”",
@@ -80829,7 +80829,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_TOXTRICITY_LOW_KEY] = {
         .textData = {
-            .name = "-----",
+            .name = "Toxtricity",
             .pokedexEntry = "",
             .classification = "Punk Pokémon",
             .height = "???’??”",
@@ -80886,7 +80886,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_CENTISKORCH] = {
         .textData = {
-            .name = "-----",
+            .name = "Centskorch",
             .pokedexEntry = "",
             .classification = "Radiator Pokémon",
             .height = "???’??”",
@@ -80943,7 +80943,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_HATTERENE] = {
         .textData = {
-            .name = "-----",
+            .name = "Hatterene",
             .pokedexEntry = "",
             .classification = "Silent Pokémon",
             .height = "???’??”",
@@ -81000,7 +81000,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_GRIMMSNARL] = {
         .textData = {
-            .name = "-----",
+            .name = "Grimmsnarl",
             .pokedexEntry = "",
             .classification = "Bulk Up Pokémon",
             .height = "???’??”",
@@ -81057,7 +81057,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_ALCREMIE] = {
         .textData = {
-            .name = "-----",
+            .name = "Alcremie",
             .pokedexEntry = "",
             .classification = "Cream Pokémon",
             .height = "???’??”",
@@ -81114,7 +81114,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_COPPERAJAH] = {
         .textData = {
-            .name = "-----",
+            .name = "Copperajah",
             .pokedexEntry = "",
             .classification = "Copperderm Pokémon",
             .height = "???’??”",
@@ -81171,7 +81171,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_DURALUDON] = {
         .textData = {
-            .name = "-----",
+            .name = "Duraludon",
             .pokedexEntry = "",
             .classification = "Alloy Pokémon",
             .height = "???’??”",
@@ -81228,7 +81228,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_URSHIFU] = {
         .textData = {
-            .name = "-----",
+            .name = "Urshifu",
             .pokedexEntry = "",
             .classification = "Wushu Pokémon",
             .height = "???’??”",
@@ -81285,7 +81285,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_GIGANTAMAX_URSHIFU_RAPID_STRIKE] = {
         .textData = {
-            .name = "-----",
+            .name = "Urshifu",
             .pokedexEntry = "",
             .classification = "Wushu Pokémon",
             .height = "???’??”",
@@ -81342,7 +81342,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_RAICHU_X] = {
         .textData = {
-            .name = "-----",
+            .name = "Raichu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -81399,7 +81399,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_RAICHU_Y] = {
         .textData = {
-            .name = "-----",
+            .name = "Raichu",
             .pokedexEntry = "",
             .classification = "Mouse Pokémon",
             .height = "???’??”",
@@ -81456,7 +81456,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CLEFABLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Clefable",
             .pokedexEntry = "",
             .classification = "Fairy Pokémon",
             .height = "???’??”",
@@ -81513,7 +81513,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_VICTREEBEL] = {
         .textData = {
-            .name = "-----",
+            .name = "Victreebel",
             .pokedexEntry = "",
             .classification = "Flycatcher Pokémon",
             .height = "???’??”",
@@ -81570,7 +81570,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_STARMIE] = {
         .textData = {
-            .name = "-----",
+            .name = "Starmie",
             .pokedexEntry = "",
             .classification = "Mysterious Pokémon",
             .height = "???’??”",
@@ -81627,7 +81627,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_DRAGONITE] = {
         .textData = {
-            .name = "-----",
+            .name = "Dragonite",
             .pokedexEntry = "",
             .classification = "Dragon Pokémon",
             .height = "???’??”",
@@ -81684,7 +81684,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MEGANIUM] = {
         .textData = {
-            .name = "-----",
+            .name = "Meganium",
             .pokedexEntry = "",
             .classification = "Herb Pokémon",
             .height = "???’??”",
@@ -81741,7 +81741,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_FERALIGATR] = {
         .textData = {
-            .name = "-----",
+            .name = "Feraligatr",
             .pokedexEntry = "",
             .classification = "Double Jaw Pokémon",
             .height = "7’07”",
@@ -81798,7 +81798,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SKARMORY] = {
         .textData = {
-            .name = "-----",
+            .name = "Skarmory",
             .pokedexEntry = "",
             .classification = "Armor Bird Pokémon",
             .height = "???’??”",
@@ -81855,7 +81855,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CHIMECHO] = {
         .textData = {
-            .name = "-----",
+            .name = "Chimecho",
             .pokedexEntry = "",
             .classification = "Wind Chime Pokémon",
             .height = "???’??”",
@@ -81912,7 +81912,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ABSOL_Z] = {
         .textData = {
-            .name = "-----",
+            .name = "Absol",
             .pokedexEntry = "",
             .classification = "Disaster Pokémon",
             .height = "???’??”",
@@ -81969,7 +81969,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_STARAPTOR] = {
         .textData = {
-            .name = "-----",
+            .name = "Staraptor",
             .pokedexEntry = "",
             .classification = "Predator Pokémon",
             .height = "???’??”",
@@ -82026,7 +82026,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GARCHOMP_Z] = {
         .textData = {
-            .name = "-----",
+            .name = "Garchomp",
             .pokedexEntry = "",
             .classification = "Mach Pokémon",
             .height = "???’??”",
@@ -82083,7 +82083,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_LUCARIO_Z] = {
         .textData = {
-            .name = "-----",
+            .name = "Lucario",
             .pokedexEntry = "",
             .classification = "Aura Pokémon",
             .height = "???’??”",
@@ -82140,7 +82140,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_FROSLASS] = {
         .textData = {
-            .name = "-----",
+            .name = "Froslass",
             .pokedexEntry = "",
             .classification = "Snow Land Pokémon",
             .height = "???’??”",
@@ -82197,7 +82197,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_HEATRAN] = {
         .textData = {
-            .name = "-----",
+            .name = "Heatran",
             .pokedexEntry = "",
             .classification = "Lava Dome Pokémon",
             .height = "???’??”",
@@ -82254,7 +82254,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_DARKRAI] = {
         .textData = {
-            .name = "-----",
+            .name = "Darkrai",
             .pokedexEntry = "",
             .classification = "Bad Dreams Pokémon",
             .height = "9’10”",
@@ -82311,7 +82311,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_EMBOAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Emboar",
             .pokedexEntry = "",
             .classification = "Mega Fire Pig Pokémon",
             .height = "???’??”",
@@ -82368,7 +82368,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_EXCADRILL] = {
         .textData = {
-            .name = "-----",
+            .name = "Excadrill",
             .pokedexEntry = "",
             .classification = "Subterrene Pokémon",
             .height = "???’??”",
@@ -82425,7 +82425,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SCOLIPEDE] = {
         .textData = {
-            .name = "-----",
+            .name = "Scolipede",
             .pokedexEntry = "",
             .classification = "Megapede Pokémon",
             .height = "???’??”",
@@ -82482,7 +82482,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SCRAFTY] = {
         .textData = {
-            .name = "-----",
+            .name = "Scrafty",
             .pokedexEntry = "",
             .classification = "Hoodlum Pokémon",
             .height = "???’??”",
@@ -82539,7 +82539,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_EELEKTROSS] = {
         .textData = {
-            .name = "-----",
+            .name = "Eelektross",
             .pokedexEntry = "",
             .classification = "EleFish Pokémon",
             .height = "???’??”",
@@ -82596,7 +82596,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CHANDELURE] = {
         .textData = {
-            .name = "-----",
+            .name = "Chandelure",
             .pokedexEntry = "",
             .classification = "Luring Pokémon",
             .height = "???’??”",
@@ -82653,7 +82653,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GOLURK] = {
         .textData = {
-            .name = "-----",
+            .name = "Golurk",
             .pokedexEntry = "",
             .classification = "Automaton Pokémon",
             .height = "???’??”",
@@ -82710,7 +82710,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CHESNAUGHT] = {
         .textData = {
-            .name = "-----",
+            .name = "Chesnaught",
             .pokedexEntry = "",
             .classification = "Spiny Armor Pokémon",
             .height = "???’??”",
@@ -82767,7 +82767,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_DELPHOX] = {
         .textData = {
-            .name = "-----",
+            .name = "Delphox",
             .pokedexEntry = "",
             .classification = "Fox Pokémon",
             .height = "???’??”",
@@ -82824,7 +82824,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GRENINJA] = {
         .textData = {
-            .name = "-----",
+            .name = "Greninja",
             .pokedexEntry = "",
             .classification = "Ninja Pokémon",
             .height = "???’??”",
@@ -82881,7 +82881,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_PYROAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Pyroar",
             .pokedexEntry = "",
             .classification = "Royal Pokémon",
             .height = "???’??”",
@@ -82938,7 +82938,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_FLOETTE] = {
         .textData = {
-            .name = "-----",
+            .name = "Floette",
             .pokedexEntry = "",
             .classification = "Single Bloom Pokémon",
             .height = "???’??”",
@@ -82995,7 +82995,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MEOWSTIC] = {
         .textData = {
-            .name = "-----",
+            .name = "Meowstic",
             .pokedexEntry = "",
             .classification = "Second Sight Pokémon",
             .height = "2’07”",
@@ -83052,7 +83052,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MEOWSTIC_FEMALE] = {
         .textData = {
-            .name = "-----",
+            .name = "Meowstic",
             .pokedexEntry = "",
             .classification = "Second Sight Pokémon",
             .height = "2’07”",
@@ -83109,7 +83109,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MALAMAR] = {
         .textData = {
-            .name = "-----",
+            .name = "Malamar",
             .pokedexEntry = "",
             .classification = "Overturning Pokémon",
             .height = "???’??”",
@@ -83166,7 +83166,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_BARBARACLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Barbaracle",
             .pokedexEntry = "",
             .classification = "Collective Pokémon",
             .height = "???’??”",
@@ -83223,7 +83223,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_DRAGALGE] = {
         .textData = {
-            .name = "-----",
+            .name = "Dragalge",
             .pokedexEntry = "",
             .classification = "Mock Kelp Pokémon",
             .height = "???’??”",
@@ -83280,7 +83280,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_HAWLUCHA] = {
         .textData = {
-            .name = "-----",
+            .name = "Hawlucha",
             .pokedexEntry = "",
             .classification = "Wrestling Pokémon",
             .height = "???’??”",
@@ -83337,7 +83337,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ZYGARDE] = {
         .textData = {
-            .name = "-----",
+            .name = "Zygarde",
             .pokedexEntry = "",
             .classification = "Order Pokémon",
             .height = "???’??”",
@@ -83394,7 +83394,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_CRABOMINABLE] = {
         .textData = {
-            .name = "-----",
+            .name = "Crabomnabl",
             .pokedexEntry = "",
             .classification = "Woolly Crab Pokémon",
             .height = "???’??”",
@@ -83451,7 +83451,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GOLISOPOD] = {
         .textData = {
-            .name = "-----",
+            .name = "Golisopod",
             .pokedexEntry = "",
             .classification = "Hard Scale Pokémon",
             .height = "???’??”",
@@ -83508,7 +83508,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_DRAMPA] = {
         .textData = {
-            .name = "-----",
+            .name = "Drampa",
             .pokedexEntry = "",
             .classification = "Imposing Pokémon",
             .height = "9’10”",
@@ -83565,7 +83565,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MAGEARNA] = {
         .textData = {
-            .name = "-----",
+            .name = "Magearna",
             .pokedexEntry = "",
             .classification = "Artificial Pokémon",
             .height = "???’??”",
@@ -83622,7 +83622,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_MAGEARNA_ORIGINAL] = {
         .textData = {
-            .name = "-----",
+            .name = "Magearna",
             .pokedexEntry = "",
             .classification = "Artificial Pokémon",
             .height = "???’??”",
@@ -83679,7 +83679,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_ZERAORA] = {
         .textData = {
-            .name = "-----",
+            .name = "Zeraora",
             .pokedexEntry = "",
             .classification = "Thunderclap Pokémon",
             .height = "???’??”",
@@ -83736,7 +83736,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_FALINKS] = {
         .textData = {
-            .name = "-----",
+            .name = "Falinks",
             .pokedexEntry = "",
             .classification = "Formation Pokémon",
             .height = "???’??”",
@@ -83793,7 +83793,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_SCOVILLAIN] = {
         .textData = {
-            .name = "-----",
+            .name = "Scovillain",
             .pokedexEntry = "",
             .classification = "Spicy Pepper Pokémon",
             .height = "???’??”",
@@ -83850,7 +83850,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_GLIMMORA] = {
         .textData = {
-            .name = "-----",
+            .name = "Glimmora",
             .pokedexEntry = "",
             .classification = "Ore Pokémon",
             .height = "???’??”",
@@ -83907,7 +83907,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_TATSUGIRI] = {
         .textData = {
-            .name = "-----",
+            .name = "Tatsugiri",
             .pokedexEntry = "",
             .classification = "Mimicry Pokémon",
             .height = "???’??”",
@@ -83964,7 +83964,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_TATSUGIRI_DROOPY] = {
         .textData = {
-            .name = "-----",
+            .name = "Tatsugiri",
             .pokedexEntry = "",
             .classification = "Mimicry Pokémon",
             .height = "???’??”",
@@ -84021,7 +84021,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_TATSUGIRI_STRETCHY] = {
         .textData = {
-            .name = "-----",
+            .name = "Tatsugiri",
             .pokedexEntry = "",
             .classification = "Mimicry Pokémon",
             .height = "???’??”",
@@ -84078,7 +84078,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
 
     [SPECIES_MEGA_BAXCALIBUR] = {
         .textData = {
-            .name = "-----",
+            .name = "Baxcalibur",
             .pokedexEntry = "",
             .classification = "Ice Dragon Pokémon",
             .height = "???’??”",
