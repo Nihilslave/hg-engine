@@ -21226,9 +21226,9 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21243,7 +21243,7 @@ const SpriteFrameData __data[] = {
         },
         .backFrames = {
                 { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 22, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21253,19 +21253,19 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -8,
-        .shadowXOffset = 1,
+        .spriteYOffset = -9,
+        .shadowXOffset = 2,
         .shadowSize = 1,
     },
     [SPECIES_SNIVY] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 5,
+            .animation = 2,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 24, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21305,8 +21305,8 @@ const SpriteFrameData __data[] = {
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 16, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21343,7 +21343,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21360,7 +21360,7 @@ const SpriteFrameData __data[] = {
         },
         .backFrames = {
                 { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 22, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21377,12 +21377,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_TEPIG] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 7,
+            .animation = 4,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 20, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21455,14 +21455,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_EMBOAR] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21499,7 +21499,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21577,7 +21577,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 24, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -21689,12 +21689,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_LILLIPUP] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 22, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -22352,7 +22352,7 @@ const SpriteFrameData __data[] = {
     [SPECIES_ZEBSTRIKA] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 18,
+            .animation = 19,
             .animationDelay = 0,
         },
         .frontFrames = {
@@ -22468,13 +22468,13 @@ const SpriteFrameData __data[] = {
     },
     [SPECIES_GIGALITH] = {
         .frontHeader = {
-            .cryDelay = 0,
-            .animation = 2,
-            .animationDelay = 0,
+            .cryDelay = 8,
+            .animation = 15,
+            .animationDelay = 8,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -22774,7 +22774,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -4,
+        .spriteYOffset = 0,
         .shadowXOffset = -1,
         .shadowSize = 1,
     },
@@ -22931,7 +22931,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
         .spriteYOffset = -5,
-        .shadowXOffset = 2,
+        .shadowXOffset = 4,
         .shadowSize = 3,
     },
     [SPECIES_THROH] = {
@@ -24462,10 +24462,10 @@ const SpriteFrameData __data[] = {
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -24503,8 +24503,8 @@ const SpriteFrameData __data[] = {
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -24541,7 +24541,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 17, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -24926,14 +24926,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_ESCAVALIER] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -25203,8 +25203,8 @@ const SpriteFrameData __data[] = {
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 7, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -26018,18 +26018,18 @@ const SpriteFrameData __data[] = {
     [SPECIES_ACCELGOR] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 1, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 1, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 1, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 1, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
@@ -26140,9 +26140,9 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -26179,7 +26179,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 28, .horizontalShift = 8, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -26206,7 +26206,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -4,
+        .spriteYOffset = -2,
         .shadowXOffset = 4,
         .shadowSize = 3,
     },
@@ -26257,7 +26257,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -27188,12 +27188,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_KELDEO] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 4,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 20, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -27383,12 +27383,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_CHESNAUGHT] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 28, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -27539,12 +27539,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_FROAKIE] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 4,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 20, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -27622,7 +27622,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 24, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -27649,19 +27649,19 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -5,
+        .spriteYOffset = -3,
         .shadowXOffset = 0,
         .shadowSize = 3,
     },
     [SPECIES_BUNNELBY] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 4,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -27734,18 +27734,18 @@ const SpriteFrameData __data[] = {
     [SPECIES_FLETCHLING] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 9,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 1, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 1, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
@@ -27766,7 +27766,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -14,
+        .spriteYOffset = 0,
         .shadowXOffset = -2,
         .shadowSize = 1,
     },
@@ -27812,12 +27812,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_TALONFLAME] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -30932,16 +30932,16 @@ const SpriteFrameData __data[] = {
     [SPECIES_RIBOMBEE] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 13,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -30949,14 +30949,14 @@ const SpriteFrameData __data[] = {
         },
         .backHeader = {
             .cryDelay = 9,
-            .animation = 5,
+            .animation = 84,
             .animationDelay = 11,
         },
         .backFrames = {
                 { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -34598,14 +34598,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_GREEDENT] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 7,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -35378,12 +35378,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_APPLIN] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 9,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 40, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -36119,14 +36119,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_IMPIDIMP] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 11,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -36548,12 +36548,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_FALINKS] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 20, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -36775,7 +36775,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -1,
+        .spriteYOffset = -5,
         .shadowXOffset = 0,
         .shadowSize = 2,
     },
@@ -36938,16 +36938,16 @@ const SpriteFrameData __data[] = {
     [SPECIES_DRACOZOLT] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 11,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 3, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 3, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 3, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 3, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37099,7 +37099,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 20, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37484,12 +37484,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_REGIELEKI] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 19,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 36, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37523,12 +37523,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_REGIDRAGO] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 36, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37678,15 +37678,15 @@ const SpriteFrameData __data[] = {
     },
     [SPECIES_WYRDEER] = {
         .frontHeader = {
-            .cryDelay = 0,
-            .animation = 1,
-            .animationDelay = 0,
+            .cryDelay = 9,
+            .animation = 5,
+            .animationDelay = 15,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 3, .horizontalShift = 1, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 3, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 5, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = -10, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37756,13 +37756,13 @@ const SpriteFrameData __data[] = {
     },
     [SPECIES_URSALUNA] = {
         .frontHeader = {
-            .cryDelay = 0,
+            .cryDelay = 8,
             .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 32, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37779,7 +37779,7 @@ const SpriteFrameData __data[] = {
         },
         .backFrames = {
                 { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 24, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37802,8 +37802,8 @@ const SpriteFrameData __data[] = {
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -37874,12 +37874,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_OVERQWIL] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -38035,7 +38035,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -38498,14 +38498,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_LOKIX] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 7,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -39941,14 +39941,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_TINKATINK] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 6,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -40803,8 +40803,8 @@ const SpriteFrameData __data[] = {
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 25, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -40816,12 +40816,12 @@ const SpriteFrameData __data[] = {
         },
         .backHeader = {
             .cryDelay = 9,
-            .animation = 5,
+            .animation = 1,
             .animationDelay = 11,
         },
         .backFrames = {
-                { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 13, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 22, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -40843,7 +40843,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -40855,12 +40855,12 @@ const SpriteFrameData __data[] = {
         },
         .backHeader = {
             .cryDelay = 9,
-            .animation = 5,
+            .animation = 2,
             .animationDelay = 11,
         },
         .backFrames = {
-                { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 21, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -40877,14 +40877,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_FARIGIRAF] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 14,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -40894,11 +40894,11 @@ const SpriteFrameData __data[] = {
         },
         .backHeader = {
             .cryDelay = 9,
-            .animation = 5,
+            .animation = 92,
             .animationDelay = 11,
         },
         .backFrames = {
-                { .frameNo = 0, .duration = 11, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 15, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -41072,14 +41072,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_BRUTE_BONNET] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 16,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 12, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -41111,14 +41111,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_FLUTTER_MANE] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 16,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 20, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 14, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -41260,9 +41260,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 1,
+        .spriteYOffset = -15,
         .shadowXOffset = 2,
-        .shadowSize = 2,
+        .shadowSize = 3,
     },
     [SPECIES_IRON_BUNDLE] = {
         .frontHeader = {
@@ -41299,8 +41299,8 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 0,
-        .shadowXOffset = 0,
+        .spriteYOffset = -9,
+        .shadowXOffset = 8,
         .shadowSize = 2,
     },
     [SPECIES_IRON_HANDS] = {
@@ -41345,12 +41345,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_IRON_JUGULIS] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 8, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 28, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -41377,8 +41377,8 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 0,
-        .shadowXOffset = 0,
+        .spriteYOffset = 7,
+        .shadowXOffset = 7,
         .shadowSize = 2,
     },
     [SPECIES_IRON_MOTH] = {
@@ -41417,20 +41417,20 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
         .spriteYOffset = 0,
-        .shadowXOffset = 0,
+        .shadowXOffset = -10,
         .shadowSize = 2,
     },
     [SPECIES_IRON_THORNS] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 14,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 6, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -41501,7 +41501,7 @@ const SpriteFrameData __data[] = {
     [SPECIES_ARCTIBAX] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
@@ -41533,7 +41533,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -5,
+        .spriteYOffset = -13,
         .shadowXOffset = 0,
         .shadowSize = 2,
     },
@@ -41968,13 +41968,13 @@ const SpriteFrameData __data[] = {
     },
     [SPECIES_WALKING_WAKE] = {
         .frontHeader = {
-            .cryDelay = 0,
-            .animation = 2,
+            .cryDelay = 4,
+            .animation = 15,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 24, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -42286,7 +42286,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -42476,12 +42476,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_IRON_BOULDER] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 15,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -42510,7 +42510,7 @@ const SpriteFrameData __data[] = {
         },
         .spriteYOffset = -9,
         .shadowXOffset = 0,
-        .shadowSize = 2,
+        .shadowSize = 3,
     },
     [SPECIES_IRON_CROWN] = {
         .frontHeader = {
@@ -45128,12 +45128,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_GRIMER_ALOLAN] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 5,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -45171,8 +45171,8 @@ const SpriteFrameData __data[] = {
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 26, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -45245,14 +45245,14 @@ const SpriteFrameData __data[] = {
     [SPECIES_MAROWAK_ALOLAN] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 16,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -52621,7 +52621,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 14, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -52699,7 +52699,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 22, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -52811,18 +52811,18 @@ const SpriteFrameData __data[] = {
     [SPECIES_BRAVIARY_HISUIAN] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 17,
+            .animation = 16,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 2, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
@@ -52843,19 +52843,19 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -1,
+        .spriteYOffset = 8,
         .shadowXOffset = 0,
         .shadowSize = 2,
     },
     [SPECIES_SLIGGOO_HISUIAN] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 14,
+            .animation = 18,
             .animationDelay = 0,
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -52894,7 +52894,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 38, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -53896,9 +53896,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 0,
-        .shadowXOffset = 0,
-        .shadowSize = 2,
+        .spriteYOffset = -9,
+        .shadowXOffset = -4,
+        .shadowSize = 3,
     },
     [SPECIES_TAUROS_BLAZE] = {
         .frontHeader = {
@@ -53935,9 +53935,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 0,
-        .shadowXOffset = 0,
-        .shadowSize = 2,
+        .spriteYOffset = -5,
+        .shadowXOffset = 2,
+        .shadowSize = 3,
     },
     [SPECIES_TAUROS_AQUA] = {
         .frontHeader = {
@@ -53974,9 +53974,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 0,
-        .shadowXOffset = 0,
-        .shadowSize = 2,
+        .spriteYOffset = -7,
+        .shadowXOffset = 2,
+        .shadowSize = 3,
     },
     [SPECIES_OINKOLOGNE_FEMALE] = {
         .frontHeader = {
@@ -56360,7 +56360,7 @@ const SpriteFrameData __data[] = {
     [SPECIES_MEGA_RAICHU_Y] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 19,
             .animationDelay = 0,
         },
         .frontFrames = {
@@ -56510,8 +56510,8 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
         .spriteYOffset = -1,
-        .shadowXOffset = 0,
-        .shadowSize = 2,
+        .shadowXOffset = 2,
+        .shadowSize = 3,
     },
     [SPECIES_MEGA_DRAGONITE] = {
         .frontHeader = {
@@ -56672,7 +56672,7 @@ const SpriteFrameData __data[] = {
     [SPECIES_MEGA_CHIMECHO] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 13,
             .animationDelay = 0,
         },
         .frontFrames = {
@@ -56704,9 +56704,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -1,
+        .spriteYOffset = 7,
         .shadowXOffset = 0,
-        .shadowSize = 2,
+        .shadowSize = 3,
     },
     [SPECIES_MEGA_ABSOL_Z] = {
         .frontHeader = {
@@ -56938,9 +56938,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -1,
+        .spriteYOffset = -7,
         .shadowXOffset = 0,
-        .shadowSize = 2,
+        .shadowSize = 3,
     },
     [SPECIES_MEGA_DARKRAI] = {
         .frontHeader = {
@@ -57335,7 +57335,7 @@ const SpriteFrameData __data[] = {
     [SPECIES_MEGA_GRENINJA] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 15,
             .animationDelay = 0,
         },
         .frontFrames = {
@@ -57574,7 +57574,7 @@ const SpriteFrameData __data[] = {
         },
         .frontFrames = {
                 { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 18, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -57602,8 +57602,8 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
         .spriteYOffset = -1,
-        .shadowXOffset = 0,
-        .shadowSize = 2,
+        .shadowXOffset = 6,
+        .shadowSize = 3,
     },
     [SPECIES_MEGA_DRAGALGE] = {
         .frontHeader = {
@@ -57686,12 +57686,12 @@ const SpriteFrameData __data[] = {
     [SPECIES_MEGA_ZYGARDE] = {
         .frontHeader = {
             .cryDelay = 0,
-            .animation = 2,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 14, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 24, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -57718,9 +57718,9 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = -1,
-        .shadowXOffset = 0,
-        .shadowSize = 2,
+        .spriteYOffset = 4,
+        .shadowXOffset = 10,
+        .shadowSize = 3,
     },
     [SPECIES_MEGA_CRABOMINABLE] = {
         .frontHeader = {
@@ -57802,13 +57802,13 @@ const SpriteFrameData __data[] = {
     },
     [SPECIES_MEGA_DRAMPA] = {
         .frontHeader = {
-            .cryDelay = 0,
-            .animation = 2,
+            .cryDelay = 12,
+            .animation = 3,
             .animationDelay = 0,
         },
         .frontFrames = {
-                { .frameNo = 0, .duration = 4, .horizontalShift = 0, .verticalShift = 0 },
-                { .frameNo = 1, .duration = 10, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 0, .duration = 14, .horizontalShift = 0, .verticalShift = 0 },
+                { .frameNo = 1, .duration = 22, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
@@ -57835,8 +57835,8 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
-        .spriteYOffset = 1,
-        .shadowXOffset = -3,
+        .spriteYOffset = -2,
+        .shadowXOffset = 2,
         .shadowSize = 3,
     },
     [SPECIES_MEGA_MAGEARNA] = {
@@ -57953,7 +57953,7 @@ const SpriteFrameData __data[] = {
                 { .frameNo = -1, .duration = 0, .horizontalShift = 0, .verticalShift = 0 },
         },
         .spriteYOffset = -1,
-        .shadowXOffset = 0,
+        .shadowXOffset = 9,
         .shadowSize = 2,
     },
     [SPECIES_MEGA_FALINKS] = {
