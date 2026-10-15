@@ -487,3 +487,43 @@ TREASURE
 NORMAL
 HARD
 VERY HARD
+Adjust IVs
+Adjust EVs
+Change nature
+Nothing, thanks
+HP
+Attack
+Defense
+Sp. Atk
+Sp. Def
+Speed
+All of them
+Max out (31)
+Reset to 0
+Max out (252)
+Hardy\n(no change)
+Lonely\n+Atk -Def
+Brave\n+Atk -Spe
+Adamant\n+Atk -SpA
+Naughty\n+Atk -SpD
+Bold\n+Def -Atk
+Docile\n(no change)
+Relaxed\n+Def -Spe
+Impish\n+Def -SpA
+Lax\n+Def -SpD
+Timid\n+Spe -Atk
+Hasty\n+Spe -Def
+Serious\n(no change)
+Jolly\n+Spe -SpA
+Naive\n+Spe -SpD
+Modest\n+SpA -Atk
+Mild\n+SpA -Def
+Quiet\n+SpA -Spe
+Bashful\n(no change)
+Rash\n+SpA -SpD
+Calm\n+SpD -Atk
+Gentle\n+SpD -Def
+Sassy\n+SpD -Spe
+Careful\n+SpD -SpA
+Quirky\n(no change)
+More...

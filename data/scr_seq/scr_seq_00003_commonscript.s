@@ -99,6 +99,7 @@ scrdef scr_seq_0003_070
 scrdef scr_seq_0003_071
 scrdef scr_seq_0003_072_repels
 scrdef scr_seq_0003_073_autobattle_testing
+scrdef scr_seq_0003_074_stats_service
 scrdef_end
 
 scr_seq_0003_002:
@@ -1752,4 +1753,288 @@ scr_seq_0003_073_autobattle_testing:
     //setvar 0x800B, 1
     //WildBattleSp 785 | (1 << 11), 50, 0
     releaseall
+    end
+
+// IV/EV/nature adjustment service (standard script 2074).  charges 100 per
+// completed adjustment; var usage: x8003 = chosen party slot,
+// x8004 = stat/nature payload, x8005 = value payload,
+// x8006 = scratch (payment result / cancel flag)
+scr_seq_0003_074_stats_service:
+    play_se SEQ_SE_DP_SELECT
+    lockall
+    faceplayer
+    npc_msg 121
+    wait_button
+    closemsg
+
+// main menu: IV / EV / nature / leave
+_S074_MAIN:
+    npc_msg 169
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 489, 255, 0
+    menu_item_add 490, 255, 1
+    menu_item_add 491, 255, 2
+    menu_item_add 492, 255, 3
+    menu_exec
+    touchscreen_menu_show
+    closemsg
+    switch VAR_SPECIAL_RESULT
+    case 0, _S074_IV
+    case 1, _S074_EV
+    case 2, _S074_NATURE
+    goto _S074_EXIT
+
+// ---------- IV adjustment ----------
+_S074_IV:
+    call _S074_CHOOSE_MON
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _S074_MAIN
+    npc_msg 128
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 493, 255, 0
+    menu_item_add 494, 255, 1
+    menu_item_add 495, 255, 2
+    menu_item_add 496, 255, 4
+    menu_item_add 497, 255, 5
+    menu_item_add 498, 255, 3
+    menu_item_add 499, 255, 6
+    menu_exec
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    compare VAR_SPECIAL_RESULT, 6
+    goto_if_gt _S074_MAIN
+    copyvar VAR_SPECIAL_x8004, VAR_SPECIAL_RESULT
+    npc_msg 136
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 500, 255, 31
+    menu_item_add 501, 255, 0
+    menu_exec
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    compare VAR_SPECIAL_RESULT, 31
+    goto_if_eq _S074_IV_APPLY
+    compare VAR_SPECIAL_RESULT, 0
+    goto_if_ne _S074_MAIN
+_S074_IV_APPLY:
+    copyvar VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    call _S074_PAY
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _S074_MAIN
+    MonServiceSelect VAR_SPECIAL_x8003
+    MonServiceSetIV VAR_SPECIAL_x8004, VAR_SPECIAL_x8005
+    npc_msg 167
+    wait_button
+    closemsg
+    goto _S074_MAIN
+
+// ---------- EV adjustment ----------
+_S074_EV:
+    call _S074_CHOOSE_MON
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _S074_MAIN
+    npc_msg 139
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 493, 255, 0
+    menu_item_add 494, 255, 1
+    menu_item_add 495, 255, 2
+    menu_item_add 496, 255, 4
+    menu_item_add 497, 255, 5
+    menu_item_add 498, 255, 3
+    menu_item_add 499, 255, 6
+    menu_exec
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    compare VAR_SPECIAL_RESULT, 6
+    goto_if_gt _S074_MAIN
+    copyvar VAR_SPECIAL_x8004, VAR_SPECIAL_RESULT
+    npc_msg 136
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 502, 255, 252
+    menu_item_add 501, 255, 0
+    menu_exec
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    compare VAR_SPECIAL_RESULT, 252
+    goto_if_eq _S074_EV_APPLY
+    compare VAR_SPECIAL_RESULT, 0
+    goto_if_ne _S074_MAIN
+_S074_EV_APPLY:
+    copyvar VAR_SPECIAL_x8005, VAR_SPECIAL_RESULT
+    call _S074_PAY
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _S074_MAIN
+    MonServiceSelect VAR_SPECIAL_x8003
+    MonServiceSetEV VAR_SPECIAL_x8004, VAR_SPECIAL_x8005
+    npc_msg 167
+    wait_button
+    closemsg
+    goto _S074_MAIN
+
+// ---------- nature change (4 pages x 7 natures + "More...") ----------
+_S074_NATURE:
+    call _S074_CHOOSE_MON
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _S074_MAIN
+    npc_msg 141
+
+// page 1: Hardy..Docile (natures 0-6)
+_S074_NAT_P1:
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 503, 255, 0
+    menu_item_add 504, 255, 1
+    menu_item_add 505, 255, 2
+    menu_item_add 506, 255, 3
+    menu_item_add 507, 255, 4
+    menu_item_add 508, 255, 5
+    menu_item_add 509, 255, 6
+    menu_item_add 528, 255, 100
+    menu_exec
+    compare VAR_SPECIAL_RESULT, 100
+    goto_if_eq _S074_NAT_P2
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    copyvar VAR_SPECIAL_x8004, VAR_SPECIAL_RESULT
+    goto _S074_NAT_APPLY
+
+// page 2: Relaxed..Jolly (natures 7-13)
+_S074_NAT_P2:
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 510, 255, 7
+    menu_item_add 511, 255, 8
+    menu_item_add 512, 255, 9
+    menu_item_add 513, 255, 10
+    menu_item_add 514, 255, 11
+    menu_item_add 515, 255, 12
+    menu_item_add 516, 255, 13
+    menu_item_add 528, 255, 100
+    menu_exec
+    compare VAR_SPECIAL_RESULT, 100
+    goto_if_eq _S074_NAT_P3
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    copyvar VAR_SPECIAL_x8004, VAR_SPECIAL_RESULT
+    goto _S074_NAT_APPLY
+
+// page 3: Naive..Calm (natures 14-20)
+_S074_NAT_P3:
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 517, 255, 14
+    menu_item_add 518, 255, 15
+    menu_item_add 519, 255, 16
+    menu_item_add 520, 255, 17
+    menu_item_add 521, 255, 18
+    menu_item_add 522, 255, 19
+    menu_item_add 523, 255, 20
+    menu_item_add 528, 255, 100
+    menu_exec
+    compare VAR_SPECIAL_RESULT, 100
+    goto_if_eq _S074_NAT_P4
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    copyvar VAR_SPECIAL_x8004, VAR_SPECIAL_RESULT
+    goto _S074_NAT_APPLY
+
+// page 4: Gentle..Quirky (natures 21-24); "More..." wraps to page 1
+_S074_NAT_P4:
+    setvar VAR_SPECIAL_RESULT, 0xEEEE
+    touchscreen_menu_hide
+    menu_init_std_gmm 1, 1, 0, 1, VAR_SPECIAL_RESULT
+    menu_item_add 524, 255, 21
+    menu_item_add 525, 255, 22
+    menu_item_add 526, 255, 23
+    menu_item_add 527, 255, 24
+    menu_item_add 528, 255, 100
+    menu_exec
+    compare VAR_SPECIAL_RESULT, 100
+    goto_if_eq _S074_NAT_P1
+    touchscreen_menu_show
+    closemsg
+    compare VAR_SPECIAL_RESULT, 0xEEEE
+    goto_if_eq _S074_MAIN
+    copyvar VAR_SPECIAL_x8004, VAR_SPECIAL_RESULT
+
+_S074_NAT_APPLY:
+    call _S074_PAY
+    compare VAR_SPECIAL_x8006, 1
+    goto_if_eq _S074_MAIN
+    MonServiceSelect VAR_SPECIAL_x8003
+    MonServiceSetNature VAR_SPECIAL_x8004
+    npc_msg 167
+    wait_button
+    closemsg
+    goto _S074_MAIN
+
+// ---------- helpers ----------
+// choose a party mon into VAR_SPECIAL_x8003; x8006 is set to 1 on cancel
+_S074_CHOOSE_MON:
+    npc_msg 126
+    wait_button
+    closemsg
+    fade_screen 6, 1, 0, RGB_BLACK
+    wait_fade
+    party_select_ui
+    get_party_selection VAR_SPECIAL_x8003
+    restore_overworld
+    fade_screen 6, 1, 1, RGB_BLACK
+    wait_fade
+    compare VAR_SPECIAL_x8003, 255
+    goto_if_eq _S074_CM_CANCEL
+    setvar VAR_SPECIAL_x8006, 0
+    return
+_S074_CM_CANCEL:
+    npc_msg 127
+    wait_button
+    closemsg
+    setvar VAR_SPECIAL_x8006, 1
+    return
+
+// charge 100; x8006 is set to 1 when the player cannot pay
+_S074_PAY:
+    hasenoughmoneyimmediate VAR_SPECIAL_x8006, 100
+    compare VAR_SPECIAL_x8006, 0
+    goto_if_eq _S074_PAY_FAIL
+    play_se SEQ_SE_DP_REGI
+    submoneyimmediate 100
+    setvar VAR_SPECIAL_x8006, 0
+    return
+_S074_PAY_FAIL:
+    npc_msg 168
+    wait_button
+    closemsg
+    setvar VAR_SPECIAL_x8006, 1
+    return
+
+_S074_EXIT:
+    releaseall
+    endstd
     end

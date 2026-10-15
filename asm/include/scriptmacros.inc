@@ -226,6 +226,8 @@
 .equ std_fade_heal_fade, 2069
 .equ std_play_rival_outro_music, 2070
 .equ std_fade_end_rival_outro_music, 2071
+// IV/EV/nature adjustment service (scr_seq_0003_074 in the common script bank)
+.equ std_stats_service, 2074
 
 // Creates a new script context to run the indicated script and wait
 .macro callstd,id
@@ -6777,6 +6779,41 @@ DummyTextTrap \slot, \unk
 
 .macro QueueNewRepel
 RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
+.endm
+
+// mon stats adjustment service (standard script 2074) support commands.
+// the script first stashes the chosen party slot with MonServiceSelect, then
+// applies the changes.  stat 0-5 = HP/Atk/Def/Speed/SpAtk/SpDef (mon data
+// enum order), 6 = all six stats; nature 0-24.
+.equ NEW_COMMAND_MON_SERVICE_SELECT, 3
+.equ NEW_COMMAND_MON_SERVICE_SET_IV, 4
+.equ NEW_COMMAND_MON_SERVICE_SET_EV, 5
+.equ NEW_COMMAND_MON_SERVICE_SET_NATURE, 6
+
+// slotvar: script var holding the selected party slot (0-5)
+.macro MonServiceSelect,slotvar
+RunNewCommand NEW_COMMAND_MON_SERVICE_SELECT, \slotvar
+.endm
+
+// statvar: var holding the stat to change (0-6); valuevar: var holding the new IV (0-31)
+.macro MonServiceSetIV,statvar,valuevar
+.hword 208
+.byte NEW_COMMAND_MON_SERVICE_SET_IV
+.hword \statvar
+.hword \valuevar
+.endm
+
+// statvar: var holding the stat to change (0-6); valuevar: var holding the new EV (0-252)
+.macro MonServiceSetEV,statvar,valuevar
+.hword 208
+.byte NEW_COMMAND_MON_SERVICE_SET_EV
+.hword \statvar
+.hword \valuevar
+.endm
+
+// naturevar: var holding the new nature (0-24)
+.macro MonServiceSetNature,naturevar
+RunNewCommand NEW_COMMAND_MON_SERVICE_SET_NATURE, \naturevar
 .endm
 
 // rolls the next three concept words of the opening quiz into the given

@@ -119,3 +119,52 @@ NOT TELLING
 The repellent’s effect wore off!\nWould you like to use another one?
 You used the {STRVAR_1 8, 1, 0}.
 Begin auto-battle.
+Welcome!\rI can tune your Pokémon’s IVs,\nEVs, and nature.\rEach adjustment costs 100.
+Adjust IVs
+Adjust EVs
+Change nature
+Nothing, thanks
+Please choose a Pokémon.
+No Pokémon? Come back anytime!
+Which IV should I tune?
+HP
+Attack
+Defense
+Sp. Atk
+Sp. Def
+Speed
+All of them
+Max them out, or reset to 0?
+Max them out (31)
+Reset to 0
+Which EV should I tune?
+Max them out (252)
+Pick a new nature.
+Hardy (no change)
+Lonely (Atk+ Def-)
+Brave (Atk+ Speed-)
+Adamant (Atk+ SpAtk-)
+Naughty (Atk+ SpDef-)
+Bold (Def+ Atk-)
+Docile (no change)
+Relaxed (Def+ Speed-)
+Impish (Def+ SpAtk-)
+Lax (Def+ SpDef-)
+Timid (Speed+ Atk-)
+Hasty (Speed+ Def-)
+Serious (no change)
+Jolly (Speed+ SpAtk-)
+Naive (Speed+ SpDef-)
+Modest (SpAtk+ Atk-)
+Mild (SpAtk+ Def-)
+Quiet (SpAtk+ Speed-)
+Bashful (no change)
+Rash (SpAtk+ SpDef-)
+Calm (SpDef+ Atk-)
+Gentle (SpDef+ Def-)
+Sassy (SpDef+ Speed-)
+Careful (SpDef+ SpAtk-)
+Quirky (no change)
+Done! That will be 100.
+You don’t have 100. Sorry!
+What can I do for you?
