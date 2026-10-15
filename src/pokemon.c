@@ -22,6 +22,7 @@
 #include "rtc.h"
 #include "save.h"
 #include "script.h"
+#include "silvally_forms.h"
 #include "sound.h"
 
 extern u32 word_to_store_form_at;
@@ -637,6 +638,12 @@ void LONG_CALL ArceusBoxPokemonFormeChange(struct BoxPokemon *bp)
         form = GetGenesectForme(item);
         SetBoxMonData(bp, MON_DATA_FORM, &form);
     }
+
+    if (species == SPECIES_SILVALLY
+        && ability == ABILITY_RKS_SYSTEM) {
+        form = GET_SILVALLY_MEMORY_FORM_NO(item);
+        SetBoxMonData(bp, MON_DATA_FORM, &form);
+    }
 }
 
 /**
@@ -650,7 +657,7 @@ BOOL LONG_CALL HandleBoxPokemonFormeChanges(struct BoxPokemon *bp)
 {
     u32 species = GetBoxMonData(bp, MON_DATA_SPECIES, NULL);
 
-    if (species == SPECIES_ARCEUS || species == SPECIES_GENESECT) {
+    if (species == SPECIES_ARCEUS || species == SPECIES_GENESECT || species == SPECIES_SILVALLY) {
         u32 form_no = GetBoxMonData(bp, MON_DATA_FORM, NULL);
 
         ArceusBoxPokemonFormeChange(bp);

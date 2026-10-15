@@ -12,6 +12,7 @@
 #include "bag.h"
 #include "battle.h"
 #include "pokemon.h"
+#include "silvally_forms.h"
 
 /**
  *  @brief check if a form change needs to happen.  if so, return TRUE and populate *seq_no with the subscript to run
@@ -146,11 +147,11 @@ BOOL BattleFormChangeCheck(void *bw, struct BattleStruct *sp, int *seq_no)
             }
         }
 
-        // handle Silvally TODO check if this actually works, eventually change to use the memories instead of plates
+        // handle Silvally: the held memory decides the type form
         if ((sp->battlemon[client].species == SPECIES_SILVALLY)
             && (sp->battlemon[client].hp)
             && (GetBattlerAbility(sp, client) == ABILITY_RKS_SYSTEM)) {
-            form_no = GetArceusType(BattleItemDataGet(sp, sp->battlemon[client].item, 1));
+            form_no = GET_SILVALLY_MEMORY_FORM_NO(sp->battlemon[client].item);
             if (sp->battlemon[client].form_no != form_no) {
                 sp->battlemon[client].form_no = form_no;
                 *seq_no = BATTLE_SUBSCRIPT_FORM_CHANGE;
