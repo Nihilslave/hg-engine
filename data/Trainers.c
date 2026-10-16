@@ -2380,6 +2380,9 @@ const TrainerData sTrainerData[] = {
                 .abilitySlot = TRAINER_POKEMON_ABILITY_1,
                 .level = 9,
                 .species = SPECIES_VICTREEBEL,
+                .item = ITEM_AIR_BALLOON,
+                .moves = { MOVE_METAL_BURST, MOVE_TAUNT, MOVE_PARTING_SHOT, MOVE_BOOMBURST },
+                .ability = ABILITY_ILLUSION,
                 .ballSeal = 0,
             },
             {
@@ -2387,6 +2390,8 @@ const TrainerData sTrainerData[] = {
                 .abilitySlot = TRAINER_POKEMON_ABILITY_2,
                 .level = 9,
                 .species = SPECIES_NOCTOWL,
+                .moves = { MOVE_BOOMBURST, MOVE_QUIVER_DANCE, MOVE_STRENGTH_SAP, MOVE_EXTREME_SPEED },
+                .ability = ABILITY_AERILATE,
                 .ballSeal = 0,
             },
         },
