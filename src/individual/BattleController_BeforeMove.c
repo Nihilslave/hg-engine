@@ -5039,7 +5039,7 @@ BOOL BattleController_CheckStrongWindsWeaken(struct BattleSystem *bw, struct Bat
             if (HasType(sp, defender, TypeEffectivenessTable[i][1])) {
                 if ((GetWeather(bw, sp, sp->attack_client) & FIELD_CONDITION_STRONG_WINDS)
                     && (TypeEffectivenessTable[i][2] == 20)
-                    && (HasType(sp, defender, TYPE_FLYING))) {
+                    && (TypeEffectivenessTable[i][1] == TYPE_FLYING)) {
                     LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_WEAKEN_MOVES_STRONG_WINDS);
                     sp->next_server_seq_no = sp->server_seq_no;
                     sp->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
