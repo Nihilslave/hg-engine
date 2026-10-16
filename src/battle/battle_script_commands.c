@@ -15,6 +15,7 @@
 #include "constants/weather_numbers.h"
 
 #include "battle.h"
+#include "flat_battle.h"
 #include "mega.h"
 #include "message.h"
 #include "nitro.h"
@@ -1242,7 +1243,10 @@ BOOL btl_scr_cmd_27_shouldgetexp(void *bw, struct BattleStruct *sp)
 
     adrs = read_battle_script_param(sp);
 
-    if ((/*cp->client_type*/ sp->fainting_client & 1) && ((fight_type & BATTLE_TYPE_NO_EXPERIENCE) == 0)) {
+    // Gym leader "flat" battles award no experience (and no EVs), exactly
+    // like link battles; see src/flat_battle.c.
+    if ((/*cp->client_type*/ sp->fainting_client & 1) && ((fight_type & BATTLE_TYPE_NO_EXPERIENCE) == 0)
+        && !FlatBattle_IsActive()) {
 
         // exp. calculation has been entirely moved to Task_DistributeExp_Extend as of the implementation of capture experience.
 

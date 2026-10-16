@@ -65,7 +65,7 @@
 
  ``UPDATE_VITAMIN_EV_CAPS`` (``include/config.h`` only) updates the EV caps for vitamins from 100 to 252 like later generations.
 
- ``DISABLE_ITEMS_IN_TRAINER_BATTLE`` (``include/config.h`` only) disables items being used while in trainer battles.
+ ``DISABLE_ITEMS_IN_TRAINER_BATTLE`` (``include/config.h`` only) enables the in-battle item ban.  In this repository it is used by the gym leader "flat battle" system (see ``src/flat_battle.c``): items cannot be used only while a gym leader battle with flat levels is active, by the player and by the AI.
 
  ``STATIC_HP_BAR`` (``include/config.h`` only) updates the HP bar to increase/decrease at a fixed rate like later generations.
 

@@ -10,6 +10,7 @@
 #include "constants/move_effects.h"
 
 #include "battle.h"
+#include "flat_battle.h"
 
 #ifdef DEBUG_BATTLE_SCENARIOS
 #include "test_battle.h"
@@ -24,7 +25,9 @@ void overrideItemUsage(struct BattleSystem *bsys, struct BattleStruct *ctx)
 
     for (battlerId = 0; battlerId < bsys->maxBattlers; battlerId++) {
         if (ctx->playerActions[battlerId][0] == CONTROLLER_COMMAND_ITEM_INPUT && ctx->com_seq_no[battlerId] == SSI_STATE_7) {
-            if (fight_type & BATTLE_TYPE_TRAINER) {
+            // In this fork, items are banned only during gym leader "flat"
+            // battles (link-battle-style); see src/flat_battle.c.
+            if ((fight_type & BATTLE_TYPE_TRAINER) && FlatBattle_IsActive()) {
                 msg.id = BATTLE_MSG_ITEMS_CANT_BE_USED_HERE; // msg.id  = msg_0197_00593; // Items can't be used here
                 msg.tag = TAG_NONE;
                 ov12_022639B8(bsys, battlerId, msg);
@@ -113,7 +116,16 @@ BOOL LONG_CALL BattleContext_Main(struct BattleSystem *bsys, struct BattleStruct
 #endif
     overrideRunButton(bsys, ctx);
 
+    // Keep the player's active battlemons on the flat stat line (the stat
+    // data is rebuilt from the party copy whenever a mon is sent out).
+    FlatBattle_Enforce(bsys, ctx);
+
     if (ctx->server_seq_no == CONTROLLER_COMMAND_45) {
+        // The battle is over.  Like a link battle, the party copy is
+        // discarded: it is reset to the save party so that the results
+        // write-back (which follows every normal battle) cannot change the
+        // party.
+        FlatBattle_Finish(bsys);
         return TRUE;
     }
     return FALSE;

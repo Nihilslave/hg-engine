@@ -3,6 +3,7 @@
 #include "types.h"
 
 #include "constants/ability.h"
+#include "constants/battle_constants.h"
 #include "constants/file.h"
 #include "constants/game.h"
 #include "constants/hold_item_effects.h"
@@ -13,6 +14,7 @@
 
 #include "bag.h"
 #include "battle.h"
+#include "flat_battle.h"
 #include "mon_randomizer.h"
 #include "pokemon.h"
 #include "rival_typechart.h"
@@ -529,6 +531,31 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 
     gf_srand(seed_tmp);
 
+    // Gym leader battles play like link battles: force the player's battle
+    // party (the copy the battle uses) to the leader's ace level, and take
+    // the leader's bag items away for the fight.  The flat levels are
+    // restored when the battle ends; see src/flat_battle.c.
+    if (num != BATTLER_PLAYER && FlatBattle_IsGymLeaderClass(bp->trainer_data[num].tr_type)) {
+        struct Party *leaderParty = bp->poke_party[num];
+        u32 flatLevel = 0;
+        int k;
+
+        for (k = 0; k < 6; k++) {
+            struct PartyPokemon *leaderMon = Party_GetMonByIndex(leaderParty, k);
+            if (leaderMon != NULL) {
+                u32 monLevel = GetMonData(leaderMon, MON_DATA_LEVEL, NULL);
+                if (monLevel > flatLevel)
+                    flatLevel = monLevel;
+            }
+        }
+
+        if (flatLevel != 0) {
+            for (k = 0; k < 4; k++)
+                bp->trainer_data[num].use_item[k] = 0;
+            FlatBattle_Begin(flatLevel, bp->poke_party[BATTLER_PLAYER]);
+        }
+    }
+
 #ifdef DEBUG_BATTLE_SCENARIOS
     // Override parties with test scenario if enabled
     TestBattle_OverrideParties(bp);
@@ -544,6 +571,10 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
             }
         }
     }
+
+    // Give the player's battle party copy the flat-level display values
+    // (the form changes above recalculated stats and clamped hp again).
+    FlatBattle_ApplyBattleEntryValues(bp->poke_party[BATTLER_PLAYER]);
 }
 
 extern u32 space_for_setmondata;
